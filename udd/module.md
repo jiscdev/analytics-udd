@@ -86,7 +86,7 @@ Int
 Level of credit points - indicates the level of module the student is studying. This has been initially based on the HESA field LEVELPTS, however may be utilised and adapted to also cater for FE
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 Jisc
@@ -94,7 +94,7 @@ Jisc
 ###Valid Values
 
 <table>
-<tr><td>CODE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
+<tr><td>MOD_LEVEL</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
 <tr><td>0</td><td>Entry level</td><td>  </td></tr>
 <tr><td>1</td><td>HE Certificate/NVQ Level 4 or equivalent</td><td> 	</td></tr>
 <tr><td>2</td><td>HE Intermediate</td><td> 	</td></tr>
@@ -109,7 +109,7 @@ Jisc
 <tr><td>D</td><td>HND/Diploma HE</td><td> 	</td></tr>
 <tr><td>E</td><td>Ordinary degrees</td><td></td></tr>
 </table> 	
- 
+
 ###Format
 String(1)
 

@@ -25,7 +25,7 @@
 Final grade student achieved on the module.
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 Jisc
@@ -44,7 +44,7 @@ String (256)
 Indicates whether the student passed the module, didn't pass the module, deferred the module or whether this information is not known because the module hasn't been completed yet.
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 Jisc
@@ -52,7 +52,7 @@ Jisc
 ###Valid Values
 
 <table>
-<tr><td>CODE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
+<tr><td>MOD_RESULT</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
 <tr><td>1</td><td>Yes</td><td>Ie  </td></tr>
 <tr><td>2</td><td>No</td><td>Na  </td></tr>
 <tr><td>3</td><td>Not completed yet</td><td>Dim wedi cwblhau</td></tr>
@@ -71,7 +71,7 @@ Code 3 is applied in all cases where the outcome is either not known (yet), or d
 Whether this is a retake of the module for that student.
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 Jisc
@@ -79,9 +79,9 @@ Jisc
 ###Valid Values
 
 <table>
-<tr><td>    CODE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
-<tr><td>    1</td><td>Yes</td><td>Ie  </td></tr>
-<tr><td>    2</td><td>No</td><td>Na</td></tr>
+<tr><td>MOD_RETAKE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
+<tr><td>1</td><td>Yes</td><td>Ie  </td></tr>
+<tr><td>2</td><td>No</td><td>Na</td></tr>
 </table>  
 
 ###Format

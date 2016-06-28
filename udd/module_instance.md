@@ -31,7 +31,7 @@ String (255)
 Period to which module instance relates (e.g. semester 1)
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 Jisc
@@ -50,14 +50,14 @@ It is expected that sites / organisations will have their own code lists for MOD
 Whether this module instance is delivered wholly online
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 Jisc
 
 ###Valid Values
 <table>
-<tr><td>CODE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
+<tr><td>MOD_ONLINE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
 <tr><td>1</td><td>Yes</td><td>Ie  </td></tr>
 <tr><td>2</td><td>No</td><td>Na</td></tr>
 </table>  
@@ -72,7 +72,7 @@ Int
 Academic year that this module runs within - this must represent the start year of that specific academic year eg. for 2014-15 this would be 2014
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 Jisc
@@ -91,7 +91,7 @@ This is the starting year for the academic year.
 Whether this instance relates to an optional module or not.
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 Jisc
@@ -99,7 +99,7 @@ Jisc
 ###Valid Values
 
 <table>
-<tr><td>CODE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
+<tr><td>MOD_OPTIONAL</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
 <tr><td>1</td><td>Yes</td><td>Ie  </td></tr>
 <tr><td>2</td><td>No</td><td>Na</td></tr>
 </table>  

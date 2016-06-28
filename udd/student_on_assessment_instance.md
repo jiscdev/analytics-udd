@@ -53,7 +53,7 @@ Jisc
 YYYY-MM-DD
 
 ###Format
-ISO 8601 
+ISO 8601
 
 ###Notes
 
@@ -69,11 +69,11 @@ Analytics
 Jisc
 
 ###Valid Values
-
-|code|description (English)|description (Welsh)|
-|---|---|---|
-|1|Yes|Ie|
-|2|No|Na|
+<table>
+<tr><td>ASSESS_RETAKE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
+<tr><td>1</td><td>Yes</td><td>Ie  </td></tr>
+<tr><td>2</td><td>No</td><td>Na</td></tr>
+</table>  
 
 ###Format
 Integer
@@ -188,7 +188,7 @@ Jisc; student_on_a_module_instance.MOD_RESULT
 
 ###Valid Values
 <table>
-<tr><td>CODE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
+<tr><td>ASSESSMENT_RESULT</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
 <tr><td>1</td><td>Yes</td><td>Ie  </td></tr>
 <tr><td>2</td><td>No</td><td>Na  </td></tr>
 <tr><td>3</td><td>Not completed yet</td><td>Dim wedi cwblhau</td></tr>
@@ -207,7 +207,7 @@ Code 3 is applied in all cases where the outcome is either not known (yet), or d
 The date at which the grade result has been confirmed and awarded.
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 Jisc
@@ -227,7 +227,7 @@ This is the date when a grade has been moderated and agreed, but before exam boa
 The maximum points that an instructor can allocate to an assessment. Used to indicate the marking scale used for an assignment.
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 Jisc
@@ -253,7 +253,7 @@ Implementation optimisation
 Jisc; assessment_instance.ASSESS_DETAIL
 
 ###Valid Values
-Any 
+Any
 
 ###Format
 String (255)
@@ -273,7 +273,7 @@ Implementation optimisation
 Jisc; module.MOD_ID
 
 ###Valid Values
-Any 
+Any
 
 ###Format
 String (255)

@@ -89,7 +89,7 @@ String (10)
 ###Valid Values & Mappings:  
 
 <table>
-<tr><td>UDD VALUE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td><td>HESA(ETHNIC)</td><td>FEILR(ETHNICITY)</td></tr>
+<tr><td>ETHNICITY</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td><td>HESA(ETHNIC)</td><td>FEILR(ETHNICITY)</td></tr>
 <tr><td>10</td><td>White</td><td>Gwyn</td><td>10</td><td>31</td></tr>
 <tr><td>13</td><td>White - Scottish</td><td>Gwyn - Alban</td><td>13</td><td>N/A</td></tr>
 <tr><td>51</td><td>Irish</td><td>Gwyddel</td><td>N/A</td><td>32</td></tr>
@@ -114,7 +114,7 @@ String (10)
 <tr><td>98</td><td>Information refused</td><td></td><td>98</td><td>99</td></tr>
 <tr><td>NULL</td><td>No data</td><td> </td><td>NULL</td><td>NULL</td></tr>
 </table>
- 
+
 Please Note - N/A denotes that no mapping value is applicable (and should not be confused with NULL)  
 
 ###Notes
@@ -137,7 +137,7 @@ Int
 ###Valid Values & Mappings
 
 <table>
-<tr><td>UDD VALUE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td><td>HESA(SEXID)</td><td>FEILR(SEX)</td></tr>
+<tr><td>SEXID</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td><td>HESA(SEXID)</td><td>FEILR(SEX)</td></tr>
 <tr><td>1</td><td>Male</td><td>Gwryw</td><td>1</td><td>M  </td></tr>
 <tr><td>2</td><td>Female</td><td>Beny</td><td>2</td><td>F  </td></tr>
 <tr><td>3</td><td>Other</td><td>Arall</td><td>3</td><td>N/A  </td></tr>
@@ -178,7 +178,7 @@ https://www.hesa.ac.uk/component/studrec/show_file/14051/a%5E_%5ELEARNDIF.html
 ###Valid Values & Mappings
 
 <table>
-<tr><td>UDD VALUE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td><td>HESA(LEARNDIF)</td><td>FEILR(LLDDCAT)  </td></tr>
+<tr><td>LEARN_DIF</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td><td>HESA(LEARNDIF)</td><td>FEILR(LLDDCAT)  </td></tr>
 <tr><td>1</td><td>Moderate learning difficulty</td><td></td><td>1</td><td>10  </td></tr>
 <tr><td>2</td><td>Severe learning difficulty</td><td></td><td>2</td><td>11  </td></tr>
 <tr><td>10</td><td>Dyslexia</td><td></td><td>10</td><td>12  </td></tr>
@@ -215,7 +215,7 @@ https://www.hesa.ac.uk/index.php?option=com_studrec&task=show_file&mnl=14051&hre
 
 <table>
 <tr>
-<td>UDD VALUE</td>
+<td>DISABILITY1</td>
 <td>DESCRIPTION(ENGLISH)</td>
 <td>DESCRIPTION(WELSH)</td>
 <td>HESA(DISABLE)</td>
@@ -229,45 +229,15 @@ https://www.hesa.ac.uk/index.php?option=com_studrec&task=show_file&mnl=14051&hre
 <td>N/A </td>
 </tr>
 <tr>
-<td>58</td>
-<td>Blind or a serious visual impairment uncorrected by glasses</td>
-<td></td>
-<td>2</td>
-<td>N/A </td>
-</tr>
-<tr>
-<td>57</td>
-<td>Deaf or a serious hearing impairment</td>
-<td></td>
-<td>3</td>
-<td>N/A </td>
-</tr>
-<tr>
-<td>56</td>
-<td>A physical impairment or mobility issues such as difficulty using arms or using
-a wheelchair or crutches</td>
-<td></td>
-<td>4</td>
-<td>N/A </td>
-</tr>
-<tr>
-<td>96</td>
-<td>A disability impairment or medical condition that is not listed above</td>
+<td>5</td>
+<td>Personal care support</td>
 <td></td>
 <td>5</td>
 <td>N/A </td>
 </tr>
 <tr>
-<td>55</td>
-<td>A mental health condition such as depression schizophrenia or anxiety
-disorder</td>
-<td></td>
-<td>6</td>
-<td>N/A </td>
-</tr>
-<tr>
-<td>96</td>
-<td>A disability impairment or medical condition that is not listed above</td>
+<td>7</td>
+<td>An unseen disability, e.g. diabetes, epilepsy, asthma</td>
 <td></td>
 <td>7</td>
 <td>N/A </td>
@@ -292,15 +262,7 @@ disorder</td>
 spectrum disorder</td>
 <td></td>
 <td>53</td>
-<td>15 </td>
-</tr>
-<tr>
-<td>53</td>
-<td>A social/communication impairment such as Asperger's syndrome/other autistic
-spectrum disorder</td>
-<td></td>
-<td>N/A</td>
-<td>1 </td>
+<td>15, 1</td>
 </tr>
 <tr>
 <td>54</td>
@@ -315,7 +277,7 @@ heart disease or epilepsy</td>
 <td>A mental health condition such as depression schizophrenia or anxiety
 disorder</td>
 <td></td>
-<td>55</td>
+<td>6, 55</td>
 <td>9 </td>
 </tr>
 <tr>
@@ -323,29 +285,21 @@ disorder</td>
 <td>A physical impairment or mobility issues such as difficulty using arms or using
 a wheelchair or crutches</td>
 <td></td>
-<td>56</td>
-<td>6 </td>
-</tr>
-<tr>
-<td>56</td>
-<td>A physical impairment or mobility issues such as difficulty using arms or using
-a wheelchair or crutches</td>
-<td></td>
-<td>N/A</td>
-<td>93 </td>
+<td>4, 56</td>
+<td>6, 93</td>
 </tr>
 <tr>
 <td>57</td>
 <td>Deaf or a serious hearing impairment</td>
 <td></td>
-<td>57</td>
+<td>3, 57</td>
 <td>5 </td>
 </tr>
 <tr>
 <td>58</td>
 <td>Blind or a serious visual impairment uncorrected by glasses</td>
 <td></td>
-<td>58</td>
+<td>2, 58</td>
 <td>4 </td>
 </tr>
 <tr>
@@ -353,56 +307,28 @@ a wheelchair or crutches</td>
 <td>A disability impairment or medical condition that is not listed above</td>
 <td></td>
 <td>96</td>
-<td>7 </td>
+<td>7, 8, 16, 97</td>
 </tr>
 <tr>
-<td>96</td>
-<td>A disability impairment or medical condition that is not listed above</td>
-<td></td>
-<td>N/A</td>
-<td>8 </td>
-</tr>
-<tr>
-<td>96</td>
-<td>A disability impairment or medical condition that is not listed above</td>
-<td></td>
-<td>N/A</td>
-<td>16 </td>
-</tr>
-<tr>
-<td>96</td>
-<td>A disability impairment or medical condition that is not listed above</td>
-<td></td>
-<td>N/A</td>
-<td>97 </td>
-</tr>
-<tr>
-<td>00</td>
+<td>97</td>
 <td>Information refused</td>
 <td></td>
 <td>97</td>
 <td>98 </td>
 </tr>
 <tr>
-<td>00</td>
+<td>98</td>
 <td>Information not sought</td>
 <td></td>
 <td>98</td>
 <td>N/A </td>
 </tr>
 <tr>
-<td>00</td>
+<td>99</td>
 <td>Not known</td>
 <td>Anhysbys</td>
 <td>99</td>
 <td>99 </td>
-</tr>
-<tr>
-<td>00</td>
-<td>No known disability</td>
-<td>Dim Anabledd</td>
-<td>00</td>
-<td>N/A</td>
 </tr>
 <tr>
 <td>NULL</td>
@@ -435,32 +361,122 @@ https://www.hesa.ac.uk/index.php?option=com_studrec&task=show_file&mnl=14051&hre
 ###Valid Values & Mappings
 
 <table>
-<tr><td>UDD VALUE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td><td>HESA(DISABLE)</td><td>FEILR(LLDDCat)  </td></tr>
-<tr><td>0</td><td>No known disability</td><td>Dim Anabledd</td><td>0</td><td>N/A  </td></tr>
-<tr><td>58</td><td>Blind or a serious visual impairment uncorrected by glasses</td><td></td><td>2</td><td>N/A  </td></tr>
-<tr><td>57</td><td>Deaf or a serious hearing impairment</td><td></td><td>3</td><td>N/A  </td></tr>
-<tr><td>56</td><td>A physical impairment or mobility issues such as difficulty using arms or using a wheelchair or crutches</td><td></td><td>4</td><td>N/A  </td></tr>
-<tr><td>96</td><td>A disability impairment or medical condition that is not listed above</td><td></td><td>5</td><td>N/A  </td></tr>
-<tr><td>55</td><td>A mental health condition such as depression schizophrenia or anxiety disorder</td><td></td><td>6</td><td>N/A  </td></tr>
-<tr><td>96</td><td>A disability impairment or medical condition that is not listed above</td><td></td><td>7</td><td>N/A  </td></tr>
-<tr><td>8</td><td>Two or more impairments and/or disabling medical conditions</td><td></td><td>8</td><td>2  </td></tr>
-<tr><td>51</td><td>A specific learning difficulty such as dyslexia dyspraxia or AD(H)D</td><td></td><td>11</td><td>12  </td></tr>
-<tr><td>53</td><td>A social/communication impairment such as Asperger's syndrome/other autistic spectrum disorder</td><td></td><td>53</td><td>15  </td></tr>
-<tr><td>53</td><td>A social/communication impairment such as Asperger's syndrome/other autistic spectrum disorder</td><td></td><td>N/A</td><td>1  </td></tr>
-<tr><td>54</td><td>A long standing illness or health condition such as cancer HIV diabetes chronic heart disease or epilepsy</td><td></td><td>54</td><td>95  </td></tr>
-<tr><td>55</td><td>A mental health condition such as depression schizophrenia or anxiety disorder</td><td></td><td>55</td><td>9  </td></tr>
-<tr><td>56</td><td>A physical impairment or mobility issues such as difficulty using arms or using a wheelchair or crutches</td><td></td><td>56</td><td>6  </td></tr>
-<tr><td>56</td><td>A physical impairment or mobility issues such as difficulty using arms or using a wheelchair or crutches</td><td></td><td>N/A</td><td>93  </td></tr>
-<tr><td>57</td><td>Deaf or a serious hearing impairment</td><td></td><td>57</td><td>5  </td></tr>
-<tr><td>58</td><td>Blind or a serious visual impairment uncorrected by glasses</td><td></td><td>58</td><td>4  </td></tr>
-<tr><td>96</td><td>A disability impairment or medical condition that is not listed above</td><td></td><td>96</td><td>7  </td></tr>
-<tr><td>96</td><td>A disability impairment or medical condition that is not listed above</td><td></td><td>N/A</td><td>8  </td></tr>
-<tr><td>96</td><td>A disability impairment or medical condition that is not listed above</td><td></td><td>N/A</td><td>16  </td></tr>
-<tr><td>96</td><td>A disability impairment or medical condition that is not listed above</td><td></td><td>N/A</td><td>97  </td></tr>
-<tr><td>00</td><td>Information refused</td><td></td><td>97</td><td>98  </td></tr>
-<tr><td>00</td><td>Information not sought</td><td></td><td>98</td><td>N/A  </td></tr>
-<tr><td>00</td><td>Not known</td><td>Anhysbys</td><td>99</td><td>99  </td></tr>
-<tr><td>00</td><td>No known disability</td><td>Dim Anabledd</td><td>00</td><td>N/A  </td></tr>
+<tr>
+<td>DISABILITY2</td>
+<td>DESCRIPTION(ENGLISH)</td>
+<td>DESCRIPTION(WELSH)</td>
+<td>HESA(DISABLE)</td>
+<td>FEILR(LLDDCat) </td>
+</tr>
+<tr>
+<td>0</td>
+<td>No known disability</td>
+<td>Dim Anabledd</td>
+<td>0</td>
+<td>N/A </td>
+</tr>
+<tr>
+<td>5</td>
+<td>Personal care support</td>
+<td></td>
+<td>5</td>
+<td>N/A </td>
+</tr>
+<tr>
+<td>7</td>
+<td>An unseen disability, e.g. diabetes, epilepsy, asthma</td>
+<td></td>
+<td>7</td>
+<td>N/A </td>
+</tr>
+<tr>
+<td>8</td>
+<td>Two or more impairments and/or disabling medical conditions</td>
+<td></td>
+<td>8</td>
+<td>2 </td>
+</tr>
+<tr>
+<td>51</td>
+<td>A specific learning difficulty such as dyslexia dyspraxia or AD(H)D</td>
+<td></td>
+<td>11</td>
+<td>12 </td>
+</tr>
+<tr>
+<td>53</td>
+<td>A social/communication impairment such as Asperger's syndrome/other autistic
+spectrum disorder</td>
+<td></td>
+<td>53</td>
+<td>15, 1</td>
+</tr>
+<tr>
+<td>54</td>
+<td>A long standing illness or health condition such as cancer HIV diabetes chronic
+heart disease or epilepsy</td>
+<td></td>
+<td>54</td>
+<td>95 </td>
+</tr>
+<tr>
+<td>55</td>
+<td>A mental health condition such as depression schizophrenia or anxiety
+disorder</td>
+<td></td>
+<td>6, 55</td>
+<td>9 </td>
+</tr>
+<tr>
+<td>56</td>
+<td>A physical impairment or mobility issues such as difficulty using arms or using
+a wheelchair or crutches</td>
+<td></td>
+<td>4, 56</td>
+<td>6, 93</td>
+</tr>
+<tr>
+<td>57</td>
+<td>Deaf or a serious hearing impairment</td>
+<td></td>
+<td>3, 57</td>
+<td>5 </td>
+</tr>
+<tr>
+<td>58</td>
+<td>Blind or a serious visual impairment uncorrected by glasses</td>
+<td></td>
+<td>2, 58</td>
+<td>4 </td>
+</tr>
+<tr>
+<td>96</td>
+<td>A disability impairment or medical condition that is not listed above</td>
+<td></td>
+<td>96</td>
+<td>7, 8, 16, 97</td>
+</tr>
+<tr>
+<td>97</td>
+<td>Information refused</td>
+<td></td>
+<td>97</td>
+<td>98 </td>
+</tr>
+<tr>
+<td>98</td>
+<td>Information not sought</td>
+<td></td>
+<td>98</td>
+<td>N/A </td>
+</tr>
+<tr>
+<td>99</td>
+<td>Not known</td>
+<td>Anhysbys</td>
+<td>99</td>
+<td>99 </td>
+</tr>
 <tr>
 <td>NULL</td>
 <td>No data</td>
@@ -468,7 +484,7 @@ https://www.hesa.ac.uk/index.php?option=com_studrec&task=show_file&mnl=14051&hre
 <td>NULL</td>
 <td>NULL</td>
 </tr>
-</table>
+</table>  
 
 Please Note - N/A denotes that no mapping value is applicable (and should not be confused with NULL)  
 
@@ -512,7 +528,7 @@ https://www.hesa.ac.uk/index.php?option=com_studrec&task=show_file&mnl=14051&hre
 ###Valid Values & Mappings
 
 <table>
-<tr><td>UDD VALUE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td><td>HESA(TTACCOM)</td><td>FEILR(ACCOM)  </td></tr>
+<tr><td>TERMTIME_ACCOM</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td><td>HESA(TTACCOM)</td><td>FEILR(ACCOM)  </td></tr>
 <tr><td>1</td><td>Provider maintained property</td><td></td><td>1</td><td>5  </td></tr>
 <tr><td>2</td><td>Parental/guardian home</td><td></td><td>2</td><td>N/A  </td></tr>
 <tr><td>4</td><td>Other</td><td>Arall</td><td>4</td><td>NULL  </td></tr>
@@ -521,7 +537,6 @@ https://www.hesa.ac.uk/index.php?option=com_studrec&task=show_file&mnl=14051&hre
 <tr><td>7</td><td>Own residence</td><td></td><td>7</td><td>N/A  </td></tr>
 <tr><td>8</td><td>Other rented accommodation</td><td></td><td>8</td><td>N/A  </td></tr>
 <tr><td>9</td><td>Private-sector halls</td><td></td><td>9</td><td>N/A  </td></tr>
-<tr><td>5</td><td>Not known</td><td>Anhysbys</td><td>N/A</td><td>N/A </td></tr>
 <tr>
 <td>NULL</td>
 <td>No data</td>
@@ -553,7 +568,7 @@ https://www.hesa.ac.uk/index.php?option=com_studrec&task=show_file&mnl=14051&hre
 ###Valid Values
 
 <table>
-<tr><td>UDD VALUE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
+<tr><td>PARENTS_ED</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
 <tr><td>1</td><td>Yes</td><td>Ie  </td></tr>
 <tr><td>2</td><td>No</td><td>Na  </td></tr>
 <tr><td>7</td><td>No response given</td><td>Dim Ateb  </td></tr>
@@ -586,7 +601,7 @@ https://www.hesa.ac.uk/index.php?option=com_studrec&task=show_file&mnl=14051&hre
 ###Valid Values
 
 <table>
-<tr><td>UDD VALUE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
+<tr><td>SOCIO_EC</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
 <tr><td>1</td><td>Higher managerial &amp; professional occupations</td><td>  </td></tr>
 <tr><td>2</td><td>Lower managerial &amp; professional occupations</td><td>   </td></tr>
 <tr><td>3</td><td>Intermediate occupations</td><td>  </td></tr>
@@ -623,7 +638,7 @@ Jisc
 ###Valid Values
 
 <table>
-<tr><td>UDD VALUE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td></tr>
+<tr><td>OVERSEAS</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td></tr>
 <tr><td>1</td><td>United Kingdom</td><td>Deyrnas Unedig  </td></tr>
 <tr><td>2</td><td>Europe (EU)</td><td>Ewrop (UE)  </td></tr>
 <tr><td>3</td><td>Rest of the World (Overseas)</td><td>Gweddill y Byd  </td></tr>
@@ -647,7 +662,7 @@ If this value is unknown, then code '99' should be used. The mapping for these f
 The person identifier used by Shibboleth / The UK Access Management Federation to grant access to the Jisc analytics student app via the Shibboleth - JWT gateway.
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 https://www.internet2.edu/media/medialibrary/2013/09/04/internet2-mace-dir-eduperson-200604.html
@@ -667,10 +682,10 @@ There may be a more general AIM_ID property later that can be used for any UK Fe
 The ID assigned to a student by the VLE.
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
-Jisc 
+Jisc
 
 ###Valid Values
 Not specified
@@ -687,19 +702,16 @@ Note that this is not a universal user ID; there maybe several VLEs, or records 
 A HESA student identifier unique to each student. It is intended that the identifier is to be transferred with the student to each provider of higher education he or she may attend. The objective is that the use of this number will facilitate the accurate tracking of students throughout their experience within the sector for which HESA collects data.
 
 ###Purpose
-Analytics 
+Analytics
 
 ###Derivation
 https://www.hesa.ac.uk/index.php?option=com_studrec&task=show_file&mnl=15051&href=a^_^HUSID.html
 
-###Valid Values
-<table>
-<tbody><tr><td>First 2 digits:</td><td>Year of entry into provider (last 2 digits of year)</td></tr>
-<tr><td>Next 4 digits:</td><td>HESA institution identifier + 1000</td></tr>
-<tr><td>Next 6 digits:</td><td>6 digit reference number internally allocated by provider.</td></tr>
-<tr><td>Last digit:</td><td>Check digit.</td></tr>
-</tbody>
-</table>
+###Format of Valid Values
+- First 2 digits:</td><td>Year of entry into provider (last 2 digits of year)
+- Next 4 digits:</td><td>HESA institution identifier + 1000
+- Next 6 digits:</td><td>6 digit reference number internally allocated by provider.
+- Last digit:</td><td>Check digit.
 
 ###Format
 String (13)

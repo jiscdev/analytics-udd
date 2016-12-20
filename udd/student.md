@@ -4,7 +4,6 @@
 * [DOB](#dob) [0..1]
 * [ETHNICITY](#ethnicity) [0..1]
 * [SEXID](#sexid) [0..1]
-* [AGE](#age) [0..1]
 * [LEARN_DIF](#learn_dif) [0..1]
 * [DISABILITY1](#disability1) [0..1]
 * [DISABILITY2](#disability2) [0..1]
@@ -304,20 +303,6 @@ Please Note - N/A denotes that no mapping value is applicable and the SEXID prop
 If sexid data is not supplied, this property should be omitted.
 Omitting this property may hinder the development or use of an effective analytics model.
 
-##AGE
-###Description
-The current age of the learner/ student
-
-###Purpose
-To be used purely for display purposes within the Learning Analytics software suite.
-
-###Format
-Int
-
-###Notes
-This will typically auto-calculated on a daily basis, based on DOB property. The LA system will provide this field.
-
-
 ##LEARN_DIF
 ###Description
 This field records whether a learner considers themselves to have a learning difficulty.
@@ -494,7 +479,7 @@ As of the 2016-2017 academic year, HESA DISABILITY has a different value space i
 
 ##DISABILITY2
 ###Description
-Whether the student is indicated as being disabled, according to their own self-assessment. This will be their primary disability.
+Whether the student is indicated as being disabled, according to their own self-assessment. This will be their secondary disability.
 
 ###Purpose
 For equal opportunities monitoring within Learning Analytics/ Data Modelling.

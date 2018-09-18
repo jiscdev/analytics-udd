@@ -8,7 +8,7 @@ The following spreadsheet gives an overview of all the changes that were introdu
 
 ## Summary of differences
 
-In summary, v1.4 release of UDD implemented the following, compared to v1.3.0:
+In summary, v1.4.0 release of UDD implemented the following, compared to v1.3.3:
 
 - HECoS vocabulary added to /media.
 - Draft course_subject and draft module_subject entities added. Note: course.SUBJECT and module.SUBJECT not deleted, but deprecated instead.

@@ -29,6 +29,7 @@ To link relational database tables
 
 ### Derivation
 https://www.hesa.ac.uk/collection/c16051/a/owncourseid/
+
 https://www.hesa.ac.uk/collection/c16054/e/course_courseid/
 
 ### Valid Values
@@ -1196,12 +1197,12 @@ body</td>
 String (255)
 
 ### Notes
-This field uses the HESA "COURSEAIM" codeset initially - with the addition of new code 'X98' to denote 'No formal qualification aim, below FE level' for FE equivalent denotation to HE code 'X99'. All course levels are denoted here (TBC with FE college, for final implementation). Specific use of the LARS codeset for FE (from ILR) may need to be considered, or a mapping/ amalgamation with the HESA codeset. This is to be discussed in consultation with the FE sector.
+This field uses the HESA "COURSEAIM" codeset initially - with the addition of new code 'X98' to denote 'No formal qualification aim, below FE level' for FE equivalent denotation to HE code 'X99'. All course levels are denoted here. Specific use of the LARS codeset for FE (from ILR) may need to be considered, or a mapping/ amalgamation with the HESA codeset. This is to be discussed in consultation with the FE sector.
 Omitting this property may hinder the development or use of an effective analytics model.
 
 
 ## INST_TIER_1
-Details the top level of an institutional structure (e.g. Faculty Details)
+Details the top level of an institutional structure (e.g. faculty details)
 
 ### Purpose
 For display purposes and further analysis
@@ -1273,6 +1274,7 @@ UK Register of Learning Providers (UKRLP)
 
 ### Valid Values
 UKPRN: 8-digit string
+
 Other: Any
 
 ### Format

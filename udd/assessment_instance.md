@@ -36,7 +36,7 @@ String (255)
 
 
 ## ASSESS_TYPE_ID
-### Description.
+### Description
 An institution's unique identifier for the type of assessment as defined in their student record system (e.g. CW for Coursework)
 
 ### Purpose
@@ -55,7 +55,7 @@ String (255)
 Omitting this property may hinder the development or use of an effective analytics model.
 
 ## ASSESS_TYPE_NAME
-### Description.
+### Description
 An institution's description for the type of assessment as defined in their student record system (e.g. Coursework).
 
 ### Purpose
@@ -74,7 +74,7 @@ String (255)
 Omitting this property could impair the functionality of analytics applications such as student apps or dashboards.
 
 ## ASSESS_DETAIL
-### Description.
+### Description
 A textual description of the assessment component and type. For example "Lab Report (1000 words)"
 
 ### Purpose
@@ -93,7 +93,7 @@ String (255)
 Omitting this property could impair the functionality of analytics applications such as student apps or dashboards.
 
 ## ASSESS_WEIGHT
-### Description.
+### Description
 The weighting percentage that the assessment component counts towards the module mark.
 
 ### Purpose
@@ -112,7 +112,7 @@ Decimal
 Omitting this property may hinder the development or use of an effective analytics model.
 
 ## MAX_MARKS
-### Description.
+### Description
 The maximum numeric marks that an instructor can allocate to an assessment. Used to indicate the marking scale used for an assignment.
 
 ### Purpose
@@ -122,7 +122,7 @@ To enable student performance calculations.
 Jisc
 
 ### Valid Values
-Any
+Any decimal value
 
 ### Format
 Decimal

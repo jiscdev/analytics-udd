@@ -6,7 +6,7 @@ There is provision here for data extensions at the level of property (in other w
 
 It is not envisaged that there will be a proliferation of extensions, but rather that these will be used sparingly and with good reason. In addition, the various values in this entity should be carefully managed by the body identified in CONTROLLER.
 
-The CONTROLLER should record the details of the extension in the Field Guide spreadsheet that has been completed for the product or service. See the [Field Guide template](media/UDD_FieldGuide_template.xls) for details.
+The CONTROLLER should record the details of the extension in the Field Guide spreadsheet that has been completed for the product or service. See the [Field Guide template](https://github.com/jiscdev/analytics-udd/blob/master/media/UDD_FieldGuide_template.xls) for details.
 
 The records in the extension entity consist of 5 parts, described here. The purpose of the record is to identify the vendor or institution that is using this extension, the entity involved, the specific record that is extended, the name of the extension property and its value.
 

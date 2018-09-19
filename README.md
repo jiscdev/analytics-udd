@@ -1,6 +1,6 @@
 # Jisc Learning Analytics Unified Data Definitions v1.4.0
 
-_Version 1.4.0 finalised w/c 4 June 2018. For release in September 2018._
+_Version 1.4.0 released 19 September 2018._
 
 ## Introduction
 The Unified Data Definitions (UDD) of the Jisc learning analytics project is a vocabulary of the chief data entities of interest to learning analytics: students, courses, modules, and so on, as well as their characteristics. The data coded with this vocabulary is typically extracted from the student record system of a college or university.
@@ -17,7 +17,7 @@ The main folder (jiscdev/analytics-udd) contains:
 
 In addition to the main folder, there are 4 sub-folders. The udd sub-folder is the heart of the specification, with a file for each entity describing its properties in detail. Refer to these files to design data for import into the Learning Data Hub. The media sub-folder contains supporting files, including the E-R diagram source, the changes spreadsheet, Guides to the relative importance of UDD properties in respect of applications, products and services that use the UDD, and copies of the JACS3 and HECoS subject classification systems. The utilities sub-folder has code fragments and snippets to support the development and use of the UDD. The implementation sub-folder describes matters that are not part of the formal UDD specification, but are closely related to it, for example a description of the mechanism for handling unofficial extensions to properties in the UDD, and filename conventions for adding data into the Learning Data Hub.
 
-For release schedule and version control, see [below](https://github.com/jiscdev/analytics-udd/tree/v1.4.0#release-schedule-and-version-control).
+For release schedule and version control, see [below](README.md#release-schedule-and-version-control).
 
 ## Differences between v1.3 and v1.4
 The development of v1.4 has involved a number of additions and changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between v1.3.3 and v1.4.0. 
@@ -153,6 +153,7 @@ Many thanks to all contributors who have raised issues, sent pull requests, comm
 - @christoffballard
 - @craig-petch
 - @ds10
+- @gmoger-jisc
 - @gryglbrt
 - @ht2 
 - @huwrobertsjisc
@@ -162,7 +163,9 @@ Many thanks to all contributors who have raised issues, sent pull requests, comm
 - @robwynj
 - @ryansmith94
 - @sandeepmjay
+- @willblenkhorn
 - @wilmTap
+
 
 ### License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

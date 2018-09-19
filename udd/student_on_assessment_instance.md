@@ -10,8 +10,8 @@
 * [ASSESS_DUE_DATE](#assess_due_date) [0..1]
 * [ASSESS_SUBMISSION_DATE](#assess_submission_date) [0..1]
 * [ASSESS_RETAKE](#assess_retake) [0..1]
-* [ASSESS_AGREED_MARK](#assess_agreed_mark) [0..1]
 * [ASSESS_ACTUAL_MARK](#assess_actual_mark) [0..1]
+* [ASSESS_AGREED_MARK](#assess_agreed_mark) [0..1]
 * [ASSESS_RAW_ACTUAL_MARK](#assess_raw_actual_mark) [0..1]
 * [ASSESS_RAW_AGREED_MARK](#assess_raw_agreed_mark) [0..1]
 * [ASSESS_AGREED_GRADE](#assess_agreed_grade) [0..1]
@@ -19,11 +19,10 @@
 * [ASSESSMENT_CURRENT_ATTEMPT](#assessment_current_attempt) [0..1]
 * [ASSESSMENT_RESULT](#assessment_result) [0..1]
 * [GRADE_DATE](#grade_date) [0..1]
-* [MAX_POINTS](#max_points) [0..1] DEPRECATED
 * [X_ASSESS_DETAIL](#x_assess_detail) [0..1]
 * [X_MOD_NAME](student_on_a_module_instance.md#x_mod_name) [0..1]
 * [X_MOD_ID](#x_mod_id) [0..1]
-* [MOD_ACADEMIC_YEAR](module_instance.md#mod_academic_year) [0..1]
+* [MOD_ACADEMIC_YEAR](module_instance.md#mod_academic_year) [1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity; if not provided by data supplier, will be Learning Data Hub generated.   
@@ -93,6 +92,24 @@ String (255)
 ## ASSESS_DUE_DATE
 ### Description
 The date an assessment instance for a student was due for submission.
+
+### Purpose
+Analytics and display
+
+### Derivation
+Jisc
+
+### Valid Values
+Date in ISO 8601 format - YYYY-MM-DD
+
+### Format
+String in ISO 8601 Date extended format - YYYY-MM-DD
+
+### Notes
+
+## ASSESS_SUBMISSION_DATE
+### Description
+The date an assessment or assignment was submitted by the student.
 
 ### Purpose
 Analytics and display
@@ -190,6 +207,45 @@ Decimal
 ### Notes
 ASSESS_AGREED_MARK is expected to be present in any UDD compliant dataset as soon as it becomes available.
 
+## ASSESS_RAW_ACTUAL_MARK
+### Description
+The original mark scored by the student.
+
+### Purpose
+Storage of the original numerical score.
+
+### Derivation
+Institution
+
+### Valid Values
+Any decimal value
+
+### Format
+Decimal
+
+### Notes
+Can contain any decimal value, for example "59", "162.87", and so on; this value may or may not be a percentage. ASSESS_ACTUAL_MARK contains a representation of ASSESS_RAW_ACTUAL_MARK explicitly as a percentage.
+
+
+## ASSESS_RAW_AGREED_MARK
+### Description
+The mark scored by the student after any moderation or confirmation processes, or the only recorded mark if there are no moderation or confirmation processes.
+
+### Purpose
+Storage of the confirmed numerical score.
+
+### Derivation
+Institution
+
+### Valid Values
+Any decimal value
+
+### Format
+Decimal
+
+### Notes
+Can contain any decimal value, for example "59", "162.87", and so on; this value may or may not be a percentage. ASSESS_AGREED_MARK contains a representation of ASSESS_RAW_AGREED_MARK explicitly as a percentage.
+
 
 ## ASSESS_RAW_ACTUAL_MARK
 ### Description
@@ -252,7 +308,7 @@ ASSESS_ACTUAL_GRADE should only be part of a UDD compliant dataset if there is a
 
 
 ## ASSESS_AGREED_GRADE
-### Description.
+### Description
 The grade recorded after any moderation or confirmation processes, or the only recorded grade if there are no moderation or confirmation processes. 
 
 ### Purpose
@@ -335,28 +391,6 @@ String in ISO 8601 Date extended format - YYYY-MM-DD
 
 ### Notes
 This is the date when a grade has been moderated and agreed, but before exam board confirmation. It is typically the date at which the grade is entered in a SRS.
-
-
-## MAX_POINTS
-### Description
-DEPRECATED
-The maximum points that an instructor can allocate to an assessment. Used to indicate the marking scale used for an assignment.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
-
-### Valid Values
-Any decimal value
-
-### Format
-Decimal
-
-### Notes
-This property is deprecated in v1.3.3 and will be deleted in v1.4.
-This property can contain any decimal value. It will normally be an integer representing the highest mark obtainable.
 
 
 ## X_ASSESS_DETAIL

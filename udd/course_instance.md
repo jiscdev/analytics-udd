@@ -3,7 +3,7 @@
 * [COURSE_ID](course.md#course_id) [1]
 * [START_DATE](#start_date) [0..1]
 * [END_DATE](#end_date) [0..1]
-* [ACADEMIC_YEAR](#academic_year) [0..1]
+* [ACADEMIC_YEAR](#academic_year) [1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
@@ -87,5 +87,4 @@ Int
 
 ### Notes
 Could be derived, but academic year calendars may be different between institutions. This field could also be sourced directly from the SRS.
-Omitting this property could impair the functionality of analytics applications such as student apps or dashboards.
-Will be mandatory from v1.4.
+This property is synonymous with MOD_ACADEMIC_YEAR.

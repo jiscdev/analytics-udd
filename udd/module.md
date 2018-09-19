@@ -1,7 +1,7 @@
 # module
 * [MOD_ID](#mod_id) [1] **
 * [MOD_NAME](#mod_name) [0..1]
-* [MOD_SUBJECT](#mod_subject) [0..1]
+* [MOD_SUBJECT](#mod_subject) [0..1] deprecated
 * [MOD_CREDITS](#mod_credits) [0..1]
 * [MOD_LEVEL](#mod_level) [0..1]
 * [CREDIT_BEARING](#credit_bearing) [0..1]
@@ -58,6 +58,7 @@ Omitting this property could impair the functionality of analytics applications 
 ## MOD_SUBJECT
 ### Description
 Module subject - coded using JACS3 subject codes
+DEPRECATED in v1.4. Use module_subject entity for preference.
 
 ### Purpose
 For display purposes and analytics.

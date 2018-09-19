@@ -65,8 +65,7 @@ UDD specification in use by the institution
 String (8)
 
 ### Notes
-Value will be the current version number of the UDD preceded by "v".  Example: if the data uses UDD v1.3.1, value will "v1.3.1".
-
+Value will be the current version number of the UDD preceded by "v".  Example: if the data uses UDD v1.4.0, value will "v1.4.0".
 
 ## MODULE_VLE_MAP_MODE
 ### Description

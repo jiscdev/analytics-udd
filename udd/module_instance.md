@@ -3,8 +3,7 @@
 * [MOD_ID](module.md#mod_id) [1]
 * [MOD_PERIOD](#mod_period) [0..1]
 * [MOD_ONLINE](#mod_online) [0..1]
-* [MOD_ACADEMIC_YEAR](#mod_academic_year) [0..1]
-* [MOD_OPTIONAL](#mod_optional) [0..1] deprecated
+* [MOD_ACADEMIC_YEAR](#mod_academic_year) [1]
 * [MOD_LOCATION](#mod_location) [0..1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
@@ -17,10 +16,10 @@ A module_instance is the specific offer of a module to students. It therefore ha
 
 ## MOD_INSTANCE_ID
 ### Description
-Institutions unique identifier for this module_instance
+Institution's unique identifier for this module_instance
 
 ### Purpose
-For linking a module_instance to a student
+To uniquely identify the module instance.
 
 ### Derivation
 Jisc
@@ -94,31 +93,7 @@ Int
 
 ### Notes
 This is the starting year for the academic year.
-Omitting this property may hinder the development or use of an effective analytics model.
-
-## MOD_OPTIONAL
-### Description
-Whether or not this instance relates to an optional module.
-This property is deprecated in v1.3.2 for module_instance. It properly belongs on student_on_a_module_instance instead of module_instance, and has been added there.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
-
-### Valid Values
-
-<table>
-<tr><td>MOD_OPTIONAL</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)  </td></tr>
-<tr><td>1</td><td>Yes</td><td>Ie  </td></tr>
-<tr><td>2</td><td>No</td><td>Na</td></tr>
-</table>  
-
-### Format
-String (255)
-
-### Notes
+This property is synonymous with ACADEMIC_YEAR.
 
 
 ## MOD_LOCATION

@@ -6,7 +6,7 @@
 * [ASSESS_DETAIL](#assess_detail) [0..1]
 * [ASSESS_WEIGHT](#assess_weight) [0..1]
 * [MAX_MARKS](#max_marks) [0..1]
-* [MOD_ACADEMIC_YEAR](module_instance.md#mod_academic_year) [0..1]
+* [MOD_ACADEMIC_YEAR](module_instance.md#mod_academic_year) [1]
 * [PROVIDED_AT](#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
@@ -128,7 +128,6 @@ Any decimal value
 Decimal
 
 ### Notes
-There is also the similar MAX_POINTS property on student_on_assessment_instance. The value does not necessarily represent a percentage.
 
 ## PROVIDED_AT
 

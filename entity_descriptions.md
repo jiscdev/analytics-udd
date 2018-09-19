@@ -6,18 +6,22 @@ An assessment_instance is any learning activity in a module, for which a student
 
 # course
 ## Description of course entity
-A course is a learning opportunity that defines a student's learning activities and aim. It is run by an institution and is usually validated to continue over several years with several intakes. A course will usually have a qualification aim.  Example: BA Honours degree in French.
+A course is a learning opportunity that defines a student's learning activities and aim. It is run by an institution and is usually validated to continue over several years with several intakes. A course will usually have a qualification aim. Example: BA Honours degree in French.
 
 ## Notes
-The properties of the course entity do not include start date, study mode or location, because the course is at a high level in the UDD structure.  These properties of a learning opportunity are differentiated in the course_instance, student_course_membership and student_on_course_instance entities.
+The properties of the course entity do not include start date, study mode or location, because the course is at a high level in the UDD structure. These properties of a learning opportunity are differentiated in the course_instance, student_course_membership and student_on_course_instance entities.
 
 # course_instance
 ## Description of course_instance entity
-A course_instance is a stage of a course with a start date and an end date, often marked by a progression decision point at the end.  Example: a single academic year in a 3 year Honours degree course.
+A course_instance is a stage of a course with a start date and an end date, often marked by a progression decision point at the end. Example: a single academic year in a 3 year Honours degree course.
+
+# course_subject
+## Description of course_subject entity
+A course_subject describes the subject or subjects of study of a course, using a specified subject classification system.
 
 # institution
 ## Description of institution entity
-An institution is the overall provider of one or more courses.  Example: University of Gloucestershire.
+An institution is the overall provider of one or more courses. Example: University of Gloucestershire.
 
 # module
 ## Description of module entity
@@ -29,6 +33,10 @@ This description is the same as the description for the Module entity in the HED
 # module_instance
 ## Description of module_instance entity
 A module_instance is the specific offer of a module to students. It therefore has a specific venue and defined assessments.
+
+# module_subject
+## Description of module_subject entity
+A module_subject describes the subject or subjects of study of a module, using a specified subject classification system.
 
 # module_VLE_map
 ## Description of module_VLE_map entity

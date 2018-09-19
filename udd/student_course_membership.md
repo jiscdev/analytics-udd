@@ -6,6 +6,8 @@
 * [WITHDRAWAL_REASON](#withdrawal_reason) [0..1]
 * [ENTRY_QUALS](#entry_quals) [0..1]
 * [ENTRY_POINTS](#entry_points) [0..1]
+* [ENTRY_POINTS_SCHEMA](#entry_points_schema) [0..1]
+* [AVERAGE_GCSE_SCORE](#average_gcse_score) [0..1]
 * [COURSE_OUTCOME](#course_outcome) [0..1]
 * [COURSE_GRADE](#course_grade) [0..1]
 * [COURSE_AIM_ATTAINED](#course_aim_attained) [0..1]
@@ -16,7 +18,7 @@
 * [COURSE_JOIN_DATE](#course_join_date) [0..1]
 * [COURSE_JOIN_AGE](#course_join_age) [0..1]
 * [COHORT_ID](#cohort_id) [0..1]
-* [ACTIVE_MEMBERSHIP](#active_membership) [0..1]
+* [ACTIVE_MEMBERSHIP](#active_membership) [1]
 * [PREDICTED_OUTCOME_GRADE](#predicted_outcome_grade) [0..1]
 * [ATTAINMENT_TARGET_GRADE](#attainment_target_grade) [0..1]
 * [PREDICTED_OUTCOME_MARK](#predicted_outcome_mark) [0..1]
@@ -102,7 +104,10 @@ https://www.hesa.ac.uk/collection/c16051/a/RSNEND
 String (255)
 
 ### Notes
-This property should be set when a student changes course, so that historical records can be maintained and analysed later; in addition the COURSE_END_DATE should be set accordingly.
+
+**Not withdrawn, currently active students: omit the property (leave blank in TSV).**
+
+This property should also be set when a student changes course, so that historical records can be maintained and analysed later; in addition the COURSE_END_DATE should be set accordingly.
 
 ## ENTRY_QUALS
 ### Description
@@ -192,7 +197,57 @@ Omitting this property may hinder the development or use of an effective analyti
 
 ## ENTRY_POINTS
 ### Description
-This field indicates the entry points gained by the student prior to entry to the institution. This is currently based on the UCAS entry points system for HE institutions.  For FE institutions, it should be the average GCSE points score or similar numeric value where GCSEs are not relevant.
+This field indicates the entry points gained by the student prior to entry to the course, using a recognised scheme specified in ENTRY_POINTS_SCHEMA (for example, a UCAS Tariff points scheme). 
+
+### Purpose
+For analytics
+
+### Derivation
+UCAS: https://www.ucas.com/advisers/guides-and-resources/information-new-ucas-tariff-advisers
+
+### Valid Values
+Any
+
+### Format
+Int
+
+### Notes
+For UCAS Tariff points: For courses starting in or after 2017 use the 2017 UCAS Tariff points scheme. This replaced the original scheme that ran from 2001 to 2016. Specify the specific Tariff points scheme used in ENTRY_POINTS_SCHEMA.
+
+See also [AVERAGE_GCSE_SCORE](#average_gcse_score).
+
+Omitting this property may hinder the development or use of an effective analytics model.
+This property is MANDATORY if ENTRY_POINTS_SCHEMA is used.
+
+## ENTRY_POINTS_SCHEMA
+### Description
+This property specifies the particular scheme used for the data in ENTRY_POINTS (for example, a UCAS Tariff points scheme).
+
+### Purpose
+For analytics
+
+### Derivation
+UCAS: https://www.ucas.com/advisers/guides-and-resources/information-new-ucas-tariff-advisers
+
+### Valid Values
+<table>
+<tr><td>ENTRY_POINTS_SCHEMA</td><td>DESCRIPTION (ENGLISH)</td><td>DESCRIPTION (WELSH)</td></tr>
+<tr><td>UCAS_17</td><td>UCAS Tariff Scheme 2017 (the "new" scheme)</td><td></td></tr>
+<tr><td>UCAS_01</td><td>UCAS Tariff Scheme 2001-20016 (the "old" scheme)</td><td></td></tr>
+<tr><td>99</td><td>Not known (DEFAULT)</td><td></td></tr>
+</table>  
+
+### Format
+String (255)
+
+### Notes
+This property is MANDATORY if ENTRY_POINTS is used. Where the Tariff scheme for ENTRY_POINTS is unknown, use '99' (Not known). This value is used for consistency with other values of this type.
+
+When there is demand for other schemas to be available, the schemas will be added to this vocabulary.
+
+## AVERAGE_GCSE_SCORE
+### Description
+AVERAGE_GCSE_SCORE is a numeric value representing the student's achievement across all GCSE or similar qualifications. Where the provider uses an average GCSE score standard, such as Attainment 8 or ALPS, the value from this scheme should be used. A similar numeric value can be used where GCSEs are not relevant.
 
 ### Purpose
 For analytics
@@ -207,7 +262,9 @@ Any
 Int
 
 ### Notes
-Where an average GCSE points score system or similar scheme is used, the institution should use a single consistent scheme across all its data.  An example would be the Alps average GCSE scoring scheme.
+Where an average GCSE points score system or similar scheme is used, such as Attainment 8 or ALPS, the institution should use a single consistent scheme across all its data.
+
+See also [ENTRY_POINTS](#entry_points).
 
 ## COURSE_OUTCOME
 ### Description
@@ -317,20 +374,6 @@ https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/449779
                 <td>N/A</td>
             </tr>
             <tr>
-                <td>13</td>
-                <td>The learner is continuing or intending to continue the learning activities leading to the learning aim</td>
-                <td> </td>
-                <td>N/A</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>14</td>
-                <td>Learner has temporarily withdrawn from the aim due to an agreed break in learning</td>
-               <td> </td>
-                <td>N/A</td>
-                <td>6</td>
-            </tr>
-            <tr>
                 <td>98</td>
                 <td>Completion of course - result unknown</td>
                 <td> </td>
@@ -350,7 +393,8 @@ https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/449779
 String (255)
 
 ### Notes
-Omitting this property may hinder the development or use of an effective analytics model.
+
+**Currently active students: omit the property (leave blank in TSV).**
 
 ## COURSE_GRADE
 ### Description
@@ -1593,6 +1637,9 @@ Date in ISO 8601 format - YYYY-MM-DD
 String in ISO 8601 Date extended format - YYYY-MM-DD
 
 ### Notes
+
+**If the course has not ended: omit the property (leave blank in TSV).**
+
 Note that there may be many reasons why a student leaves a course. This is recorded in WITHDRAWAL_REASON.
 
 ## COURSE_DURATION
@@ -1707,11 +1754,6 @@ Jisc
                 <td>not active - The student has finished the course, or has withdrawn from, left or transferred out of the course for any reason.</td>
                 <td> </td>
             </tr>
-            <tr>
-                <td>3</td>
-                <td>unknown - It is not known whether the student is 'active' or 'not active' in relation to this course.</td>
-                <td> </td>
-            </tr>
         </table>
 
 ### References
@@ -1721,6 +1763,7 @@ String (1)
 
 ### Notes
 A student may have sequential student_course_membership records with only 1 active record, or may be pursuing more than 1 course and therefore have more than 1 active record. When updating student_course_membership records, the ACTIVE_MEMBERSHIP property may need to be updated on more than one record.
+Where it is not known whether or not the student is active, "not active" should be supplied.
 
 
 ## PREDICTED_OUTCOME_GRADE
@@ -1830,7 +1873,7 @@ String (10)
 
 ## INITIAL_ASSESSMENT_ENGLISH
 ### Description
-States a numerical value of the institution's measure of the student's capability in English at the start of their programme of learning.
+States a numerical measure of the student's capability in English at the start of their programme of learning.
 
 ### Purpose
 Analytics
@@ -1842,10 +1885,11 @@ Any decimal
 Decimal
 
 ### Notes
+The measure is typically a diagnostic assessment undertaken by the provider around the time of enrolment.
 
 ## INITIAL_ASSESSMENT_MATHEMATICS
 ### Description
-States a numerical value of the institution's measure of the student's capability in Mathematics at the start of their programme of learning.
+States a numerical measure of the student's capability in Mathematics at the start of their programme of learning.
 
 ### Purpose
 Analytics
@@ -1857,11 +1901,11 @@ Any decimal
 Decimal
 
 ### Notes
-
+The measure is typically a diagnostic assessment undertaken by the provider around the time of enrolment.
 
 ## ADMISSIONS_ROUTE
 ### Description
-States whether the student was accepted via UCAS Clearing or via some other route.
+States whether the student was accepted via the default application route, via Clearing or another specialist route.
 
 ### Purpose
 Analytics
@@ -1878,12 +1922,27 @@ SRS systems
             </tr>
             <tr>
                 <td>0</td>
-                <td>Student was accepted onto the course via a route other than UCAS Clearing</td>
+                <td>Accepted through default application route</td>
                 <td> </td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Student was accepted onto the course via UCAS Clearing</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Student was accepted onto the course via a widening participation initiative</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Student was accepted onto the course via UCAS Adjustment</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Student was accepted onto the course via UCAS Record of Prior Acceptance</td>
                 <td> </td>
             </tr>
 </table>
@@ -1893,6 +1952,7 @@ String (1)
 
 ### Notes
 Code list may be extended in future.
+Similar codes related to this property or to offer types can be specified using the extensions functionality.
 
 ## COURSE_TRANSFERRED_FROM
 ### Description

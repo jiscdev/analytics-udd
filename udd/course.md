@@ -1,12 +1,12 @@
 # course
 * [COURSE_ID](#course_id) [1] **
-* [SUBJECT](#subject) [0..1]
+* [TENANT_ID](institution.md#tenant_id) [1]
+* [SUBJECT](#subject) [0..1] deprecated
 * [TITLE](#title) [0..1]
 * [COURSE_AIM](#course_aim) [0..1]
 * [INST_TIER_1](#inst_tier_1) [0..1]
 * [INST_TIER_2](#inst_tier_2) [0..1]
 * [INST_TIER_3](#inst_tier_3) [0..1]
-* [TENANT_ID](institution.md#tenant_id) [0..1] Will be mandatory in v1.4.
 * [AWARDING_BODY](#awarding_body) [0..1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
@@ -44,6 +44,7 @@ HE guidance - this field could relate to actual HESA COURSEID field or the HE in
 ## SUBJECT
 ### Description
 Subject of study coding using JACS3.
+DEPRECATED in v1.4. Use course_subject entity for preference.
 
 ### Purpose
 For display purposes
@@ -57,7 +58,7 @@ https://www.hesa.ac.uk/support/documentation/jacs
 [JACS3 CSV](../media/jacs3-valid-entries.csv)
 
 ### Format
-String (255) - For JACS3: 4 characters, capital letter followed by three digits
+String (10) - For JACS3: 4 characters, capital letter followed by three digits
 
 ### Notes
 The JACS3 coding will be used here initially, from the HE (HESA) model. Further discussion will be required around this, to discuss subject classifications for FE/ ILR.

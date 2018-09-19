@@ -9,11 +9,10 @@
 * [YEAR_STU](#year_stu) [0..1]
 * [COURSE_LOCATION](#course_location) [0..1]
 * [X_COURSE_AVERAGE_MARK](#x_course_average_mark) [0..1]
-* [X_YEAR_AVERAGE_MARK](#x_year_average_mark) [0..1] deprecated
 * [PROGRESSION](#progression) [0..1]
 * [PROGRESSION_SOURCE](#progression_source) [0..1]
 * [LOCATION_OF_STUDY](#location_of_study) [0..1]
-* [ACADEMIC_YEAR](course_instance.md#academic_year) [0..1]
+* [ACADEMIC_YEAR](course_instance.md#academic_year) [1]
 * [TERMTIME_ACCOM](#termtime_accom) [0..1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
@@ -264,17 +263,18 @@ For analytics
 https://www.hesa.ac.uk/collection/c16051/a/YEARPRG
 
 ### Valid Values
-Any
+0-25
 
 ### Format
-String (255)
+Int
 
 ### Notes
+"0" indicates a foundation year or other bridging year aimed at students who are not quite ready to enter the first year of the course. See Notes in YEAR_STU.
 Omitting this property may hinder the development or use of an effective analytics model.
 
 ## YEAR_STU
 ### Description
-Year number that the student is in since enrolling for a course
+A count of the number of years that the student has been on the course since enrolling. This could be different from the year of the course if the student has changed course or retaken a year or was on a foundation year.
 
 ### Purpose
 For analytics
@@ -283,14 +283,33 @@ For analytics
 https://www.hesa.ac.uk/collection/c16051/a/YEARSTU
 
 ### Valid Values
-Any
+1-25
 
 ### Format
-String (255)
+Int
 
 ### Notes
 Omitting this property may hinder the development or use of an effective analytics model.
-
+**_Example of relationship between YEAR_STU and YEAR_PRG:_**
+<table>
+  <tr>
+    <td>Year</td><td>YEAR_STU</td><td>YEAR_PRG</td>
+  </tr>
+  <tr>
+    <td>Foundation year</td><td>1</td><td>0</td>
+  </tr>
+  <tr>
+    <td>First Year</td><td>2</td><td>1</td>
+  </tr>
+  <tr>
+    <td>Second Year</td><td>3</td><td>2</td>
+  </tr>
+    <tr>
+    <td>Re-take of Second Year</td><td>4</td><td>2</td>
+  </tr><tr>
+    <td>Third Year</td><td>5</td><td>3</td>
+  </tr>
+</table>
 
 ## COURSE_LOCATION
 ### Description
@@ -330,27 +349,6 @@ Float
 
 ### Notes
 This data is generated internally to the learning record warehouse from existing data, and does not need to be supplied by an institution.
-
-
-## X_YEAR_AVERAGE_MARK
-### Description
-The current (LIVE) average of all of this academic year's module marks from across a learner's whole course.
-
-### Purpose
-For analytics
-
-### Derivation
-Jisc
-
-### Valid Values
-0-1
-
-### Format
-Float
-
-### Notes
-This data is generated internally to the learning record warehouse from existing data, and does not need to be supplied by an institution.
-This property is deprecated.
 
 
 ## PROGRESSION

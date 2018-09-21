@@ -21,7 +21,7 @@ In summary, v1.4.0 release of UDD implemented the following, compared to v1.3.3:
 - New property ENTRY_POINTS_SCHEMA added to student_course_membership, specifying the UCAS Tariff points scheme used in ENTRY_POINTS.
 - ENTRY_POINTS_SCHEMA mandatory if ENTRY_POINTS used; indicates particular scheme used for ENTRY_POINTS (normally Ucas tariff).
 - Deprecated MAX_POINTS deleted from student_on_assessment_instance.
-- Deprecated MOD_LOCATION deleted from module_instance
+- Deprecated MOD_OPTIONAL deleted from module_instance
 - Deprecated LEARN_DIF, DISABILITY1, DISABILITY2 and TERMTIME_ACCOM deleted from student
 - Deprecated X_YEAR_AVERAGE_MARK deleted from student_on_course_instance
 - Values for ADMISSIONS_ROUTE extended to include widening participation initiatives, UCAS Adjustment, UCAS Record of Prior Acceptance.

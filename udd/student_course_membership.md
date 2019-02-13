@@ -87,6 +87,7 @@ https://www.hesa.ac.uk/collection/c16051/a/RSNEND
 <tr><td>5</td><td>Death</td><td></td><td>N/A</td><td>05</td><td>N/A  </td></tr>
 <tr><td>7</td><td>Learner has transferred between providers due to intervention by the Skills Funding Agency</td><td></td><td>07</td><td>N/A</td><td>7  </td></tr>
 <tr><td>10</td><td>Gone into employment</td><td></td><td>N/A</td><td>10</td><td>N/A  </td></tr>
+<tr><td>12</td><td>Transferred out as part of collaborative supervision arrangements</td><td></td><td>N/A</td><td>N/A</td><td>N/A  </td></tr>
 <tr><td>28</td><td>OLASS learner withdrawn due to circumstances outside the provider's control</td><td></td><td>N/A</td><td>N/A</td><td>28  </td></tr>
 <tr><td>29</td><td>Learner has been made redundant</td><td></td><td>29</td><td>N/A</td><td>29  </td></tr>
 <tr><td>40</td><td>Learner has transferred to a new learning aim with the same provider</td><td></td><td>40</td><td>N/A</td><td>40  </td></tr>
@@ -96,6 +97,7 @@ https://www.hesa.ac.uk/collection/c16051/a/RSNEND
 <tr><td>44</td><td>Other personal reasons</td><td></td><td>N/A</td><td>07</td><td>44  </td></tr>
 <tr><td>45</td><td>Written off after lapse of time (HE learning aims only)</td><td></td><td>N/A</td><td>08</td><td>45  </td></tr>
 <tr><td>46</td><td>Exclusion</td><td></td><td>N/A</td><td>09</td><td>46  </td></tr>
+<tr><td>47</td><td>Learner has transferred to another provider due to merger</td><td></td><td>N/A</td><td>N/A</td><td>N/A  </td></tr>
 <tr><td>97</td><td>Other</td><td></td><td>97</td><td>11</td><td>97  </td></tr>
 <tr><td>98</td><td>Reason not known</td><td></td><td>98</td><td>99</td><td>98  </td></tr>
 <tr><td>99</td><td>Completion of course - result unknown</td><td></td><td>N/A</td><td>98</td><td>N/A</td></tr>

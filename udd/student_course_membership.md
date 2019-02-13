@@ -75,9 +75,9 @@ Based on the ILR codeset used for 'WithdrawReason' - with HESA code '05' utilise
 
 https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/449779/ILRSpecification2015_16_v3_July2015.pdf
 
-https://www.hesa.ac.uk/collection/c16051/a/WITHDRAWREASON
+https://www.hesa.ac.uk/collection/c18051/a/withdrawreason
 
-https://www.hesa.ac.uk/collection/c16051/a/RSNEND
+https://www.hesa.ac.uk/collection/c18051/a/rsnend
 
 ### Valid Values & Mappings
 <table>
@@ -124,7 +124,7 @@ Based on HESA codings for QUALENT3, but merged with specific element of the FE I
 
 https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/518675/ILRSpecification2016_17_v2_April2016.pdf
 
-https://www.hesa.ac.uk/collection/c16051/a/QUALENT3
+https://www.hesa.ac.uk/collection/c18051/a/qualent3
 
 ### Valid Values & Mappings
 <table>
@@ -278,7 +278,7 @@ For analytics
 
 ### Derivation
 
-https://www.hesa.ac.uk/collection/c16051/a/rsnend/
+https://www.hesa.ac.uk/collection/c18051/a/rsnend
 
 https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/449779/ILRSpecification2015_16_v3_July2015.pdf
 
@@ -407,7 +407,7 @@ Class of award achieved by the student on this course. Based on HESA codeset for
 For analytics
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/CLASS
+https://www.hesa.ac.uk/collection/c18051/a/class
 
 ### Valid Values
 
@@ -470,7 +470,7 @@ The Course Aim the student attained on the course of which they are a member.
 Allowing the analysis of whether a student achieved the award/aim associated with the course of which they are a member.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/courseaim/
+https://www.hesa.ac.uk/collection/c18051/a/courseaim
 
 ### Valid Values
 <table>
@@ -1676,7 +1676,7 @@ Analytics
 
 ### Derivation
 HESA COMDATE
-https://www.hesa.ac.uk/collection/c16051/a/COMDATE
+https://www.hesa.ac.uk/collection/c18051/a/comdate
 
 ### Valid values
 Date in ISO 8601 format - YYYY-MM-DD

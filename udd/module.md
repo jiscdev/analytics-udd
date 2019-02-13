@@ -25,7 +25,7 @@ The unique identifier standard across SRS and LMS for the module.
 For analytics and to link module to module_instance
 
 Derivation
-https://www.hesa.ac.uk/collection/c16051/a/module_modid/
+https://www.hesa.ac.uk/collection/c18051/a/module_modid
 
 ### Valid Values
 Any
@@ -44,7 +44,7 @@ The actual name of the module
 For display purposes.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/MTITLE
+https://www.hesa.ac.uk/collection/c18051/a/mtitle
 
 ### Valid Values
 Any
@@ -64,7 +64,7 @@ DEPRECATED in v1.4. Use module_subject entity for preference.
 For display purposes and analytics.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/modsbj/
+https://www.hesa.ac.uk/collection/c18051/a/modsbj
 
 https://www.hesa.ac.uk/support/documentation/jacs
 
@@ -87,7 +87,7 @@ Number of credits awarded for the module
 For analytics
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/CRDTPTS
+https://www.hesa.ac.uk/collection/c18051/a/crdtpts
 
 ### Valid Values
 Any

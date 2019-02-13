@@ -131,7 +131,7 @@ A unique code allocated to staff when they are first entered onto the HESA Staff
 Analytics
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c15025/a/staffid/
+https://www.hesa.ac.uk/collection/c18025/a/staffid
 
 ### Valid values
 First 2 characters:

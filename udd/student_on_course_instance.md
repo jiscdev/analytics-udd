@@ -52,7 +52,7 @@ Mode of study (eg part-time or full time)
 For analytics
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/MODE
+https://www.hesa.ac.uk/collection/c18051/a/mode
 
 ### Valid Values & Mappings
 
@@ -260,7 +260,7 @@ This field indicates the year number of the course that the student is currently
 For analytics
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/YEARPRG
+https://www.hesa.ac.uk/collection/c18051/a/yearprg
 
 ### Valid Values
 0-25
@@ -280,7 +280,7 @@ A count of the number of years that the student has been on the course since enr
 For analytics
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/YEARSTU
+https://www.hesa.ac.uk/collection/c18051/a/yearstu
 
 ### Valid Values
 1-25
@@ -320,7 +320,7 @@ For analytics (predictive model building) and for presenting analytics.
 
 ### Derivation
 Loosely based on
-https://www.hesa.ac.uk/collection/c16051/a/CAMPID
+https://www.hesa.ac.uk/collection/c18051/a/campid
 
 ### Valid Values
 Any
@@ -359,7 +359,7 @@ This property indicates the status of the student on the current course_instance
 Enables tracking of the student's continuation or otherwise from one stage of a course to another.
 
 ### Derivation
-HESA CSTAT (Completion status)
+https://www.hesa.ac.uk/collection/c18051/a/cstat
 
 ### Valid Values & Mappings
 <table>
@@ -457,7 +457,7 @@ This property indicateS whether the student is based on campus, is studying abro
 For analytics
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/locsdy/
+https://www.hesa.ac.uk/collection/c18051/a/locsdy
 
 ### Valid Values & Mappings
 <table>
@@ -555,7 +555,7 @@ The current term time accommodation type of student
 For detailed analysis within Learning Analytics/ Data Modelling.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/TTACCOM
+https://www.hesa.ac.uk/collection/c18051/a/ttaccom
 
 ### Valid Values & Mappings
 

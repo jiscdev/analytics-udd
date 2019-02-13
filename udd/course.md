@@ -660,7 +660,7 @@ body</td>
   <td>Level 5 Diploma in Education and Training (DET)</td>
   <td>
   </td>
-  <td>I76</td>
+  <td>I78</td>
   <td></td>
  </tr><tr>
   <td>I79</td>

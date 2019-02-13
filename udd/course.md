@@ -655,7 +655,14 @@ body</td>
   <td>I76</td>
   <td></td>
  </tr>
- <tr>
+  <tr>
+  <td>I78</td>
+  <td>Level 5 Diploma in Education and Training (DET)</td>
+  <td>
+  </td>
+  <td>I76</td>
+  <td></td>
+ </tr><tr>
   <td>I79</td>
   <td>Level 5 Diploma in Teaching in the Lifelong Learning Sector</td>
   <td></td>

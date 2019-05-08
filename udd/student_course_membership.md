@@ -40,7 +40,7 @@ API endpoint name: **studentcoursemembership**
 A student_course_membership describes a student's enrolment on a course. It is designed to handle, not only a student enrolling on a single course in their time at an institution, but also with cases where a student is enrolled on more than one course, to study either two or more courses simultaneously or one after the other.
 
 ## Notes
-The student_course_membership entity carries critical data about the student's current studies and also acts as a historical record of course changes and previous studies.  For this reason, the WITHDRAWAL_REASON code and COURSE_END_DATE must be set when a student changes course, and typically the ACTIVE_MEMBERSHIP property is updated.
+The student_course_membership entity carries critical data about the student's current studies and also acts as a historical record of course changes and previous studies. For this reason, the WITHDRAWAL_REASON code and COURSE_END_DATE must be set when a student changes course, and typically the ACTIVE_MEMBERSHIP property is updated. ACTIVE_MEMBERSHIP indicates students who are ACTIVE, in other words "current", "on programme", and so on; ACTIVE_MEMBERSHIP is not a mechanism to convey opt-out - that should be done using the LDH record deletion mechanism.
 
 This entity is similar to a HESA Instance element and a HEDIIP Data Language Student Registration entity.
 
@@ -1767,8 +1767,8 @@ String (1)
 
 ### Notes
 A student may have sequential student_course_membership records with only 1 active record, or may be pursuing more than 1 course and therefore have more than 1 active record. When updating student_course_membership records, the ACTIVE_MEMBERSHIP property may need to be updated on more than one record.
-Where it is not known whether or not the student is active, "not active" should be supplied.
-
+The ACTIVE_MEMBERSHIP property indicates students who are ACTIVE, in other words "current", "on programme", and so on; therefore, institutions can exclude individuals from services for current students by setting this property to "2", Not Active. Doing this would not wholly exclude the student; they would continue to appear in historical aggregations and be used for training or reference data for learning analytics services. ACTIVE_MEMBERSHIP is not a mechanism to convey opt-out; that should be done using the LDH record deletion mechanism.
+Institutions should review carefully cases where data appears to suggest that ACTIVE_MEMBERSHIP status is unknown, so that students are not unnecessarily omitted.
 
 ## PREDICTED_OUTCOME_GRADE
 ### Description

@@ -11,10 +11,10 @@
 \** indicates that the property is the primary key for this entity.
 
 ## Description of staff_link entity
-A staff_link record relates a member of staff to any other entity in the UDD. A staff_link specifies that there is a relationship between the member of staff and the concrete entity referenced by REF_KEY. The type of relationship is described in the RELATIONSHIP property, but the meaning of the relationship, and any functionality associated with it, is not prescribed in the UDD. Instead these are defined and controlled by the organisation responsible for a particular product or service via its application, product or service. 
+A staff_link record relates a member of staff to any other entity in the UDD. A staff_link specifies that there is a relationship between the member of staff and the concrete entity referenced by REF_KEY. The type of relationship is described in the RELATIONSHIP property, but the meaning of the relationship, and any functionality associated with it, is not prescribed in the UDD. Instead these are defined and controlled by the organisation responsible for a particular product or service via its application, product or service identified in the SCOPE property. 
 
 
-Other organisations MAY use these RELATIONSHIPs, but no system behaviour should be inferred, except when using one of their own namespaced RELATIONSHIPs.
+Other organisations MAY use these RELATIONSHIPs, but no system behaviour should be inferred, except when using one of their own RELATIONSHIPs.
 
 ## STAFF_LINK_ID
 

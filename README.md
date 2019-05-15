@@ -1,6 +1,6 @@
-# Jisc Learning Analytics Unified Data Definitions v1.4.1 (development branch)
+# Jisc Learning Analytics Unified Data Definitions v1.4.1
 
-_Version 1.4.1 is a development version, not yet released._
+_Version 1.4.1 released 14 May 2019._
 
 ## Introduction
 The Unified Data Definitions (UDD) of the Jisc learning analytics project is a vocabulary of the chief data entities of interest to learning analytics: students, courses, modules, and so on, as well as their characteristics. The data coded with this vocabulary is typically extracted from the student record system of a college or university.
@@ -17,10 +17,10 @@ The main folder (jiscdev/analytics-udd) contains:
 
 In addition to the main folder, there are 4 sub-folders. The udd sub-folder is the heart of the specification, with a file for each entity describing its properties in detail. Refer to these files to design data for import into the Learning Data Hub. The media sub-folder contains supporting files, including the E-R diagram source, the changes spreadsheet, Guides to the relative importance of UDD properties in respect of applications, products and services that use the UDD, and copies of the JACS3 and HECoS subject classification systems. The utilities sub-folder has code fragments and snippets to support the development and use of the UDD. The implementation sub-folder describes matters that are not part of the formal UDD specification, but are closely related to it, for example a description of the mechanism for handling unofficial extensions to properties in the UDD, and filename conventions for adding data into the Learning Data Hub.
 
-For release schedule and version control, see [below](https://github.com/jiscdev/analytics-udd/tree/v1.4.0#release-schedule-and-version-control).
+For release schedule and version control, see [below](https://github.com/jiscdev/analytics-udd/tree/v1.4.1#release-schedule-and-version-control).
 
 ## Differences between v1.3 and v1.4
-The development of v1.4 has involved a number of additions and changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between v1.3.3 and v1.4.0. 
+The development of v1.4 has involved a number of additions and changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between v1.3.3 and v1.4.0. There is also a spreadsheet listing changes between v1.4.0 and v1.4.1.
 
 ## Data format
 UDD data must be UTF-8 encoded. TSV is the preferred data format, but JSON and XML data are also supported. Other formats are not supported.
@@ -43,6 +43,8 @@ Some entities have uniqueness constraints across multiple properties; for exampl
 
 ### [course_subject](udd/course_subject.md)
 
+### [event](udd/event.md)
+
 ### [institution](udd/institution.md)
 
 ### [module](udd/module.md)
@@ -56,6 +58,8 @@ Some entities have uniqueness constraints across multiple properties; for exampl
 ### [student](udd/student.md)
 
 ### [student_course_membership](udd/student_course_membership.md)
+
+### [student_event](udd/student_event.md)
 
 ### [student_on_assessment_instance](udd/student_on_assessment_instance.md)
 
@@ -83,6 +87,7 @@ See the [filename_conventions](implementation/filename_conventions.md) file for 
   <tr><td><a href="./udd/course.md">course</a></td><td>course</td></tr>
   <tr><td><a href="./udd/course_instance.md">course_instance</a></td><td>courseinstance</td></tr>
   <tr><td><a href="./udd/course_subject.md">course_subject</a></td><td>coursesubject</td></tr>
+  <tr><td><a href="./udd/event.md">event</a></td><td>event</td></tr>
   <tr><td><a href="./udd/institution.md">institution</a></td><td>institution</td></tr>
   <tr><td><a href="./udd/module.md">module</a></td><td>module</td></tr>
   <tr><td><a href="./udd/module_instance.md">module_instance</a></td><td>moduleinstance</td></tr>
@@ -94,22 +99,22 @@ See the [filename_conventions](implementation/filename_conventions.md) file for 
   <tr><td><a href="./udd/staff_on_mod_instance.md">staff_on_mod_instance</a></td><td>staffmoduleinstance</td></tr>
   <tr><td><a href="./udd/student.md">student</a></td><td>student</td></tr>
   <tr><td><a href="./udd/student_course_membership.md">student_course_membership</a></td><td>studentcoursemembership</td></tr>
+  <tr><td><a href="./udd/student_event.md">student_event</a></td><td>studentevent</td></tr>
   <tr><td><a href="./udd/student_id_map.md">student_id_map</a></td><td>studentidmap</td></tr>
   <tr><td><a href="./udd/student_on_assessment_instance.md">student_on_assessment_instance</a></td><td>studentassessmentinstance</td></tr>
   <tr><td><a href="./udd/student_on_a_module_instance.md">student_on_a_module_instance</a></td><td>studentmoduleinstance</td></tr>
   <tr><td><a href="./udd/student_on_course_instance.md">student_on_course_instance</a></td><td>studentcourseinstance</td></tr>
 </table>
 
-
 There are also files of code lists extracted from the MD files for machine processing.
 ### [UDD code lists in Welsh](udd/udd_codelists_cy.json)
 ### [UDD code lists in English](udd/udd_codelists_en.json)
 
 ## Mandatory and optional properties
-The properties of the UDD are required in compliant datasets to different degrees, dependent on the products and services that use the outputs. There will be a Field Guide spreadsheet for each product or service to indicate how important each property is for operation or use of the product. A [Field Guide template](media/UDD_FieldGuide_template.xls) is included in this version of the UDD, so that vendors and service providers can supply their own Field Guide for institutions to refer to as an aid to data preparation. The Field Guide enables the vendor or service provider to indicate data items that are MANDATORY, IMPORTANT, PREFERRED or NOT USED.
+The properties of the UDD are required in compliant datasets to different degrees, dependent on the products and services that use the outputs. There is a Field Guide spreadsheet that, for each product or service, indicates how important each property is for operation or use of the product. A [Field Guide](media/UDD_FieldGuide.xls) is included in this version of the UDD, so that vendors and service providers can supply their own entries for institutions to refer to as an aid to data preparation. The Field Guide enables the vendor or service provider to indicate data items that are MANDATORY, IMPORTANT, PREFERRED or NOT USED.
 
 ## Code lists
-Some UDD properties consist of code lists. Some have values derived from HESA tables (for HE) or ILR tables (for FE). In general these code lists are mapped to generic UDD code lists, so that they are standardised across data from multiple institutions. To extract code lists from the UDD MD files, you may wish to use the Python utility provided [here](utilities/Extract Code Lists from MD.py).
+Some UDD properties consist of code lists. Some have values derived from HESA tables (for HE) or ILR tables (for FE). In general these code lists are mapped to generic UDD code lists, so that they are standardised across data from multiple institutions. To extract code lists from the UDD MD files, you may wish to use the Python utility provided [here](utilities/Extract%20Code%20Lists%20from%20MD.py).
 
 Some code lists will be specific to one or a limited group of institutions. These lists are not included in the UDD and can be generated by the vendor. They can be loaded to the Learning Data Hub via a standard JSON format or can be handled via extensions (see below). An example of the JSON format is:
 
@@ -123,11 +128,11 @@ There is provision for data extensions at the level of property (in other words,
 ## Specification development workflow
 The simplest way of contributing to the UDD is as follows:
 
-1. add an issue to the issue tracker to alert everyone to what you are working on and why
-2. tag the issue with the version milestone of which you'd like the patch to be a part
-3. make an edit or add a file in this repository, and save it to your own branch. If you prefer, you can fork the whole repository and work in your own repository
-4. send a pull request once you're done
-5. the pull request will be discussed at our weekly meeting and either merged, or kept in the queue, depending on whether more work is required
+1. add an issue to the issue tracker to alert everyone to what you are working on and why.
+2. tag the issue with the version milestone of which you'd like the patch to be a part.
+3. make an edit or add a file in this repository, and save it to your own branch. If you prefer, you can fork the whole repository and work in your own repository.
+4. send a pull request once you're done.
+5. the pull request will be discussed at our regular meetings and either merged, or kept in the queue, depending on whether more work is required.
 
 You can do all this through the Github GUI, but you're welcome to use any other git tool you prefer.
 
@@ -137,7 +142,7 @@ Particular release versions will get their own branches, but the master branch w
 
 Versioning is done broadly as follows: (majorVersion.minorVersion.patch) major versions indicate major data model changes. Minor versions denote changes that can break applications, such as the deletion of properties that were valid in earlier versions. Patches can include the addition of new properties.
 
-There will usually be a new minor version with breaking changes available for use in June of each year, in time for the next academic year. For example, from version 1.3 to version 1.4 in June 2018 for the 2018-19 academic year.
+There will usually be a new minor version with breaking changes available for use in June of each year, in time for the next academic year. For example, from version 1.4 to version 1.5 in June 2019 for the 2019-20 academic year.
 
 All version changes will be announced in advance on the repository issue tracker and in this README file.
 
@@ -153,6 +158,7 @@ Many thanks to all contributors who have raised issues, sent pull requests, comm
 - @christoffballard
 - @craig-petch
 - @ds10
+- @gmoger-jisc
 - @gryglbrt
 - @ht2 
 - @huwrobertsjisc
@@ -162,7 +168,9 @@ Many thanks to all contributors who have raised issues, sent pull requests, comm
 - @robwynj
 - @ryansmith94
 - @sandeepmjay
+- @willblenkhorn
 - @wilmTap
+
 
 ### License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

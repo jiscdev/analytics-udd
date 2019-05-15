@@ -6,7 +6,9 @@
 * [EVENT_START](#event_start) [0..1]
 * [EVENT_END](#event_end) [0..1]
 * [EVENT_LOCATION](#event_location) [0..1] 
+* [ROOM_ID](#room_id) [0..1]
 * [EVENT_TYPE](#event_type) [0..1]
+* [EVENT_TYPE_RAW](#event_type_raw) [0..1]
 * [MOD_INSTANCE_ID](module_instance.md#mod_instance_id) [0..1]
 * [COURSE_INSTANCE_ID](course_instance.md#course_instance_id)  [0..1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
@@ -17,7 +19,6 @@ API endpoint name: **event**
 
 ## Description of event entity
 The event entity records events that might be attended by a student in the future. These include events linked to modules or courses, such as lectures and seminars, as well as other more general events, such as induction meetings. Data about events will often, but not exclusively, be drawn from timetabling systems. The primary purpose of the event entity is to record the details of events that a student was registered to attend, or expected to attend. Subsequently, the xapi data may describe whether or not a student attended.
-
 
 ## EVENT_ID
 ### Description
@@ -45,6 +46,9 @@ Descriptive label for the event, using local parlance
 ### Purpose
 Human-readable identifier for the event.
 
+### Derivation
+Provider
+
 ### Valid Values
 Any
 
@@ -59,6 +63,9 @@ Short summary text about the event
 
 ### Purpose
 Clarifies and expands on the EVENT_NAME
+
+### Derivation
+Provider
 
 ### Valid Values
 Any
@@ -76,6 +83,9 @@ Planned start date and time of the event
 ### Purpose
 Specifies the planned start date and time of the event
 
+### Derivation
+Provider
+
 ### Valid Values
 Date and time in ISO 8601 format - YYYY-MM-DDThh:mm:ssZ
 
@@ -92,6 +102,9 @@ Planned end date and time of the event
 ### Purpose
 Specifies the planned end date and time of the event
 
+### Derivation
+Provider
+
 ### Valid Values
 Date and time in ISO 8601 format - YYYY-MM-DDThh:mm:ssZ
 
@@ -107,7 +120,28 @@ Description of where the event is being held
 ### Purpose
 Locates the event
 
+### Derivation
+Provider
+
 ### Valid Values
+Any
+
+### Format
+String (255)
+
+### Notes
+
+## ROOM_ID
+### Description
+Identifier for the room in which the event will take place
+
+### Purpose
+To link relational database tables; in particular to link UDD data with location data in relation to the draft intelligent campus specification.
+
+### Derivation
+CELCAT/Scientia or other timetabling or booking system
+
+### Valid Value
 Any
 
 ### Format
@@ -121,6 +155,9 @@ Categorises the event from a controlled list
 
 ### Purpose
 Enables filtering and analysis
+
+### Derivation
+Jisc
 
 ### Valid values
 <table>
@@ -143,4 +180,22 @@ Enables filtering and analysis
 String (255)
 
 ### Notes
-The draft list represents common types seen in data. Are there ways to group the data, or to map native types, that would be more useful?
+The list of event types represents common types seen in data. Where institutions have different local types, these should be mapped to one of the event types in this list. The original value should be stored in EVENT_TYPE_RAW.
+
+## EVENT_TYPE_RAW
+### Description
+The original category of the event type entered from the insitution's own list of values
+
+### Purpose
+To capture the institution's own event type name
+
+### Derivation
+Provider
+
+### Valid values
+Any
+
+### Format
+String (255)
+
+### Notes

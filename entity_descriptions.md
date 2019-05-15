@@ -19,6 +19,10 @@ A course_instance is a stage of a course with a start date and an end date, ofte
 ## Description of course_subject entity
 A course_subject describes the subject or subjects of study of a course, using a specified subject classification system.
 
+# event
+## Description of event entity
+The event entity records events that might be attended by a student in the future. These include events linked to modules or courses, such as lectures and seminars, as well as other more general events, such as induction meetings. Data about events will often, but not exclusively, be drawn from timetabling systems. The primary purpose of the event entity is to record the details of events that a student was registered to attend, or expected to attend. Subsequently, the xapi data may describe whether or not a student attended.
+
 # institution
 ## Description of institution entity
 An institution is the overall provider of one or more courses. Example: University of Gloucestershire.
@@ -70,6 +74,10 @@ A student_course_membership describes a student's enrolment on a course.  It is 
 The student_course_membership entity carries critical data about the student's current studies and also acts as a historical record of course changes and previous studies. For this reason, the WITHDRAWAL_REASON code and COURSE_END_DATE must be set when a student changes course, and typically the ACTIVE_MEMBERSHIP property is updated.
 
 This entity is similar to a HESA Instance element and a HEDIIP Data Language Student Registration entity.
+
+# student_event
+## Description of student_event entity
+The student_event entity records that a student is registered to attend, or expected to attend, an event. Subsequently, the xapi data may describe whether or not a student attended.
 
 # student_id_map
 ## Description of student_id_map entity

@@ -17,7 +17,7 @@ The main folder (jiscdev/analytics-udd) contains:
 
 In addition to the main folder, there are 4 sub-folders. The udd sub-folder is the heart of the specification, with a file for each entity describing its properties in detail. Refer to these files to design data for import into the Learning Data Hub. The media sub-folder contains supporting files, including the E-R diagram source, the changes spreadsheet, Guides to the relative importance of UDD properties in respect of applications, products and services that use the UDD, and copies of the JACS3 and HECoS subject classification systems. The utilities sub-folder has code fragments and snippets to support the development and use of the UDD. The implementation sub-folder describes matters that are not part of the formal UDD specification, but are closely related to it, for example a description of the mechanism for handling unofficial extensions to properties in the UDD, and filename conventions for adding data into the Learning Data Hub.
 
-For release schedule and version control, see [below](https://github.com/jiscdev/analytics-udd/tree/v1.4.1#release-schedule-and-version-control).
+For release schedule and version control, see [below](README.md#release-schedule-and-version-control).
 
 ## Differences between v1.3 and v1.4
 The development of v1.4 has involved a number of additions and changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between v1.3.3 and v1.4.0. There is also a spreadsheet listing changes between v1.4.0 and v1.4.1.

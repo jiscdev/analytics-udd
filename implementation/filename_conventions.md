@@ -12,6 +12,7 @@ Use the following filenames, all lower case.  The first part of each filename re
 - course.tsv
 - courseinstance.tsv
 - coursesubject.tsv
+- event.tsv
 - institution.tsv
 - module.tsv
 - moduleinstance.tsv
@@ -25,6 +26,7 @@ Use the following filenames, all lower case.  The first part of each filename re
 - studentassessmentinstance.tsv
 - studentcourseinstance.tsv
 - studentcoursemembership.tsv
+- student_event.tsv
 - studentidmap.tsv
 - studentmoduleinstance.tsv
 
@@ -34,6 +36,7 @@ or
 - course.json
 - courseinstance.json
 - coursesubject.json
+- event.json
 - institution.json
 - module.json
 - moduleinstance.json
@@ -47,6 +50,7 @@ or
 - studentassessmentinstance.json
 - studentcourseinstance.json
 - studentcoursemembership.json
+- student_event.json
 - studentidmap.json
 - studentmoduleinstance.json
 
@@ -56,6 +60,7 @@ or
 - course.xml
 - courseinstance.xml
 - coursesubject.xml
+- event.xml
 - institution.xml
 - module.xml
 - moduleinstance.xml
@@ -69,5 +74,6 @@ or
 - studentassessmentinstance.xml
 - studentcourseinstance.xml
 - studentcoursemembership.xml
+- student_event.xml
 - studentidmap.xml
 - studentmoduleinstance.xml

@@ -141,9 +141,10 @@ To provide a clear indication of the date and time of when the data was supplied
 Provider
 
 ### Valid Values
-Date/time in ISO 8601 format - YYYY-MM-DDThh:mm
+Date/time in ISO 8601 format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm
 
 ### Format
-String in ISO 8601 date and time format - YYYY-MM-DDThh:mm
+String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm
 
 ### Notes
+Preferred format is YYYY-MM-DDThh:mmZ with the "Z" denoting local time zone. However, YYYY-MM-DDThh:mm is acceptable if the supplier does not hold the "Z". Do not insert "Z" if not held.

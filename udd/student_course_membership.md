@@ -40,7 +40,7 @@ API endpoint name: **studentcoursemembership**
 A student_course_membership describes a student's enrolment on a course. It is designed to handle, not only a student enrolling on a single course in their time at an institution, but also with cases where a student is enrolled on more than one course, to study either two or more courses simultaneously or one after the other.
 
 ## Notes
-The student_course_membership entity carries critical data about the student's current studies and also acts as a historical record of course changes and previous studies.  For this reason, the WITHDRAWAL_REASON code and COURSE_END_DATE must be set when a student changes course, and typically the ACTIVE_MEMBERSHIP property is updated.
+The student_course_membership entity carries critical data about the student's current studies and also acts as a historical record of course changes and previous studies. For this reason, the WITHDRAWAL_REASON code and COURSE_END_DATE must be set when a student changes course, and typically the ACTIVE_MEMBERSHIP property is updated. ACTIVE_MEMBERSHIP indicates students who are ACTIVE, in other words "current", "on programme", and so on; ACTIVE_MEMBERSHIP is not a mechanism to convey opt-out - that should be done using the LDH record deletion mechanism.
 
 This entity is similar to a HESA Instance element and a HEDIIP Data Language Student Registration entity.
 
@@ -74,9 +74,9 @@ Based on the ILR codeset used for 'WithdrawReason' - with HESA code '05' utilise
 
 https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/449779/ILRSpecification2015_16_v3_July2015.pdf
 
-https://www.hesa.ac.uk/collection/c16051/a/WITHDRAWREASON
+https://www.hesa.ac.uk/collection/c18051/a/withdrawreason
 
-https://www.hesa.ac.uk/collection/c16051/a/RSNEND
+https://www.hesa.ac.uk/collection/c18051/a/rsnend
 
 ### Valid Values & Mappings
 <table>
@@ -86,6 +86,7 @@ https://www.hesa.ac.uk/collection/c16051/a/RSNEND
 <tr><td>5</td><td>Death</td><td></td><td>N/A</td><td>05</td><td>N/A  </td></tr>
 <tr><td>7</td><td>Learner has transferred between providers due to intervention by the Skills Funding Agency</td><td></td><td>07</td><td>N/A</td><td>7  </td></tr>
 <tr><td>10</td><td>Gone into employment</td><td></td><td>N/A</td><td>10</td><td>N/A  </td></tr>
+<tr><td>12</td><td>Transferred out as part of collaborative supervision arrangements</td><td></td><td>N/A</td><td>12</td><td>N/A  </td></tr>
 <tr><td>28</td><td>OLASS learner withdrawn due to circumstances outside the provider's control</td><td></td><td>N/A</td><td>N/A</td><td>28  </td></tr>
 <tr><td>29</td><td>Learner has been made redundant</td><td></td><td>29</td><td>N/A</td><td>29  </td></tr>
 <tr><td>40</td><td>Learner has transferred to a new learning aim with the same provider</td><td></td><td>40</td><td>N/A</td><td>40  </td></tr>
@@ -95,6 +96,7 @@ https://www.hesa.ac.uk/collection/c16051/a/RSNEND
 <tr><td>44</td><td>Other personal reasons</td><td></td><td>N/A</td><td>07</td><td>44  </td></tr>
 <tr><td>45</td><td>Written off after lapse of time (HE learning aims only)</td><td></td><td>N/A</td><td>08</td><td>45  </td></tr>
 <tr><td>46</td><td>Exclusion</td><td></td><td>N/A</td><td>09</td><td>46  </td></tr>
+<tr><td>47</td><td>Learner has transferred to another provider due to merger</td><td></td><td>47</td><td>N/A</td><td>N/A  </td></tr>
 <tr><td>97</td><td>Other</td><td></td><td>97</td><td>11</td><td>97  </td></tr>
 <tr><td>98</td><td>Reason not known</td><td></td><td>98</td><td>99</td><td>98  </td></tr>
 <tr><td>99</td><td>Completion of course - result unknown</td><td></td><td>N/A</td><td>98</td><td>N/A</td></tr>
@@ -121,7 +123,7 @@ Based on HESA codings for QUALENT3, but merged with specific element of the FE I
 
 https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/518675/ILRSpecification2016_17_v2_April2016.pdf
 
-https://www.hesa.ac.uk/collection/c16051/a/QUALENT3
+https://www.hesa.ac.uk/collection/c18051/a/qualent3
 
 ### Valid Values & Mappings
 <table>
@@ -275,7 +277,7 @@ For analytics
 
 ### Derivation
 
-https://www.hesa.ac.uk/collection/c16051/a/rsnend/
+https://www.hesa.ac.uk/collection/c18051/a/rsnend
 
 https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/449779/ILRSpecification2015_16_v3_July2015.pdf
 
@@ -404,7 +406,7 @@ Class of award achieved by the student on this course. Based on HESA codeset for
 For analytics
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/CLASS
+https://www.hesa.ac.uk/collection/c18051/a/class
 
 ### Valid Values
 
@@ -467,7 +469,7 @@ The Course Aim the student attained on the course of which they are a member.
 Allowing the analysis of whether a student achieved the award/aim associated with the course of which they are a member.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/courseaim/
+https://www.hesa.ac.uk/collection/c18051/a/courseaim
 
 ### Valid Values
 <table>
@@ -1672,7 +1674,7 @@ Analytics
 
 ### Derivation
 HESA COMDATE
-https://www.hesa.ac.uk/collection/c16051/a/COMDATE
+https://www.hesa.ac.uk/collection/c18051/a/comdate
 
 ### Valid values
 Date in ISO 8601 format - YYYY-MM-DD
@@ -1763,8 +1765,8 @@ String (1)
 
 ### Notes
 A student may have sequential student_course_membership records with only 1 active record, or may be pursuing more than 1 course and therefore have more than 1 active record. When updating student_course_membership records, the ACTIVE_MEMBERSHIP property may need to be updated on more than one record.
-Where it is not known whether or not the student is active, "not active" should be supplied.
-
+The ACTIVE_MEMBERSHIP property indicates students who are ACTIVE, in other words "current", "on programme", and so on; therefore, institutions can exclude individuals from services for current students by setting this property to "2", Not Active. Doing this would not wholly exclude the student; they would continue to appear in historical aggregations and be used for training or reference data for learning analytics services. ACTIVE_MEMBERSHIP is not a mechanism to convey opt-out; that should be done using the LDH record deletion mechanism.
+Institutions should review carefully cases where data appears to suggest that ACTIVE_MEMBERSHIP status is unknown, so that students are not unnecessarily omitted.
 
 ## PREDICTED_OUTCOME_GRADE
 ### Description

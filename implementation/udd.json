@@ -20,14 +20,14 @@
         "SUBJECT": "String (10) - For JACS3: 4 characters, capital letter followed by three digits",
         "TENANT_ID": "String (8)",
         "TITLE": "String (255)",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm"
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm"
     },
     "course_instance": {
         "ACADEMIC_YEAR": "Int",
         "COURSE_INSTANCE_ID": "String (255)",
         "COURSE_ID": "String (255)",
         "END_DATE": "String in ISO 8601 Date extended format - YYYY-MM-DD",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm",
         "START_DATE": "String in ISO 8601 Date extended format - YYYY-MM-DD"
     },
     "course_subject": {
@@ -35,10 +35,24 @@
         "COURSE_SUBJECT_ID": "String (255)",
         "ENCODING_ID": "String (255)",
         "PROPORTION": "Decimal",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm",
         "SEQUENCE_ID": "Integer",
         "SUBJECT_ID": "String (10) - JACS: 4 characters, number followed by three digits; HECoS: 6 digits",
         "SUBJECT_LABEL": "String (255)"
+    },
+    "event": {
+        "COURSE_INSTANCE_ID": "String (255)",
+        "EVENT_DESCRIPTION": "String (255)",
+        "EVENT_END": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm",
+        "EVENT_ID": "String (255)",
+        "EVENT_LOCATION": "String (255)",
+        "EVENT_NAME": "String (255)",
+        "EVENT_START": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm",
+        "EVENT_TYPE": "String (255)",
+        "EVENT_TYPE_RAW": "String (255)",
+        "MOD_INSTANCE_ID": "String (255)",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm",
+        "ROOM_ID": "String (255)"
     },
     "institution": {
         "MODULE_VLE_MAP_MODE": "Int",
@@ -175,6 +189,12 @@
         "STUDENT_ID": "String (255)",
         "VISA": "String (255)",
         "WITHDRAWAL_REASON": "String (255)"
+    },
+    "student_event": {
+        "EVENT_ID": "String (255)",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm",
+        "STUDENT_EVENT_ID": "String (255)",
+        "STUDENT_ID": "String (255)"
     },
     "student_id_map": {
         "DOMAIN": "String (255)",

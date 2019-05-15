@@ -28,9 +28,8 @@ The provider's own ID for the course
 To link relational database tables
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/owncourseid/
-
-https://www.hesa.ac.uk/collection/c16054/e/course_courseid/
+https://www.hesa.ac.uk/collection/c18051/a/owncourseid
+https://www.hesa.ac.uk/collection/c18051/a/course_courseid
 
 ### Valid Values
 Any
@@ -50,7 +49,7 @@ DEPRECATED in v1.4. Use course_subject entity for preference.
 For display purposes
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/sbjca/
+https://www.hesa.ac.uk/collection/c18051/a/sbjca
 
 https://www.hesa.ac.uk/support/documentation/jacs
 
@@ -72,7 +71,7 @@ Course Name or Title
 For display purposes
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/ctitle/
+https://www.hesa.ac.uk/collection/c18051/a/ctitle
 
 ### Valid Value
 Any
@@ -91,7 +90,7 @@ The qualification which the learner/ student is aiming for at the provider
 For display purposes and further analysis
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/courseaim/
+https://www.hesa.ac.uk/collection/c18051/a/courseaim
 
 ### Valid Values
 <table>
@@ -656,7 +655,14 @@ body</td>
   <td>I76</td>
   <td></td>
  </tr>
- <tr>
+  <tr>
+  <td>I78</td>
+  <td>Level 5 Diploma in Education and Training (DET)</td>
+  <td>
+  </td>
+  <td>I78</td>
+  <td></td>
+ </tr><tr>
   <td>I79</td>
   <td>Level 5 Diploma in Teaching in the Lifelong Learning Sector</td>
   <td></td>
@@ -1208,7 +1214,7 @@ Details the top level of an institutional structure (e.g. faculty details)
 For display purposes and further analysis
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16041/a/tier1/
+https://www.hesa.ac.uk/collection/c18041/a/tier1
 
 ### Valid Values
 Any
@@ -1229,7 +1235,7 @@ Details the middle level of an institutional structure (e.g. department details)
 For display purposes and further analysis
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16041/a/tier2/
+https://www.hesa.ac.uk/collection/c18041/a/tier2
 
 ### Valid Values
 Any
@@ -1250,7 +1256,7 @@ Details the lower level of an institutional structure (e.g. department details)
 For display purposes and further analysis
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16041/a/DEPARTMENT
+https://www.hesa.ac.uk/collection/c18041/a/department
 
 ### Valid Values
 Any

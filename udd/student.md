@@ -44,7 +44,7 @@ The institution's own unique identifier of the student. In the case or event of 
 To identify the student across multiple records within an institution.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/OWNSTU
+https://www.hesa.ac.uk/collection/c18051/a/ownstu
 
 ### References
 
@@ -81,7 +81,7 @@ Student's date of birth
 For analytics comparisons.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/BIRTHDTE
+https://www.hesa.ac.uk/collection/c18051/a/birthdte
 
 ### References
 
@@ -104,7 +104,7 @@ This field records the ethnicity of the student, on the basis of their own self-
 To allow equal opportunities monitoring, within detailed learning analytics/ data modelling.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/ETHNIC
+https://www.hesa.ac.uk/collection/c18051/a/ethnic
 
 ### Format
 String (255)
@@ -289,7 +289,7 @@ To record a Learner's current sex, on the basis of their own self-assessment.
 For equal opportunities monitoring within learning analytics / data modelling.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/SEXID
+https://www.hesa.ac.uk/collection/c18051/a/sexid
 
 ### Format
 String (255)
@@ -321,7 +321,7 @@ For longitudinal analysis or intervention purposes, eg. Data Insight Tool
 ### Derivation
 https://www.hesa.ac.uk/collection/c15051/a/learndif/
 
-https://www.hesa.ac.uk/collection/c16051/a/llddhealthprob/
+https://www.hesa.ac.uk/collection/c18051/a/llddhealthprob
 
 https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/518675/ILRSpecification2016_17_v2_April2016.pdf
 
@@ -372,7 +372,7 @@ For longitudinal analysis or intervention purposes, eg. Data Insight Tool
 ### Derivation
 https://www.hesa.ac.uk/collection/c15051/a/learndif/
 
-https://www.hesa.ac.uk/collection/c16051/a/llddhealthprob/
+https://www.hesa.ac.uk/collection/c18051/a/llddhealthprob
 
 https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/518675/ILRSpecification2016_17_v2_April2016.pdf
 
@@ -420,7 +420,7 @@ This property holds the country code of the student's permanent home address pri
 For detailed analysis within Learning Analytics/ Data Modelling.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/DOMICILE
+https://www.hesa.ac.uk/collection/c18051/a/domicile
 
 ### Format
 String (2)
@@ -1766,7 +1766,7 @@ Whether parents have higher education qualification.
 For detailed analysis within Learning Analytics/ Data Modelling.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/PARED
+https://www.hesa.ac.uk/collection/c18051/a/pared
 
 ### Valid Values
 
@@ -1794,7 +1794,7 @@ This property collects the socio-economic classification of students participati
 For detailed analysis within Learning Analytics/ Data Modelling.
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/SEC
+https://www.hesa.ac.uk/collection/c18051/a/sec
 
 ### Valid Values
 
@@ -1897,7 +1897,7 @@ A HESA student identifier unique to each student. It is intended that the identi
 Analytics
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/HUSID
+https://www.hesa.ac.uk/collection/c18051/a/husid
 
 ### Format of Valid Values
 - First 2 digits:</td><td>Year of entry into provider (last 2 digits of year)
@@ -2052,10 +2052,10 @@ For display. Used by Student Success Planner
 
 ### Derivation
 Jisc
-https://www.hesa.ac.uk/collection/c16051/a/TTPCODE. Extended to include overseas postal codes, for example for distance learners, those at overseas campuses of providers, and so on.
+https://www.hesa.ac.uk/collection/c18051/a/ttpcode. Extended to include overseas postal codes, for example for distance learners, those at overseas campuses of providers, and so on.
 
 ### Valid Values
-Any, but for UK postcodes, see [HESA definition for details.](https://www.hesa.ac.uk/collection/c16051/a/TTPCODE)
+Any, but for UK postcodes, see [HESA definition for details.](https://www.hesa.ac.uk/collection/c18051/a/ttpcode)
 
 ### Format
 String (10)
@@ -2151,7 +2151,7 @@ This is the unique identification number for the learner's academic or course ye
 For notification and alerts purposes for Learning Analytics SSP and other software tools
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c15025/a/OWNSTAFFID
+https://www.hesa.ac.uk/collection/c18025/a/ownstaffid
 
 ### References
 
@@ -2169,10 +2169,10 @@ Identifies the postal code of the student's permanent or home address prior to e
 Analytics
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/postcode/. Extended to include international postal codes.
+https://www.hesa.ac.uk/collection/c18051/a/postcode. Extended to include international postal codes.
 
 ### Valid Values
-Any, but for UK postcodes [see HESA definition for particulars.] (https://www.hesa.ac.uk/collection/c16051/a/postcode/)
+Any, but for UK postcodes [see HESA definition for particulars.] (https://www.hesa.ac.uk/collection/c18051/a/postcode)
 
 ### Format
 String (10)

@@ -44,7 +44,7 @@ Code for subject of study
 For display and analytical purposes
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/sbjca/
+https://www.hesa.ac.uk/collection/c18051/a/modsbj
 https://www.hesa.ac.uk/support/documentation/jacs
 https://www.hesa.ac.uk/files/HECoS-Vocabulary_2016-07-28.xlsx
 
@@ -67,7 +67,7 @@ Human readable name for the subject of study
 For display purposes
 
 ### Derivation
-https://www.hesa.ac.uk/collection/c16051/a/sbjca/
+https://www.hesa.ac.uk/collection/c18051/a/modsbj
 https://www.hesa.ac.uk/support/documentation/jacs
 https://www.hesa.ac.uk/files/HECoS-Vocabulary_2016-07-28.xlsx
 

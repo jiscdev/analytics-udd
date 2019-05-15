@@ -579,4 +579,3 @@ String (255)
 ### Notes
 If current term time accommodation type data is not supplied, this property should be omitted.
 Omitting this property may hinder the development or use of an effective analytics model.
-

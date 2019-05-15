@@ -62,7 +62,6 @@ String (255)
 ### Notes
 The student_course_membership is designed to deal with the fact that some students are enrolled on more than one course in their time at a provider. Drawing together data on their student ID alone could therefore be misleading, or at least be significantly different from students who have only ever been registered on one course. STUDENT_COURSE_MEMBERSHIP_ID partitions the study careers of those who are on multiple courses, and makes them comparable to those who have only ever been enrolled on one course.
 
-
 ## WITHDRAWAL_REASON
 ### Description
 The reason a student has withdrawn from a course (if they have)
@@ -271,7 +270,7 @@ See also [ENTRY_POINTS](#entry_points).
 
 ## COURSE_OUTCOME
 ### Description
-This field indicates the outcome/ status of the learner's current course or learning aim. This is based on the information provided by HESA via the RSNEND field, however this has been adapted with the addition of fields to cater for FE (via the ILR CompStatus field), and can be used to fully cater for the outcomes in granular detail
+This field indicates the outcome/ status of the learner's current course or learning aim. This is based on the information provided by HESA via the RSNEND field, however this has been adapted with the addition of fields to cater for FE (via the ILR CompStatus field), and can be used to fully cater for the outcomes in granular detail.
 
 ### Purpose
 For analytics
@@ -1575,7 +1574,7 @@ body</td>
 String (255)
 
 ### Notes
-All course levels are denoted here (TBC with FE college, for final implementation). Specific use of the LARS codeset for FE (from ILR) may need to be considered, or a mapping/ amalgamation with the HESA codeset. This is to be discussed in consultation with the FE sector.
+All course levels are denoted here. Specific use of the LARS codeset for FE (from ILR) may need to be considered, or a mapping/ amalgamation with the HESA codeset. This is to be discussed in consultation with the FE sector.
 
 
 ## COURSE_MARK
@@ -1594,9 +1593,10 @@ SRS Systems
 ### References
 
 ### Format
-Decimal (IEEE 754)
+Decimal
 
 ### Notes
+The value represents a percentage; for example, a value of "63.75" means 63.75%, a value of "50" means 50%.
 
 
 ## COURSE_EXPECTED_END_DATE
@@ -1644,10 +1644,9 @@ String in ISO 8601 Date extended format - YYYY-MM-DD
 
 Note that there may be many reasons why a student leaves a course. This is recorded in WITHDRAWAL_REASON.
 
-
 ## COURSE_DURATION
 ### Description
-The expected length of time in months that the student will take to complete the course.
+The expected length of time at course commencement in months that the student will take to complete the course.
 
 ### Purpose
 Analysis
@@ -1665,7 +1664,6 @@ Int
 
 ### Notes
 If actual number of months is not stored in source data, then for years, multiply by 12 to give approximate months value; for weeks, divide by 4.3 and round to nearest integer to give approximate months value.
-
 
 ## COURSE_JOIN_DATE
 ### Description
@@ -1775,7 +1773,7 @@ Institutions should review carefully cases where data appears to suggest that AC
 The institution's prediction of the final grade for the student in this course.
 
 ### Purpose
-Analysis.
+Analysis
 
 ### Derivation
 Institution
@@ -1793,7 +1791,7 @@ String (255)
 Grade acting as a target of attainment for the student.
 
 ### Purpose
-Analysis.
+Analysis
 
 ### Derivation
 Institution
@@ -1824,7 +1822,7 @@ Any decimal
 ### Format
 Decimal
 
-Notes
+### Notes
 
 ## ATTAINMENT_TARGET_MARK
 ### Description

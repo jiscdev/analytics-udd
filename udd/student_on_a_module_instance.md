@@ -3,7 +3,7 @@
 * [STUDENT_ON_A_MODULE_INSTANCE_ID](#student_on_a_module_instance_id) **
 * [STUDENT_COURSE_MEMBERSHIP_ID](student_course_membership.md#student_course_membership_id) [1] *
 * [MOD_INSTANCE_ID](module_instance.md#mod_instance_id) [1] *
-* [COURSE_INSTANCE_ID](course_instance.md#course_instance_id) [1] *
+* [COURSE_INSTANCE_ID](course_instance.md#course_instance_id) [1]
 * [STUDENT_ID](student.md#student_id) [1]
 * [MOD_RESULT](#mod_result) [0..1]
 * [MOD_RETAKE](#mod_retake) [0..1]

@@ -1,10 +1,14 @@
 # Differences between UDD 1.3.3 and 1.4.0
 
-The following spreadsheet gives an overview of all the changes that were introduced with version 1.4 of the UDD. A blank cell indicates that a property is no longer used, green indicates a new property, and orange a changed property. 
+The following spreadsheets give an overview of all the changes that were introduced with version 1.4 of the UDD. A blank cell indicates that a property is no longer used, green indicates a new property, and orange a changed property. 
 
 [xls spreadsheet of 1.3.3 to 1.4.0 changes][differencesXLS]
 
 [differencesXLS]: media/UDD1.3-1.4.xls "differencesXLS"
+
+[xls spreadsheet of 1.4.0 to 1.4.1 changes][differences2XLS]
+
+[differences2XLS]: media/UDD1.4.0-1.4.1.xls "differences2XLS"
 
 ## Summary of differences
 
@@ -27,3 +31,13 @@ In summary, v1.4.0 release of UDD implemented the following, compared to v1.3.3:
 - Values for ADMISSIONS_ROUTE extended to include widening participation initiatives, UCAS Adjustment, UCAS Record of Prior Acceptance.
 - Spreadsheet for entity and property changes v1.3.3 to v1.4 created
 - COURSE_OUTCOME values 13 and 14 deleted; these were added to match values on FE ISR that are confusing in relation to the definition of COURSE_OUTCOME.
+
+## Summary of differences between v1.4.0 and v1.4.1
+
+- PROVIDED_AT: Added 'Z' clarification to date/time format: in ISO 8601 format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm is acceptable
+- course: Added code I78 to COURSE_AIM
+- student_course_membership: updated WITHDRAWAL_REASON codes and clarified ACTIVE_MEMBERSHIP Notes
+- updated HESA links in many of the MD files to 2018-19 links
+- New event and student_event entities added
+- New UDD Field Guide introduced and old template removed
+- New E-R diagrams and updated change spreadsheet created

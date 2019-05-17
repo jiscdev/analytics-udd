@@ -26,7 +26,7 @@ Use the following filenames, all lower case.  The first part of each filename re
 - studentassessmentinstance.tsv
 - studentcourseinstance.tsv
 - studentcoursemembership.tsv
-- student_event.tsv
+- studentevent.tsv
 - studentidmap.tsv
 - studentmoduleinstance.tsv
 
@@ -50,7 +50,7 @@ or
 - studentassessmentinstance.json
 - studentcourseinstance.json
 - studentcoursemembership.json
-- student_event.json
+- studentevent.json
 - studentidmap.json
 - studentmoduleinstance.json
 
@@ -74,6 +74,6 @@ or
 - studentassessmentinstance.xml
 - studentcourseinstance.xml
 - studentcoursemembership.xml
-- student_event.xml
+- studentevent.xml
 - studentidmap.xml
 - studentmoduleinstance.xml

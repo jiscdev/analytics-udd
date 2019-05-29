@@ -1,6 +1,6 @@
-# Jisc Learning Analytics Unified Data Definitions v1.4.1
+# Jisc Learning Analytics Unified Data Definitions v1.5 (development branch for next major release)
 
-_Version 1.4.1 released 14 May 2019._
+_Version 1.5 is a development version, not yet released._
 
 ## Introduction
 The Unified Data Definitions (UDD) of the Jisc learning analytics project is a vocabulary of the chief data entities of interest to learning analytics: students, courses, modules, and so on, as well as their characteristics. The data coded with this vocabulary is typically extracted from the student record system of a college or university.
@@ -142,7 +142,7 @@ Particular release versions will get their own branches, but the master branch w
 
 Versioning is done broadly as follows: (majorVersion.minorVersion.patch) major versions indicate major data model changes. Minor versions denote changes that can break applications, such as the deletion of properties that were valid in earlier versions. Patches can include the addition of new properties.
 
-There will usually be a new minor version with breaking changes available for use in June of each year, in time for the next academic year. For example, from version 1.4 to version 1.5 in June 2019 for the 2019-20 academic year.
+There will usually be a new minor version with breaking changes available for use in June of each year, in time for the next academic year. For example, from version 1.4 to version 1.5 in June/July 2019 for the 2019-20 academic year.
 
 All version changes will be announced in advance on the repository issue tracker and in this README file.
 

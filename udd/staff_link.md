@@ -86,12 +86,6 @@ Identifies the UDD entity referenced by the record.
 		<td>staff</td>
 	</tr>
 	<tr>
-		<td>staff_on_course_instance</td>
-	</tr>
-	<tr>
-		<td>staff_on_mod_instance</td>
-	</tr>
-	<tr>
 		<td>student</td>
 	</tr>
 	<tr>

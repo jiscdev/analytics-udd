@@ -1,4 +1,5 @@
 # staff_on_mod_instance
+(deprecated)
 
 * [STAFF_ON_MOD_INSTANCE_ID](#staff_on_mod_instance_id) **
 * [STAFF_ID](staff.md#staff_id) [1] *
@@ -11,7 +12,8 @@
 API endpoint name: **staffmoduleinstance**
 
 ## Description of staff_on_mod_instance entity
-A staff_on_mod_instance links a member of staff to a module_instance.
+A staff_on_mod_instance links a member of staff to a module_instance.  
+This entity is deprecated. Use the staff_link entity instead if possible.
 
 ## STAFF_ON_MOD_INSTANCE_ID
 ### Description

@@ -1,4 +1,5 @@
 # staff_on_course_instance
+(deprecated)
 
 * [STAFF_ON_COURSE_INSTANCE_ID](#staff_on_course_instance_id) **
 * [STAFF_ID](staff.md#staff_id) [1] *
@@ -6,12 +7,13 @@
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity; if not provided by data supplier, will be Learning Data Hub generated.   
-\* indicates that the property is part of a uniqueness constraint for this entity.
+\* indicates that the property is part of a uniqueness constraint for this entity.  
 
 API endpoint name: **staffcourseinstance**
 
 ## Description of staff_on_course_instance entity
-A staff_on_course_instance links a member of staff to a course_instance.
+A staff_on_course_instance links a member of staff to a course_instance.  
+This entity is deprecated. Use the staff_link entity instead if possible.
 
 ## STAFF_ON_COURSE_INSTANCE_ID
 ### Description

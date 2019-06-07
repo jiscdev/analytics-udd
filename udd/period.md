@@ -44,7 +44,7 @@ To enable identification of the time period using the institution's own code, un
 Institution
 
 ### Valid Values
-Where the period record states the dates for the institution's academic year, PERIOD_CODE must use the fixed string "ACADYR". For other periods, PERIOD_CODE uses institution-defined code values. Each different code value in module_instance.MOD_PERIOD should have a matching code value in PERIOD_CODE. Where the same code values are used across different academic years, the specific period record can be identified by reference to the PERIOD_CODE together with the ACADEMIC_YEAR property; these properties together form the primary key.
+Where the period record states the dates for the institution's academic year, PERIOD_CODE must use the fixed string "ACADYR". For other periods, PERIOD_CODE uses institution-defined code values. Each different code value in module_instance.MOD_PERIOD or course_instance.COMMENCEMENT_PERIOD should have a matching code value in PERIOD_CODE. Where the same code values are used across different academic years, the specific period record can be identified by reference to the PERIOD_CODE together with the ACADEMIC_YEAR property; these properties together form the primary key.
 
 ### Format
 String (255)

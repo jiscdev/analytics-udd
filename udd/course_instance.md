@@ -4,6 +4,7 @@
 * [START_DATE](#start_date) [0..1]
 * [END_DATE](#end_date) [0..1]
 * [ACADEMIC_YEAR](#academic_year) [1]
+* [COMMENCEMENT_PERIOD](#commencement_period) [0..1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
@@ -88,3 +89,22 @@ Int
 ### Notes
 Could be derived, but academic year calendars may be different between institutions. This field could also be sourced directly from the SRS.
 This property is synonymous with MOD_ACADEMIC_YEAR.
+
+## COMMENCEMENT_PERIOD
+### Description
+Period in which the course_instance starts (e.g. semester 1)
+
+### Purpose
+Analytics
+
+### Derivation
+Jisc
+
+### Valid Values
+Each different code value in COMMENCEMENT_PERIOD should have a matching code value in period.PERIOD_CODE.
+
+### Format
+String (255)
+
+### Notes
+It is expected that sites / organisations will have their own code lists for COMMENCEMENT_PERIOD values.

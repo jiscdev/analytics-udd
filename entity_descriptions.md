@@ -38,6 +38,13 @@ This description is the same as the description for the Module entity in the HED
 ## Description of module_instance entity
 A module_instance is the specific offer of a module to students. It therefore has a specific venue and defined assessments.
 
+# module_map
+
+## Description
+A module_map links a module instance from a student record system with module information from another system specified by MODULE_MAP_DOMAIN, typically a VLE or timetable system. The module identifier in the other system is contained in DOMAIN_MOD_INSTANCE_ID.
+
+By default, MOD_INSTANCE_ID and DOMAIN_MOD_INSTANCE_ID form a uniqueness constraint within the specified MODULE_MAP_DOMAIN. For example, where the MODULE_MAP_DOMAIN is 'VLE', then MOD_INSTANCE_ID and DOMAIN_MOD_INSTANCE_ID form a uniqueness constraint, so that each module instance in the UDD can have more than one reference in the VLE and vice versa; this might be relevant where the VLE contains references to different components of the same module with no over-arching VLE module record, or the VLE has material that relates directly to more than one module in the student record system. For institutions where MOD_INSTANCE_ID values linked to the VLE must be unique, see the [MODULE_VLE_MAP_MODE](udd/institution.md#module_vle_map_mode) property in the institution entity; this facility enables a MOD_INSTANCE_ID to link to one and only one module reference in the VLE, and it is specific only to the VLE.
+
 # module_subject
 ## Description of module_subject entity
 A module_subject describes the subject or subjects of study of a module, using a specified subject classification system.
@@ -53,6 +60,13 @@ A period describes an institution's official start date and end date of time sli
 # staff
 ## Description of staff entity
 A staff element identifies a member of staff at an institution.
+
+# staff_link
+
+## Description of staff_link entity
+A staff_link record makes a statement about a member of staff in relation to a property of another entity referenced by PROPERTY_NAME and PROPERTY_VALUE; for example, that a specific member of staff identified by STAFF_ID tutors a particular student identified by STUDENT_ID. The type of relationship is described in the RELATIONSHIP property, but the meaning of the relationship, and any functionality associated with it, is not prescribed in the UDD. Instead these are defined and controlled by the organisation responsible for a particular application, product or service identified in the SCOPE property. This entity enables the identification and linking of individual members of staff to single concrete entities (for example, a member of staff to a module_instance via MODULE_INSTANCE_ID), or to multiples (for example, for filtering by INST_TIER).
+
+Other organisations MAY use these RELATIONSHIPs, but no system behaviour should be inferred, except when using one of their own RELATIONSHIPs.
 
 # staff_on_course_instance
 ## Description of staff_on_course_instance entity

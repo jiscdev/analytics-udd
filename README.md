@@ -51,9 +51,11 @@ Some entities have uniqueness constraints across multiple properties; for exampl
 
 ### [module_instance](udd/module_instance.md)
 
+### [module_map](udd/module_map.md)
+
 ### [module_subject](udd/module_subject.md)
 
-### [module_vle_map](udd/module_vle_map.md)
+### [module_vle_map](udd/module_vle_map.md) Deprecated
 
 ### [student](udd/student.md)
 
@@ -72,9 +74,11 @@ Some entities have uniqueness constraints across multiple properties; for exampl
 
 ### [staff](udd/staff.md)
 
-### [staff_on_course_instance](udd/staff_on_course_instance.md)
+### [staff_on_course_instance](udd/staff_on_course_instance.md) Deprecated
 
-### [staff_on_mod_instance](udd/staff_on_mod_instance.md)
+### [staff_on_mod_instance](udd/staff_on_mod_instance.md) Deprecated
+
+### [staff_link](udd/staff_link.md)
 
 ### [student_id_map](udd/student_id_map.md)
 
@@ -91,10 +95,12 @@ See the [filename_conventions](implementation/filename_conventions.md) file for 
   <tr><td><a href="./udd/institution.md">institution</a></td><td>institution</td></tr>
   <tr><td><a href="./udd/module.md">module</a></td><td>module</td></tr>
   <tr><td><a href="./udd/module_instance.md">module_instance</a></td><td>moduleinstance</td></tr>
+  <tr><td><a href="./udd/module_map.md">module_subject</a></td><td>modulemap</td></tr>
   <tr><td><a href="./udd/module_subject.md">module_subject</a></td><td>modulesubject</td></tr>
   <tr><td><a href="./udd/module_vle_map.md">module_vle_map</a></td><td>modulevlemap</td></tr>
   <tr><td><a href="./udd/period.md">period</a></td><td>period</td></tr>
   <tr><td><a href="./udd/staff.md">staff</a></td><td>staff</td></tr> 
+  <tr><td><a href="./udd/staff_link.md">staff</a></td><td>stafflink</td></tr> 
   <tr><td><a href="./udd/staff_on_course_instance.md">staff_on_course_instance</a></td><td>staffcourseinstance</td></tr>
   <tr><td><a href="./udd/staff_on_mod_instance.md">staff_on_mod_instance</a></td><td>staffmoduleinstance</td></tr>
   <tr><td><a href="./udd/student.md">student</a></td><td>student</td></tr>

@@ -118,7 +118,7 @@ Seconds and milliseconds [:ss.mmm] are optional and will be zero filled where no
 2012-03-29T10:05:00.000Z
 ```
 ### Format
-Date and time in ISO 8601 format - YYYY-MM-DDThh:mm:ssZ
+Date and time in ISO 8601 format - YYYY-MM-DDThh:mm:ss.mmmZ
 
 ### Notes
 
@@ -146,7 +146,7 @@ Seconds and milliseconds [:ss.mmm] are optional and will be zero filled where no
 ```
 
 ### Format
-Date and time in ISO 8601 format - YYYY-MM-DDThh:mm:ssZ
+Date and time in ISO 8601 format - YYYY-MM-DDThh:mm:ss.mmmZ
 
 ### Notes
 

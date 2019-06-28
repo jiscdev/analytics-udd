@@ -141,10 +141,16 @@ To provide a clear indication of the date and time of when the data was supplied
 Provider
 
 ### Valid Values
-Date/time in ISO 8601 format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm
+Date/time in ISO 8601 format - YYYY-MM-DDThh:mm[:ss.mmm]Z
+
+Seconds and milliseconds [:ss.mmm] are optional and will be zero filled where not given. Examples:
+
+2012-03-29T10:05Z
+2012-03-29T10:05:00Z
+2012-03-29T10:05:00.000Z
 
 ### Format
-String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm
+String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z
 
 ### Notes
-Preferred format is YYYY-MM-DDThh:mmZ with the "Z" denoting local time zone. However, YYYY-MM-DDThh:mm is acceptable if the supplier does not hold the "Z". Do not insert "Z" if not held.
+Preferred format is YYYY-MM-DDThh:mm[:ss.mmm]Z with the "Z" denoting local time zone. However, YYYY-MM-DDThh:mm[:ss.mmm] is acceptable if the supplier does not hold the "Z". Do not insert "Z" if not held.

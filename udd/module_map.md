@@ -69,8 +69,6 @@ Jisc
 ### Valid values
 Any
 
-### References
-
 ### Format
 String (255)
 

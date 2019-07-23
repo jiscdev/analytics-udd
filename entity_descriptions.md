@@ -41,15 +41,18 @@ A module_instance is the specific offer of a module to students. It therefore ha
 # module_map
 
 ## Description
-A module_map links a module instance from a student record system with module information from another system specified by MODULE_MAP_DOMAIN, typically a VLE or timetable system. The module identifier in the other system is contained in DOMAIN_MOD_INSTANCE_ID.
+The module_map entity establishes an association between a module_instance and relevant information in another system. This association may be relatively fuzzy, in that the concepts on each side of the relationship may be different. However, the mapping might be used where the two IDs are in fact identical and relate to information about a single module.
 
-By default, MOD_INSTANCE_ID and DOMAIN_MOD_INSTANCE_ID form a uniqueness constraint within the specified MODULE_MAP_DOMAIN. For example, where the MODULE_MAP_DOMAIN is 'VLE', then MOD_INSTANCE_ID and DOMAIN_MOD_INSTANCE_ID form a uniqueness constraint, so that each module instance in the UDD can have more than one reference in the VLE and vice versa; this might be relevant where the VLE contains references to different components of the same module with no over-arching VLE module record, or the VLE has material that relates directly to more than one module in the student record system. For institutions where MOD_INSTANCE_ID values linked to the VLE must be unique, see the [MODULE_VLE_MAP_MODE](udd/institution.md#module_vle_map_mode) property in the institution entity; this facility enables a MOD_INSTANCE_ID to link to one and only one module reference in the VLE, and it is specific only to the VLE.
+A module_map links a module instance from a student record system with relevant information from another system specified by MODULE_MAP_DOMAIN, typically a VLE or timetable system. The associated identifier in the other system is contained in DOMAIN_MAPPED_ID.
+
+By default, MOD_INSTANCE_ID and DOMAIN_MAPPED_ID form a uniqueness constraint within the specified MODULE_MAP_DOMAIN. For example, where the MODULE_MAP_DOMAIN is 'VLE', then MOD_INSTANCE_ID and DOMAIN_MAPPED_ID form a uniqueness constraint, so that each module instance in the UDD can have more than one reference in the VLE and vice versa; this might be relevant where the VLE contains references to different components of the same module with no over-arching VLE module record, or the VLE has material that relates directly to more than one module in the student record system.
 
 # module_subject
 ## Description of module_subject entity
 A module_subject describes the subject or subjects of study of a module, using a specified subject classification system.
 
 # module_VLE_map
+This entity is DEPRECATED. Use module_map for preference.
 ## Description of module_VLE_map entity
 A module_VLE_map links a module in a student record system with module materials in a VLE.
 

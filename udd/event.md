@@ -45,7 +45,7 @@ Where a provider supplies only part of the EVENT_ID and the corresponding object
 Descriptive label for the event, using local parlance
 
 ### Purpose
-Human-readable identifier for the event.
+To provide a human-readable distinctive label for the event.
 
 ### Derivation
 Provider

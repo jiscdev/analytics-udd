@@ -20,7 +20,7 @@ An assessment_instance is any learning activity in a module, for which a student
 
 ## ASSESS_INSTANCE_ID
 ### Description
-An institution's unique identifier for an assessment_instance
+A provider's unique identifier for an assessment_instance
 
 ### Purpose
 To uniquely identify an assessment_instance, and to link it to other entities such as module instances.
@@ -67,7 +67,7 @@ Omitting this property may hinder the development or use of an effective analyti
 
 ## ASSESS_TYPE_RAW
 ### Description
-An institution's unique identifier for the type of assessment as defined in their student record system (e.g. CW for Coursework)
+A provider's unique identifier for the type of assessment as defined in their student record system (e.g. CW for Coursework)
 
 ### Purpose
 To provide information about the type of assessment.
@@ -86,7 +86,7 @@ Omitting this property may hinder the development or use of an effective analyti
 
 ## ASSESS_TYPE_RAW_NAME
 ### Description
-An institution's description for the type of assessment as defined in their student record system (e.g. Coursework).
+A provider's description for the type of assessment as defined in their student record system (e.g. Coursework).
 
 ### Purpose
 To provide information about the type of assessment.

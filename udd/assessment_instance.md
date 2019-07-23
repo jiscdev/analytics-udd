@@ -52,10 +52,10 @@ Jisc
 <tr><td>1</td><td>assignment or coursework</td><td></td><td>Individually submitted work</td></tr>
 <tr><td>2</td><td>exam</td><td></td><td>Individual written work under exam conditions</td></tr>
 <tr><td>3</td><td>group work or group discussion</td><td></td><td>Assessment of a group or participation in a group activity</td></tr>
-<tr><td>4</td><td>oral exam or viva voce</td><td></td><td>oral assessment</td></tr>
+<tr><td>4</td><td>oral exam or viva voce</td><td></td><td>Oral assessment</td></tr>
 <tr><td>5</td><td>practical or observation</td><td></td><td>Lab work, performance, demonstrated practical skill or competence</td></tr>
-<tr><td>6</td><td>presentation</td><td></td><td>a presentation by an individual</td></tr>
-<tr><td>7</td><td>project</td><td></td><td>individual project work</td></tr>
+<tr><td>6</td><td>presentation</td><td></td><td>Presentation by an individual</td></tr>
+<tr><td>7</td><td>project</td><td></td><td>Individual project work</td></tr>
 <tr><td>98</td><td>other</td><td></td><td>Type that does not fit into the above categories</td></tr>
 </table>
 

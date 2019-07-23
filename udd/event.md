@@ -212,7 +212,8 @@ Jisc
 String (255)
 
 ### Notes
-The list of event types represents common types seen in data. Where providers have different local types, these should be mapped to one of the event types in this list. The original value should be stored in EVENT_TYPE_RAW.
+The list of event types represents common types seen in data. Where providers have different local types, these should be mapped to one of the event types in this list. The original value should be stored in EVENT_TYPE_RAW.  
+If event type data is not supplied, this property should be omitted.
 
 ## EVENT_TYPE_RAW
 ### Description
@@ -231,3 +232,4 @@ Any
 String (255)
 
 ### Notes
+If event type data is not supplied, this property should be omitted.

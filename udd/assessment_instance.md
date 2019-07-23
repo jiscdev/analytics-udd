@@ -84,7 +84,7 @@ String (255)
 ### Notes
 Omitting this property may hinder the development or use of an effective analytics model.
 
-## ASSESS_TYPE_NAME_RAW
+## ASSESS_TYPE_RAW_NAME
 ### Description
 An institution's description for the type of assessment as defined in their student record system (e.g. Coursework).
 

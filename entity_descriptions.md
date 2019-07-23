@@ -40,7 +40,7 @@ A module_instance is the specific offer of a module to students. It therefore ha
 
 # module_map
 
-## Description
+## Description of module_map entity
 The module_map entity establishes an association between a module_instance and relevant information in another system. This association may be relatively fuzzy, in that the concepts on each side of the relationship may be different. However, the mapping might be used where the two IDs are in fact identical and relate to information about a single module.
 
 A module_map links a module instance from a student record system with relevant information from another system specified by MODULE_MAP_DOMAIN, typically a VLE or timetable system. The associated identifier in the other system is contained in DOMAIN_MAPPED_ID.

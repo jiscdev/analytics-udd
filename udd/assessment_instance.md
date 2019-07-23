@@ -1,10 +1,11 @@
 # assessment_instance
 * [ASSESS_INSTANCE_ID](#assess_instance_id) [1] **
 * [MOD_INSTANCE_ID](module_instance.md#mod_instance_id) [1] 
-* [ASSESS_TYPE_ID](#assess_type_id) [0..1]
-* [ASSESS_TYPE_NAME](#assess_type_name) [0..1]
+* [ASSESS_TYPE](#assess_type) [0..1]
+* [ASSESS_TYPE_RAW](#assess_type_raw) [0..1]
+* [ASSESS_TYPE_RAW_NAME](#assess_type_raw_name) [0..1]
 * [ASSESS_DETAIL](#assess_detail) [0..1]
-* [ASSESS_SUMMATIVE](#assess_summative) [0..1]
+* [ASSESS_SUMMATIVE](#assess_summative) [1]
 * [ASSESS_WEIGHT](#assess_weight) [0..1]
 * [MAX_MARKS](#max_marks) [0..1]
 * [MOD_ACADEMIC_YEAR](module_instance.md#mod_academic_year) [1]
@@ -15,7 +16,7 @@
 API endpoint name: **assessmentinstance**
 
 ## Description of assessment_instance entity
-An assessment_instance is any learning activity in a module, for which a student receives a grade and/or mark. The assumption is that grades and/or marks in assessment_instances are summative.
+An assessment_instance is any learning activity in a module, for which a student receives a grade and/or mark. The assumption is that most grades or marks in assessment_instances are summative, but there is provision through the ASSESS_SUMMATIVE property to indicate that a grade or mark is not summative.
 
 ## ASSESS_INSTANCE_ID
 ### Description
@@ -35,8 +36,36 @@ String (255)
 
 ### Notes
 
+## ASSESS_TYPE
+### Description
+The standardised UDD classification for the type of assessment
 
-## ASSESS_TYPE_ID
+### Purpose
+To provide standardised information about the type of assessment for filtering and analysis.
+
+### Derivation
+Jisc
+
+### Valid Values
+<table>
+<tr><td>ASSESS_TYPE</td><td>DESCRIPTION (ENGLISH)</td><td>DESCRIPTION (WELSH)</td><td>DEFINITION</td></tr>
+<tr><td>1</td><td>assignment or coursework</td><td></td><td>Individually submitted work</td></tr>
+<tr><td>2</td><td>exam</td><td></td><td>Individual written work under exam conditions</td></tr>
+<tr><td>3</td><td>group work or group discussion</td><td></td><td>Assessment of a group or participation in a group activity</td></tr>
+<tr><td>4</td><td>oral exam or viva voce</td><td></td><td>oral assessment</td></tr>
+<tr><td>5</td><td>practical or observation</td><td></td><td>Lab work, performance, demonstrated practical skill or competence</td></tr>
+<tr><td>6</td><td>presentation</td><td></td><td>a presentation by an individual</td></tr>
+<tr><td>7</td><td>project</td><td></td><td>individual project work</td></tr>
+<tr><td>98</td><td>other</td><td></td><td>Type that does not fit into the above categories</td></tr>
+</table>
+
+### Format
+String (255)
+
+### Notes
+Omitting this property may hinder the development or use of an effective analytics model.
+
+## ASSESS_TYPE_RAW
 ### Description
 An institution's unique identifier for the type of assessment as defined in their student record system (e.g. CW for Coursework)
 
@@ -55,7 +84,7 @@ String (255)
 ### Notes
 Omitting this property may hinder the development or use of an effective analytics model.
 
-## ASSESS_TYPE_NAME
+## ASSESS_TYPE_NAME_RAW
 ### Description
 An institution's description for the type of assessment as defined in their student record system (e.g. Coursework).
 
@@ -109,11 +138,13 @@ Jisc
 <tr><td>1</td><td>Yes; summative</td><td>Ie</td></tr>
 <tr><td>2</td><td>No; not summative</td><td>Na</td></tr>
 </table> 
+Default value: 1
 
 ### Format
 String (255)
 
 ### Notes
+This property is mandatory, and the default value is 1.
 
 ## ASSESS_WEIGHT
 ### Description

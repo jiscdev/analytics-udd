@@ -4,6 +4,7 @@
 * [ASSESS_TYPE_ID](#assess_type_id) [0..1]
 * [ASSESS_TYPE_NAME](#assess_type_name) [0..1]
 * [ASSESS_DETAIL](#assess_detail) [0..1]
+* [ASSESS_SUMMATIVE](#assess_summative) [0..1]
 * [ASSESS_WEIGHT](#assess_weight) [0..1]
 * [MAX_MARKS](#max_marks) [0..1]
 * [MOD_ACADEMIC_YEAR](module_instance.md#mod_academic_year) [1]
@@ -91,6 +92,28 @@ String (255)
 
 ### Notes
 Omitting this property could impair the functionality of analytics applications such as student apps or dashboards.
+
+## ASSESS_SUMMATIVE
+### Description
+Indicates whether or not the assessment_instance is summative.
+
+### Purpose
+To provide information about the assessment.
+
+### Derivation
+Jisc
+
+### Valid Values
+<table>
+<tr><td>ASSESS_SUMMATIVE</td><td>DESCRIPTION(ENGLISH)</td><td>DESCRIPTION(WELSH)</td></tr>
+<tr><td>1</td><td>Yes; summative</td><td>Ie</td></tr>
+<tr><td>2</td><td>No; not summative</td><td>Na</td></tr>
+</table> 
+
+### Format
+String (255)
+
+### Notes
 
 ## ASSESS_WEIGHT
 ### Description

@@ -5,7 +5,7 @@
 * [ASSESS_TYPE_RAW](#assess_type_raw) [0..1]
 * [ASSESS_TYPE_RAW_NAME](#assess_type_raw_name) [0..1]
 * [ASSESS_DETAIL](#assess_detail) [0..1]
-* [ASSESS_SUMMATIVE](#assess_summative) [1]
+* [ASSESS_SUMMATIVE](#assess_summative) [0..1]
 * [ASSESS_WEIGHT](#assess_weight) [0..1]
 * [MAX_MARKS](#max_marks) [0..1]
 * [MOD_ACADEMIC_YEAR](module_instance.md#mod_academic_year) [1]
@@ -16,7 +16,9 @@
 API endpoint name: **assessmentinstance**
 
 ## Description of assessment_instance entity
-An assessment_instance is any learning activity in a module, for which a student receives a grade and/or mark. The assumption is that most grades or marks in assessment_instances are summative, but there is provision through the ASSESS_SUMMATIVE property to indicate that a grade or mark is not summative.
+An assessment_instance is any learning activity in a module, for which a student receives a grade and/or mark.
+
+The assumption is that most grades or marks in assessment_instances are summative, and this is the default position. There is provision through the ASSESS_SUMMATIVE property to indicate that a grade or mark is not summative.
 
 ## ASSESS_INSTANCE_ID
 ### Description
@@ -138,13 +140,12 @@ Jisc
 <tr><td>1</td><td>Yes; summative</td><td>Ie</td></tr>
 <tr><td>2</td><td>No; not summative</td><td>Na</td></tr>
 </table> 
-Default value: 1
 
 ### Format
 String (255)
 
 ### Notes
-This property is mandatory, and the default value is 1.
+Unless ASSESS_SUMMATIVE has a value of '2', grades or marks are presumed to be summative. Setting ASSESS_SUMMATIVE to a value of '1' confirms that grades or marks are summative. If ASSESS_SUMMATIVE is missing, it will be assumed that the grades or marks are summative.
 
 ## ASSESS_WEIGHT
 ### Description

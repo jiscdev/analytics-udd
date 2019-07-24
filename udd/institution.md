@@ -2,7 +2,7 @@
 * [TENANT_ID](#tenant_id) [1] **
 * [TENANT_NAME](#tenant_name) [0..1]
 * [UDD_VERSION](#udd_version) [1]
-* [MODULE_VLE_MAP_MODE](#module_vle_map_mode) [0..1]
+* [MODULE_VLE_MAP_MODE](#module_vle_map_mode) [0..1] Deprecated
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
@@ -68,6 +68,7 @@ String (8)
 Value will be the current version number of the UDD preceded by "v".  Example: if the data uses UDD v1.4.0, value will "v1.4.0".
 
 ## MODULE_VLE_MAP_MODE
+Deprecated; use module_map in preference.
 ### Description
 This property enables an institution to specify the type of relationship between the module_instance in the Student Record System and module information in the VLE, identified by MOD_INSTANCE_ID and VLE_MOD_ID respectively. By default, MOD_INSTANCE_ID plus VLE_MOD_ID form a unique constraint in module_VLE_map, which supports a many-to-many relationship between them.
 

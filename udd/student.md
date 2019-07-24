@@ -279,7 +279,6 @@ Please Note - N/A denotes that no mapping value is applicable and the ETHNICITY 
 
 ### Notes
 If ethnicity data is not supplied, this property should be omitted.
-Omitting this property may hinder the development or use of an effective analytics model.
 
 ## SEXID
 ### Description
@@ -308,7 +307,6 @@ Please Note - N/A denotes that no mapping value is applicable and the SEXID prop
 
 ### Notes
 If sexid data is not supplied, this property should be omitted.
-Omitting this property may hinder the development or use of an effective analytics model.
 
 ## DIFFLEARN1
 
@@ -359,7 +357,6 @@ String (255)
 
 ### Notes
 If a learner's learning difficulty is unknown, then code '1' should be used for those cases.
-Omitting this property may hinder the development or use of an effective analytics model.
 
 ## DIFFLEARN2
 
@@ -410,7 +407,6 @@ String (255)
 
 ### Notes
 If a learner's learning difficulty is unknown, then code '1' should be used for those cases.
-Omitting this property may hinder the development or use of an effective analytics model.
 
 ## DOMICILE
 ### Description

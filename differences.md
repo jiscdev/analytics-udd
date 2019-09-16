@@ -1,4 +1,4 @@
-# Differences between UDD 1.3.3 and 1.4.0
+# Differences between UDD 1.4.1 and 1.5.0
 
 The following spreadsheets give an overview of all the changes that were introduced with version 1.4 of the UDD. A blank cell indicates that a property is no longer used, green indicates a new property, and orange a changed property. 
 
@@ -10,7 +10,12 @@ The following spreadsheets give an overview of all the changes that were introdu
 
 [differences2XLS]: media/UDD1.4.0-1.4.1.xls "differences2XLS"
 
+[xls spreadsheet of 1.4.0 to 1.4.1 changes][differences2XLS]
+
+[differences2XLS]: media/UDD1.4.1-1.5.0.xls "differences2XLS"
+
 ## Summary of differences
+
 
 In summary, v1.4.0 release of UDD implemented the following, compared to v1.3.3:
 
@@ -41,3 +46,16 @@ In summary, v1.4.0 release of UDD implemented the following, compared to v1.3.3:
 - New event and student_event entities added
 - New UDD Field Guide introduced and old template removed
 - New E-R diagrams and updated change spreadsheet created
+
+## Summary of differences between v1.4.1 and v1.5.0
+
+- staff_link: new entity created; TUTOR_STAFF_ID on student deprecated, staff_on_course_instance deprecated; staff_on_mod_instance deprecated
+- filename_conventions.md: student_event corrected to studentevent
+- ISO 8601 formats updated to YYYY-MM-DDThh:mm[:ss.mmm]Z
+- student_on_course_instance.md: new property FTE added
+- course_instance.md: new property COMMENCEMENT_PERIOD added; PERIOD_CODE on period updated to refer to COMMENCEMENT_PERIOD
+- Field Guide: ‘Preferred’ removed from student.ETHNICITY, SEXID, DIFFLEARN1 and DIFFLEARN2 for Predictive Analytics
+- module_map: new entity created; module_vle_map deprecated
+- entity_descriptions.md: updated for new entities
+- event: extensively revised; Description clarified; EVENT_ID description clarified; EVENT_NAME changed to optional; new properties 
+- EVENT_DATA_SOURCE EVENT_TYPE_RAW added; ISO 8601 formats revised for EVENT_START and EVENT_END; EVENT_LOCATION Description and Purpose modified

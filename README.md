@@ -1,6 +1,6 @@
-# Jisc Learning Analytics Unified Data Definitions v1.5 (development branch for next major release)
+# Jisc Learning Analytics Unified Data Definitions v1.5.0
 
-_Version 1.5 is a development version, not yet released._
+_Version 1.5.0 released on 30 September 2019._
 
 ## Introduction
 The Unified Data Definitions (UDD) of the Jisc learning analytics project is a vocabulary of the chief data entities of interest to learning analytics: students, courses, modules, and so on, as well as their characteristics. The data coded with this vocabulary is typically extracted from the student record system of a college or university.
@@ -19,8 +19,8 @@ In addition to the main folder, there are 4 sub-folders. The udd sub-folder is t
 
 For release schedule and version control, see [below](README.md#release-schedule-and-version-control).
 
-## Differences between v1.3 and v1.4
-The development of v1.4 has involved a number of additions and changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between v1.3.3 and v1.4.0. There is also a spreadsheet listing changes between v1.4.0 and v1.4.1.
+## Differences between v1.4 and v1.5
+The development of v1.5 has involved a number of additions and changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between v1.4.1 and v1.5.0.
 
 ## Data format
 UDD data must be UTF-8 encoded. TSV is the preferred data format, but JSON and XML data are also supported. Other formats are not supported.
@@ -148,7 +148,7 @@ Particular release versions will get their own branches, but the master branch w
 
 Versioning is done broadly as follows: (majorVersion.minorVersion.patch) major versions indicate major data model changes. Minor versions denote changes that can break applications, such as the deletion of properties that were valid in earlier versions. Patches can include the addition of new properties.
 
-There will usually be a new minor version with breaking changes available for use in June of each year, in time for the next academic year. For example, from version 1.4 to version 1.5 in June/July 2019 for the 2019-20 academic year.
+There will usually be a new minor version with breaking changes available for use in June of each year, in time for the next academic year. For example, from version 1.5 to version 1.6 in the summer of 2020 for the 2020-21 academic year.
 
 All version changes will be announced in advance on the repository issue tracker and in this README file.
 
@@ -168,6 +168,7 @@ Many thanks to all contributors who have raised issues, sent pull requests, comm
 - @gryglbrt
 - @ht2 
 - @huwrobertsjisc
+- @Josh-Ring-jisc
 - @jfmullaney
 - @michaelwebjisc
 - @MiroslavKratchounov

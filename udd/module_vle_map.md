@@ -1,4 +1,5 @@
 # module_VLE_map
+This entity is DEPRECATED. Use module_map for preference.
 
 * [MODULE_VLE_MAP_ID](#module_vle_map_id) **
 * [MOD_INSTANCE_ID](module_instance.md#mod_instance_id) [1] *

@@ -2,13 +2,15 @@
     "assessment_instance": {
         "ASSESS_DETAIL": "String (255)",
         "ASSESS_INSTANCE_ID": "String (255)",
-        "ASSESS_TYPE_ID": "String (255)",
-        "ASSESS_TYPE_NAME": "String (255)",
+        "ASSESS_TYPE": "String (255)",
+        "ASSESS_TYPE_RAW": "String (255)",
+        "ASSESS_TYPE_RAW_NAME": "String (255)",
+        "ASSESS_SUMMATIVE": "String (255)",
         "ASSESS_WEIGHT": "Decimal",
         "MOD_INSTANCE_ID": "String (255)",
         "MOD_ACADEMIC_YEAR": "Int",
         "MAX_MARKS": "Decimal",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm"
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z"
     },
     "course": {
         "AWARDING_BODY": "String (255)",
@@ -17,17 +19,17 @@
         "INST_TIER_1": "String (255)",
         "INST_TIER_2": "String (255)",
         "INST_TIER_3": "String (255)",
-        "SUBJECT": "String (10) - For JACS3: 4 characters, capital letter followed by three digits",
         "TENANT_ID": "String (8)",
         "TITLE": "String (255)",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm"
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z"
     },
     "course_instance": {
         "ACADEMIC_YEAR": "Int",
+        "COMMENCEMENT_PERIOD": "String (255)",
         "COURSE_INSTANCE_ID": "String (255)",
         "COURSE_ID": "String (255)",
         "END_DATE": "String in ISO 8601 Date extended format - YYYY-MM-DD",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "START_DATE": "String in ISO 8601 Date extended format - YYYY-MM-DD"
     },
     "course_subject": {
@@ -35,28 +37,29 @@
         "COURSE_SUBJECT_ID": "String (255)",
         "ENCODING_ID": "String (255)",
         "PROPORTION": "Decimal",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "SEQUENCE_ID": "Integer",
         "SUBJECT_ID": "String (10) - JACS: 4 characters, number followed by three digits; HECoS: 6 digits",
         "SUBJECT_LABEL": "String (255)"
     },
     "event": {
         "COURSE_INSTANCE_ID": "String (255)",
+        "EVENT_DATA_SOURCE": "String (255)",
         "EVENT_DESCRIPTION": "String (255)",
-        "EVENT_END": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm",
+        "EVENT_END": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "EVENT_ID": "String (255)",
         "EVENT_LOCATION": "String (255)",
         "EVENT_NAME": "String (255)",
-        "EVENT_START": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm",
+        "EVENT_START": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "EVENT_TYPE": "String (255)",
         "EVENT_TYPE_RAW": "String (255)",
         "MOD_INSTANCE_ID": "String (255)",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mmZ or YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "ROOM_ID": "String (255)"
     },
     "institution": {
         "MODULE_VLE_MAP_MODE": "Int",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "TENANT_ID": "String (8)",
         "TENANT_NAME": "String (255)",
         "UDD_VERSION": "String (8)"
@@ -68,7 +71,7 @@
         "MOD_LEVEL": "String (1)",
         "MOD_NAME": "String (255)",
         "MOD_SUBJECT": "String (255) - For JACS3: 4 characters, capital letter followed by three digits",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm"
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z"
     },
     "module_instance": {
         "MOD_ACADEMIC_YEAR": "Int",
@@ -77,14 +80,21 @@
         "MOD_LOCATION": "String (255)",
         "MOD_ONLINE": "String (255)",
         "MOD_PERIOD": "String (255)",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm"
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z"
     },
+    "module_map": {
+    	"DOMAIN_MAPPED_ID": "String (255)",
+        "MOD_INSTANCE_ID": "String (255)",
+        "MODULE_MAP_DOMAIN": "String (255)",
+        "MODULE_MAP_ID": "String (255)",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z"
+    },    
     "module_subject": {
         "ENCODING_ID": "String (255)",
         "MOD_ID": "String (255)",
         "MODULE_SUBJECT_ID": "String (255)",
         "PROPORTION": "Decimal",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "SEQUENCE_ID": "Integer",
         "SUBJECT_ID": "String (10) - JACS: 4 characters, number followed by three digits; HECoS: 6 digits",
         "SUBJECT_LABEL": "String (255)"
@@ -92,7 +102,7 @@
     "module_VLE_map": {
         "MOD_INSTANCE_ID": "String (255)",
         "MODULE_VLE_MAP_ID": "String(255)",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "VLE_MOD_ID": "String(255)"
     },
     "period": {
@@ -102,7 +112,7 @@
         "PERIOD_ID": "String (255)",
         "PERIOD_NAME": "String (255)",
         "PERIOD_START_DATE": "String in ISO 8601 Date extended format - YYYY-MM-DD",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm"
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z"
     },
     "staff": {
         "DASH_SHIB_ID": "String (255)",
@@ -110,19 +120,28 @@
         "HESA_STAFF_ID": "String (13)",
         "LAST_NAME": "String (255)",
         "PRIMARY_EMAIL_ADDRESS": "String (255)",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "STAFF_ID": "String (255)",
         "TITLE": "String (255)"
     },
+    "staff_link": {
+    	"PROPERTY_NAME": "String (255)",
+    	"PROPERTY_VALUE": "String (255)",
+    	"PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
+    	"RELATIONSHIP": "String (255)",
+    	"SCOPE": "String (255)",
+    	"STAFF_ID": "String (255)",
+    	"STAFF_LINK_ID": "String (255)"
+    },
     "staff_on_course_instance": {
         "COURSE_INSTANCE_ID": "String (255)",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "STAFF_ID": "String (255)",
         "STAFF_ON_COURSE_INSTANCE_ID": "String (255)"
     },
     "staff_on_mod_instance": {
         "MOD_INSTANCE_ID": "String (255)",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "STAFF_ID": "String (255)",
         "STAFF_ON_MOD_INSTANCE_ID": "String (255)"
     },
@@ -148,7 +167,7 @@
         "PHOTO_URL": "GIF or JPG (exact list of formats, and ideal (minimum) photo resolution, to be confirmed)",
         "POSTCODE": "String (10)",
         "PRIMARY_EMAIL_ADDRESS": "String (255)",
-        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm",
+        "PROVIDED_AT": "String in ISO 8601 date and time format - YYYY-MM-DDThh:mm[:ss.mmm]Z",
         "SEXID": "String (255)",
         "SOCIO_EC": "String (255)",
         "STUDENT_ID": "String (255)",
@@ -163,6 +182,7 @@
         "ATTAINMENT_TARGET_GRADE": "String (255)",
         "ATTAINMENT_TARGET_MARK": "Decimal",
         "AVERAGE_GCSE_SCORE": "Int",
+        "CARELEAVER": "String (255)",
         "COHORT_ID": "String (255)",
         "COURSE_AIM_ATTAINED": "String (255)",
         "COURSE_DURATION": "Int",
@@ -260,6 +280,7 @@
         "ACADEMIC_YEAR": "Int",
         "COURSE_INSTANCE_ID": "String (255)",
         "COURSE_LOCATION": "String (255)",
+        "FTE": "Decimal",
         "LOCATION_OF_STUDY": "String (255)",
         "MODE": "String (255)",
         "PROGRESSION": "String (255)",

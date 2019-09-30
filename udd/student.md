@@ -25,7 +25,7 @@
 * [HOME_PHONE](#home_phone) [0..1]
 * [MOBILE_PHONE](#mobile_phone) [0..1]
 * [PHOTO_URL](#photo_url) [0..1]
-* [TUTOR_STAFF_ID](#tutor_staff_id) [0..1]
+* [TUTOR_STAFF_ID](#tutor_staff_id) [0..1] (deprecated)
 * [ENTRY_POSTCODE](#entry_postcode) [0..1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
@@ -279,7 +279,6 @@ Please Note - N/A denotes that no mapping value is applicable and the ETHNICITY 
 
 ### Notes
 If ethnicity data is not supplied, this property should be omitted.
-Omitting this property may hinder the development or use of an effective analytics model.
 
 ## SEXID
 ### Description
@@ -308,7 +307,6 @@ Please Note - N/A denotes that no mapping value is applicable and the SEXID prop
 
 ### Notes
 If sexid data is not supplied, this property should be omitted.
-Omitting this property may hinder the development or use of an effective analytics model.
 
 ## DIFFLEARN1
 
@@ -359,7 +357,6 @@ String (255)
 
 ### Notes
 If a learner's learning difficulty is unknown, then code '1' should be used for those cases.
-Omitting this property may hinder the development or use of an effective analytics model.
 
 ## DIFFLEARN2
 
@@ -410,7 +407,6 @@ String (255)
 
 ### Notes
 If a learner's learning difficulty is unknown, then code '1' should be used for those cases.
-Omitting this property may hinder the development or use of an effective analytics model.
 
 ## DOMICILE
 ### Description
@@ -2146,6 +2142,7 @@ This assumes that there is a way of securing access to the photo.
 ## TUTOR_STAFF_ID
 ### Description
 This is the unique identification number for the learner's academic or course year supervisor/ tutor, or alternatively the id of the contact who will be responsible for handling Learning Analytics alerts and notification regarding the student.
+This property is deprecated.
 
 ### Purpose
 For notification and alerts purposes for Learning Analytics SSP and other software tools
@@ -2160,6 +2157,7 @@ String (255)
 
 ### Notes
 This will be the unique identifier/ primary key for the member of staff who is responsible for the student (course/ year tutor) or the person responsible for receiving alerts and notifications from the Learning Analytics software suite/ tools. This will typically be the staff/ HR/ payroll number for the member of academic staff, which links to their email address in the institutions identity management system.
+This property is deprecated. Use the staff_link entity instead, if possible.
 
 ## ENTRY_POSTCODE
 ### Description.

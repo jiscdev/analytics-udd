@@ -1,6 +1,6 @@
-# Jisc Learning Analytics Unified Data Definitions v1.4.2 
+# Jisc Learning Analytics Unified Data Definitions v1.5.0
 
-_Version 1.4.2 released 30 September 2019 (Note: for preference, use v1.5.0 also released 30 September 2019)._
+_Version 1.5.0 released on 30 September 2019._
 
 ## Introduction
 The Unified Data Definitions (UDD) of the Jisc learning analytics project is a vocabulary of the chief data entities of interest to learning analytics: students, courses, modules, and so on, as well as their characteristics. The data coded with this vocabulary is typically extracted from the student record system of a college or university.
@@ -19,8 +19,8 @@ In addition to the main folder, there are 4 sub-folders. The udd sub-folder is t
 
 For release schedule and version control, see [below](README.md#release-schedule-and-version-control).
 
-## Differences between v1.3 and v1.4
-The development of v1.4 has involved a number of additions and changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between v1.3.3 and v1.4.0. There is also a spreadsheet listing changes between v1.4.0 and v1.4.1.
+## Differences between v1.4 and v1.5
+The development of v1.5 has involved a number of additions and changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between v1.4.1 and v1.5.0.
 
 ## Data format
 UDD data must be UTF-8 encoded. TSV is the preferred data format, but JSON and XML data are also supported. Other formats are not supported.
@@ -51,9 +51,11 @@ Some entities have uniqueness constraints across multiple properties; for exampl
 
 ### [module_instance](udd/module_instance.md)
 
+### [module_map](udd/module_map.md)
+
 ### [module_subject](udd/module_subject.md)
 
-### [module_vle_map](udd/module_vle_map.md)
+### [module_vle_map](udd/module_vle_map.md) Deprecated
 
 ### [student](udd/student.md)
 
@@ -72,9 +74,11 @@ Some entities have uniqueness constraints across multiple properties; for exampl
 
 ### [staff](udd/staff.md)
 
-### [staff_on_course_instance](udd/staff_on_course_instance.md)
+### [staff_on_course_instance](udd/staff_on_course_instance.md) Deprecated
 
-### [staff_on_mod_instance](udd/staff_on_mod_instance.md)
+### [staff_on_mod_instance](udd/staff_on_mod_instance.md) Deprecated
+
+### [staff_link](udd/staff_link.md)
 
 ### [student_id_map](udd/student_id_map.md)
 
@@ -91,10 +95,12 @@ See the [filename_conventions](implementation/filename_conventions.md) file for 
   <tr><td><a href="./udd/institution.md">institution</a></td><td>institution</td></tr>
   <tr><td><a href="./udd/module.md">module</a></td><td>module</td></tr>
   <tr><td><a href="./udd/module_instance.md">module_instance</a></td><td>moduleinstance</td></tr>
+  <tr><td><a href="./udd/module_map.md">module_map</a></td><td>modulemap</td></tr>
   <tr><td><a href="./udd/module_subject.md">module_subject</a></td><td>modulesubject</td></tr>
   <tr><td><a href="./udd/module_vle_map.md">module_vle_map</a></td><td>modulevlemap</td></tr>
   <tr><td><a href="./udd/period.md">period</a></td><td>period</td></tr>
   <tr><td><a href="./udd/staff.md">staff</a></td><td>staff</td></tr> 
+  <tr><td><a href="./udd/staff_link.md">staff_link</a></td><td>stafflink</td></tr> 
   <tr><td><a href="./udd/staff_on_course_instance.md">staff_on_course_instance</a></td><td>staffcourseinstance</td></tr>
   <tr><td><a href="./udd/staff_on_mod_instance.md">staff_on_mod_instance</a></td><td>staffmoduleinstance</td></tr>
   <tr><td><a href="./udd/student.md">student</a></td><td>student</td></tr>
@@ -142,7 +148,7 @@ Particular release versions will get their own branches, but the master branch w
 
 Versioning is done broadly as follows: (majorVersion.minorVersion.patch) major versions indicate major data model changes. Minor versions denote changes that can break applications, such as the deletion of properties that were valid in earlier versions. Patches can include the addition of new properties.
 
-There will usually be a new minor version with breaking changes available for use in June of each year, in time for the next academic year. For example, from version 1.4 to version 1.5 in June 2019 for the 2019-20 academic year.
+There will usually be a new minor version with breaking changes available for use in June of each year, in time for the next academic year. For example, from version 1.5 to version 1.6 in the summer of 2020 for the 2020-21 academic year.
 
 All version changes will be announced in advance on the repository issue tracker and in this README file.
 
@@ -162,6 +168,7 @@ Many thanks to all contributors who have raised issues, sent pull requests, comm
 - @gryglbrt
 - @ht2 
 - @huwrobertsjisc
+- @Josh-Ring-jisc
 - @jfmullaney
 - @michaelwebjisc
 - @MiroslavKratchounov

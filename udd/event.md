@@ -87,12 +87,19 @@ Specifies the planned start date and time of the event
 Provider
 
 ### Valid Values
-Date and time in ISO 8601 format - YYYY-MM-DDThh:mm:ssZ
+Date and time in ISO 8601 format - YYYY-MM-DDThh:mm[:ss.mmm]Z  
+Seconds and milliseconds [:ss.mmm] are optional and will be zero filled where not given (see examples in Notes).
 
 ### Format
-Date and time in ISO 8601 format - YYYY-MM-DDThh:mm:ssZ
+Date and time in ISO 8601 format - YYYY-MM-DDThh:mm[:ss.mmm]Z
 
 ### Notes
+Examples: 
+```
+2012-03-29T10:05Z
+2012-03-29T10:05:00Z
+2012-03-29T10:05:00.000Z
+```
 
 ## EVENT_END
 
@@ -106,12 +113,19 @@ Specifies the planned end date and time of the event
 Provider
 
 ### Valid Values
-Date and time in ISO 8601 format - YYYY-MM-DDThh:mm:ssZ
+Date and time in ISO 8601 format - YYYY-MM-DDThh:mm[:ss.mmm]Z  
+Seconds and milliseconds [:ss.mmm] are optional and will be zero filled where not given (see examples in Notes).
 
 ### Format
-Date and time in ISO 8601 format - YYYY-MM-DDThh:mm:ssZ
+Date and time in ISO 8601 format - YYYY-MM-DDThh:mm[:ss.mmm]Z
 
 ### Notes
+Examples: 
+```
+2012-03-29T10:05Z
+2012-03-29T10:05:00Z
+2012-03-29T10:05:00.000Z
+```
 
 ## EVENT_LOCATION
 ### Description

@@ -5,6 +5,7 @@
 * [COURSE_INSTANCE_ID](course_instance.md#course_instance_id) [1] *
 * [STUDENT_ID](student.md#student_id) [1]
 * [MODE](#mode) [0..1]
+* [FTE](#fte) [0..1)
 * [YEAR_PRG](#year_prg) [0..1]
 * [YEAR_STU](#year_stu) [0..1]
 * [COURSE_LOCATION](#course_location) [0..1]
@@ -251,6 +252,27 @@ Yes (if applicable)
 Mapping based on HESA codeset, and ILE (FE) initial mapping suggested above on ILR field 'PlanLearnHours'. HESA 2015 'mode' does not have code 98, but HESA 2016 'mode' does.
 Omitting this property may hinder the development or use of an effective analytics model.
 
+## FTE
+### Description
+This property holds the student FTE, representing the provider's best academic judgement of the full-time equivalence of the student during the period of this course_instance.
+
+### Purpose
+To describe the student's study load as a proportion of the load of a full-time student studying a full year of a full-time course. Full-time, full year students would normally be recorded as 100 and part-time students recorded as a proportion of an equivalent full-time course.
+
+### Derivation
+HESA: https://www.hesa.ac.uk/collection/c18051/a/stuload
+
+### Valid values
+0-300
+The value can be recorded to one decimal place.
+
+### Format
+Decimal
+
+### Notes
+See also HESA's notes on calculating fte values: https://www.hesa.ac.uk/collection/c18051/fte.
+
+The provider should record the HESA STULOAD value in FTE, if available. If STULOAD is not available, then providers should use their best calculation, so that FTE contains a reasonable approximation of full-time equivalence for the student.
 
 ## YEAR_PRG
 ### Description

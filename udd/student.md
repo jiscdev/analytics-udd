@@ -27,6 +27,7 @@
 * [PHOTO_URL](#photo_url) [0..1]
 * [TUTOR_STAFF_ID](#tutor_staff_id) [0..1] (deprecated)
 * [ENTRY_POSTCODE](#entry_postcode) [0..1]
+* [CARELEAVER](#careleaver) [0..1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
@@ -2177,3 +2178,32 @@ String (10)
 
 ### Notes
 HESA's fields only include UK domiciled students, whereas UDD may require overseas postal codes.  Therefore, this property has been extended to 10 characters and any valid values.
+
+## CARELEAVER
+### Description
+Whether the student is a care leaver.
+
+### Purpose
+For analytics
+
+### Derivation
+https://www.hesa.ac.uk/collection/c19051/a/careleaver
+
+### Valid Values & Mappings
+<table>
+<tr><td>CARELEAVER</td><td>DESCRIPTION (ENGLISH)</td><td>DESCRIPTION (WELSH)</td><td>HESA (CARELEAVER)</td></tr>
+<tr><td>01</td><td>Care leaver (16+)</td><td></td><td>01</td></tr>
+<tr><td>02</td><td>Looked after in Scotland</td><td></td><td>02</td></tr>
+<tr><td>03</td><td>In care in the rest of UK</td><td></td><td>03</td></tr>
+<tr><td>04</td><td>UCAS defined care leaver</td><td></td><td>04</td></tr>
+<tr><td>05</td><td>Not a care leaver</td><td></td><td>05</td></tr>
+<tr><td>98</td><td>Information refused</td><td></td><td>98</td></tr>
+<tr><td>99</td><td>Not known</td><td></td><td>99</td></tr>
+</table>  
+
+### Format
+String (255)
+
+### Notes
+
+This property is identical to the HESA CARELEAVER field. Please refer to the link https://www.hesa.ac.uk/collection/c19051/a/careleaver for definitions, details of coverage and other information about this data.

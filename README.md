@@ -1,6 +1,6 @@
-# Jisc Learning Analytics Unified Data Definitions v1.5.1_development (development version)
+# Jisc Learning Analytics Unified Data Definitions v1.5.1
 
-_Version 1.5.1_development created on 30 September 2019 and not yet released. This version holds non-breaking changes to the current v1.5.0 release._
+_Version 1.5.1 released on 29 October 2019._
 
 ## Introduction
 The Unified Data Definitions (UDD) of the Jisc learning analytics project is a vocabulary of the chief data entities of interest to learning analytics: students, courses, modules, and so on, as well as their characteristics. The data coded with this vocabulary is typically extracted from the student record system of a college or university.
@@ -20,7 +20,7 @@ In addition to the main folder, there are 4 sub-folders. The udd sub-folder is t
 For release schedule and version control, see [below](README.md#release-schedule-and-version-control).
 
 ## Differences between v1.4 and v1.5
-The development of v1.5 has involved a number of additions and changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between v1.4.1 and v1.5.0.
+The development of v1.5 has involved a number of additions and changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between v1.4.1 and v1.5.1.
 
 ## Data format
 UDD data must be UTF-8 encoded. TSV is the preferred data format, but JSON and XML data are also supported. Other formats are not supported.

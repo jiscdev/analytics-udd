@@ -124,10 +124,6 @@ String (255)
 
 ### Notes
 For a retake in the same academic year, use MOD_RETAKE, not this property. MOD_TRAILING is a sub-set of MOD_RETAKE; if MOD_TRAILING is set to "1", then MOD_RETAKE must also be set to "1". A re-take or re-sit (indicated by MOD_RETAKE) may happen in the same academic year as the original module instance. MOD_TRAILING only happens when the student takes the trailing module alongside continuing modules in the next academic year.
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 
 ## MOD_START_DATE
 ### Description

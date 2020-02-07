@@ -17,9 +17,11 @@ Use the following filenames, all lower case.  The first part of each filename re
 - module.tsv
 - moduleinstance.tsv
 - modulesubject.tsv
+- modulemap.tsv
 - modulevlemap.tsv
 - period.tsv
 - staff.tsv
+- stafflink.tsv
 - staffcourseinstance.tsv
 - staffmoduleinstance.tsv
 - student.tsv
@@ -41,9 +43,11 @@ or
 - module.json
 - moduleinstance.json
 - modulesubject.json
+- modulemap.json
 - modulevlemap.json
 - period.json
 - staff.json
+- stafflink.json
 - staffcourseinstance.json
 - staffmoduleinstance.json
 - student.json
@@ -65,9 +69,11 @@ or
 - module.xml
 - moduleinstance.xml
 - modulesubject.xml
+- modulemap.xml
 - modulevlemap.xml
 - period.xml
 - staff.xml
+- stafflink.xml
 - staffcourseinstance.xml
 - staffmoduleinstance.xml
 - student.xml

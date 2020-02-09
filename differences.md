@@ -15,7 +15,7 @@ In summary, v1.5.0 release of UDD implemented the following, compared to v1.4.1:
 - ISO 8601 formats updated to YYYY-MM-DDThh:mm[:ss.mmm]Z
 - student_on_course_instance.md: new property FTE added
 - course_instance.md: new property COMMENCEMENT_PERIOD added; PERIOD_CODE on period updated to refer to COMMENCEMENT_PERIOD
-- Field Guide: ‘Preferred’ removed from student.ETHNICITY, SEXID, DIFFLEARN1 and DIFFLEARN2 for Predictive Analytics
+- Field Guide: Preferred removed from student.ETHNICITY, SEXID, DIFFLEARN1 and DIFFLEARN2 for Predictive Analytics
 - student: Preference text removed from Notes in student.ETHNICITY, SEXID, DIFFLEARN1 and DIFFLEARN2 in line with Field Guide.
 - module_map: new entity created; module_vle_map and MODULE_VLE_MAP_MODE deprecated
 - entity_descriptions.md: updated for new entities
@@ -29,3 +29,9 @@ Differences between v1.5.1, compared to v1.5.0:
 - student_course_membership: CARELEAVER deleted (moved to student entity)
 - student: CARELEAVER added (moved from student_course_membership)
 - course_instance: Note re number of records added
+
+Differences between v1.5.2, compared to v1.5.1
+
+- event: MOD_INSTANCE_ID and COURSE_INSTANCE_ID removed
+- student_event: MOD_INSTANCE_ID and COURSE_INSTANCE_ID added
+- Field Guide and diagrams updated

@@ -1,15 +1,22 @@
 {
+   "key_codes":[
+      {
+         "PK":"Primary key",
+         "UC":"Unique constraint",
+         "RF":"Required field"
+      }
+   ],
    "entities":[
       {
          "assessmentinstance":[
             {
                "field":"ASSESS_INSTANCE_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"MOD_INSTANCE_ID",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
@@ -65,7 +72,7 @@
             },
             {
                "field":"MOD_ACADEMIC_YEAR",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"Int"
             },
             {
@@ -79,12 +86,12 @@
          "course":[
             {
                "field":"COURSE_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"TENANT_ID",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (8)"
             },
             {
@@ -286,12 +293,12 @@
          "courseinstance":[
             {
                "field":"COURSE_INSTANCE_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"COURSE_ID",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
@@ -306,7 +313,7 @@
             },
             {
                "field":"ACADEMIC_YEAR ",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"Int"
             },
             {
@@ -325,27 +332,27 @@
          "coursesubject":[
             {
                "field":"COURSE_SUBJECT_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"COURSE_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"SUBJECT_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (10)"
             },
             {
                "field":"SUBJECT_LABEL ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
                "field":"ENCODING_ID ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":[
                   {
                      "JACS3":"Joint Academic Coding System, version 3",
@@ -374,7 +381,7 @@
          "event":[
             {
                "field":"EVENT_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
@@ -458,7 +465,7 @@
          "institution":[
             {
                "field":"TENANT_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
@@ -468,7 +475,7 @@
             },
             {
                "field":"UDD_VERSION ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
@@ -482,7 +489,7 @@
          "module":[
             {
                "field":"MOD_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
@@ -538,12 +545,12 @@
          "moduleinstance":[
             {
                "field":"MOD_INSTANCE_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"MOD_ID ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
@@ -563,7 +570,7 @@
             },
             {
                "field":"MOD_ACADEMIC_YEAR ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"Int"
             },
             {
@@ -582,22 +589,22 @@
          "modulemap":[
             {
                "field":"MODULE_MAP_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"MOD_INSTANCE_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"MODULE_MAP_DOMAIN",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"DOMAIN_MAPPED_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
@@ -611,27 +618,27 @@
          "modulesubject":[
             {
                "field":"MODULE_SUBJECT_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"MOD_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"SUBJECT_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (10)"
             },
             {
                "field":"SUBJECT_LABEL ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
                "field":"ENCODING_ID ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":[
                   {
                      "JACS3":"Joint Academic Coding System, version 3",
@@ -660,17 +667,17 @@
          "modulevlemap":[
             {
                "field":"MODULE_VLE_MAP_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"MOD_INSTANCE_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"VLE_MOD_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
@@ -684,32 +691,32 @@
          "period":[
             {
                "field":"PERIOD_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"PERIOD_CODE",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"ACADEMIC_YEAR",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"PERIOD_NAME ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
                "field":"PERIOD_START_DATE ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"Date "
             },
             {
                "field":"PERIOD_END_DATE ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"Date "
             },
             {
@@ -723,7 +730,7 @@
          "staff":[
             {
                "field":"STAFF_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
@@ -767,32 +774,32 @@
          "stafflink":[
             {
                "field":"STAFF_LINK_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"STAFF_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"PROPERTY_NAME",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"PROPERTY_VALUE",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"RELATIONSHIP",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"SCOPE",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
@@ -806,7 +813,7 @@
          "student":[
             {
                "field":"STUDENT_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
@@ -1310,17 +1317,17 @@
          "studentcoursemembership":[
             {
                "field":"STUDENT_COURSE_MEMBERSHIP_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"STUDENT_ID ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
                "field":"COURSE_ID ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
@@ -1711,7 +1718,7 @@
             },
             {
                "field":"ACTIVE_MEMBERSHIP ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":[
                   {
                      "1":"active - The student is studying on the course, or enrolled to study on the course.",
@@ -1797,17 +1804,17 @@
          "studentevent":[
             {
                "field":"STUDENT_EVENT_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"EVENT_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"STUDENT_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
@@ -1821,22 +1828,22 @@
          "studentidmap":[
             {
                "field":"STUDENT_ID_MAP_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"STUDENT_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"DOMAIN",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"IDENTIFIER",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
@@ -1850,27 +1857,27 @@
          "studentmoduleinstance":[
             {
                "field":"STUDENT_ON_A_MODULE_INSTANCE_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"STUDENT_COURSE_MEMBERSHIP_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"MOD_INSTANCE_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"COURSE_INSTANCE_ID ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
                "field":"STUDENT_ID ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
@@ -1976,7 +1983,7 @@
             },
             {
                "field":"MOD_ACADEMIC_YEAR ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"Int"
             },
             {
@@ -1995,32 +2002,32 @@
          "studentassessmentinstance":[
             {
                "field":"STUDENT_ON_ASSESSMENT_INSTANCE_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"STUDENT_COURSE_MEMBERSHIP_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"ASSESS_INSTANCE_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"ASSESS_SEQ_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"Int"
             },
             {
                "field":"MOD_INSTANCE_ID ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
                "field":"STUDENT_ID ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
@@ -2116,7 +2123,7 @@
             },
             {
                "field":"MOD_ACADEMIC_YEAR ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"Int"
             },
             {
@@ -2130,22 +2137,22 @@
          "studentcourseinstance":[
             {
                "field":"STUDENT_ON_COURSE_INSTANCE_ID",
-               "KEY":"1",
+               "KEY":"PK",
                "Type":"String (255)"
             },
             {
                "field":"STUDENT_COURSE_MEMBERSHIP_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"COURSE_INSTANCE_ID",
-               "KEY":"2",
+               "KEY":"UC",
                "Type":"String (255)"
             },
             {
                "field":"STUDENT_ID ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"String (255)"
             },
             {
@@ -2250,7 +2257,7 @@
             },
             {
                "field":"ACADEMIC_YEAR ",
-               "KEY":"3",
+               "KEY":"RF",
                "Type":"Int"
             },
             {

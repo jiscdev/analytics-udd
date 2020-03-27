@@ -78,7 +78,7 @@
             {
                "field":"PROVIDED_AT",
                "KEY":"0",
-               "Type":"Date "
+               "Type":"Date"
             }
          ]
       },
@@ -302,27 +302,27 @@
                "Type":"String (255)"
             },
             {
-               "field":"START_DATE ",
+               "field":"START_DATE",
                "KEY":"0",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"END_DATE ",
+               "field":"END_DATE",
                "KEY":"0",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"ACADEMIC_YEAR ",
+               "field":"ACADEMIC_YEAR",
                "KEY":"PK",
                "Type":"Int"
             },
             {
-               "field":"COMMENCEMENT_PERIOD ",
+               "field":"COMMENCEMENT_PERIOD",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -346,12 +346,12 @@
                "Type":"String (10)"
             },
             {
-               "field":"SUBJECT_LABEL ",
+               "field":"SUBJECT_LABEL",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"ENCODING_ID ",
+               "field":"ENCODING_ID",
                "KEY":"RF",
                "Type":[
                   {
@@ -361,17 +361,17 @@
                ]
             },
             {
-               "field":"PROPORTION ",
+               "field":"PROPORTION",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"SEQUENCE_ID ",
+               "field":"SEQUENCE_ID",
                "KEY":"0",
                "Type":"Positive integer"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -385,42 +385,42 @@
                "Type":"String (255)"
             },
             {
-               "field":"EVENT_NAME ",
+               "field":"EVENT_NAME",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"EVENT_DATA_SOURCE ",
+               "field":"EVENT_DATA_SOURCE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"EVENT_DESCRIPTION ",
+               "field":"EVENT_DESCRIPTION",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"EVENT_START ",
+               "field":"EVENT_START",
                "KEY":"0",
                "Type":"Date"
             },
             {
-               "field":"EVENT_END ",
+               "field":"EVENT_END",
                "KEY":"0",
                "Type":"Date"
             },
             {
-               "field":"EVENT_LOCATION ",
+               "field":"EVENT_LOCATION",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"ROOM_ID ",
+               "field":"ROOM_ID",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"EVENT_TYPE ",
+               "field":"EVENT_TYPE",
                "KEY":"0",
                "Type":[
                   {
@@ -440,22 +440,22 @@
                ]
             },
             {
-               "field":"EVENT_TYPE_RAW ",
+               "field":"EVENT_TYPE_RAW",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"MOD_INSTANCE_ID ",
+               "field":"MOD_INSTANCE_ID",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"COURSE_INSTANCE_ID ",
+               "field":"COURSE_INSTANCE_ID",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -469,17 +469,17 @@
                "Type":"String (255)"
             },
             {
-               "field":"TENANT_NAME ",
+               "field":"TENANT_NAME",
                "KEY":"0",
                "Type":"String (8)"
             },
             {
-               "field":"UDD_VERSION ",
+               "field":"UDD_VERSION",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -493,17 +493,17 @@
                "Type":"String (255)"
             },
             {
-               "field":"MOD_NAME ",
+               "field":"MOD_NAME",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"MOD_CREDITS ",
+               "field":"MOD_CREDITS",
                "KEY":"0",
                "Type":"Int"
             },
             {
-               "field":"MOD_LEVEL ",
+               "field":"MOD_LEVEL",
                "KEY":"0",
                "Type":[
                   {
@@ -524,7 +524,7 @@
                ]
             },
             {
-               "field":"CREDIT_BEARING ",
+               "field":"CREDIT_BEARING",
                "KEY":"0",
                "Type":[
                   {
@@ -535,7 +535,7 @@
                ]
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -549,17 +549,17 @@
                "Type":"String (255)"
             },
             {
-               "field":"MOD_ID ",
+               "field":"MOD_ID",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"MOD_PERIOD ",
+               "field":"MOD_PERIOD",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"MOD_ONLINE ",
+               "field":"MOD_ONLINE",
                "KEY":"0",
                "Type":[
                   {
@@ -569,17 +569,17 @@
                ]
             },
             {
-               "field":"MOD_ACADEMIC_YEAR ",
+               "field":"MOD_ACADEMIC_YEAR",
                "KEY":"RF",
                "Type":"Int"
             },
             {
-               "field":"MOD_LOCATION ",
+               "field":"MOD_LOCATION",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -608,7 +608,7 @@
                "Type":"String (255)"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -632,12 +632,12 @@
                "Type":"String (10)"
             },
             {
-               "field":"SUBJECT_LABEL ",
+               "field":"SUBJECT_LABEL",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"ENCODING_ID ",
+               "field":"ENCODING_ID",
                "KEY":"RF",
                "Type":[
                   {
@@ -647,17 +647,17 @@
                ]
             },
             {
-               "field":"PROPORTION ",
+               "field":"PROPORTION",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"SEQUENCE_ID ",
+               "field":"SEQUENCE_ID",
                "KEY":"0",
                "Type":"Positive integer"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -681,7 +681,7 @@
                "Type":"String (255)"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -705,22 +705,22 @@
                "Type":"String (255)"
             },
             {
-               "field":"PERIOD_NAME ",
+               "field":"PERIOD_NAME",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"PERIOD_START_DATE ",
+               "field":"PERIOD_START_DATE",
                "KEY":"RF",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"PERIOD_END_DATE ",
+               "field":"PERIOD_END_DATE",
                "KEY":"RF",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -734,37 +734,37 @@
                "Type":"String (255)"
             },
             {
-               "field":"FIRST_NAME ",
+               "field":"FIRST_NAME",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"LAST_NAME ",
+               "field":"LAST_NAME",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"TITLE ",
+               "field":"TITLE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"PRIMARY_EMAIL_ADDRESS ",
+               "field":"PRIMARY_EMAIL_ADDRESS",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"HESA_STAFF_ID ",
+               "field":"HESA_STAFF_ID",
                "KEY":"0",
                "Type":"String (13)"
             },
             {
-               "field":"DASH_SHIB_ID ",
+               "field":"DASH_SHIB_ID",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -803,7 +803,7 @@
                "Type":"String (255)"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -817,17 +817,17 @@
                "Type":"String (255)"
             },
             {
-               "field":"ULN ",
+               "field":"ULN",
                "KEY":"0",
                "Type":"String (10)"
             },
             {
-               "field":"DOB ",
+               "field":"DOB",
                "KEY":"0",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"ETHNICITY ",
+               "field":"ETHNICITY",
                "KEY":"0",
                "Type":[
                   {
@@ -857,7 +857,7 @@
                ]
             },
             {
-               "field":"SEXID ",
+               "field":"SEXID",
                "KEY":"0",
                "Type":[
                   {
@@ -869,7 +869,7 @@
                ]
             },
             {
-               "field":"DIFFLEARN1 ",
+               "field":"DIFFLEARN1",
                "KEY":"0",
                "Type":[
                   {
@@ -884,7 +884,7 @@
                ]
             },
             {
-               "field":"DIFFLEARN2 ",
+               "field":"DIFFLEARN2",
                "KEY":"0",
                "Type":[
                   {
@@ -899,7 +899,7 @@
                ]
             },
             {
-               "field":"DOMICILE ",
+               "field":"DOMICILE",
                "KEY":"0",
                "Type":[
                   {
@@ -1170,7 +1170,7 @@
                ]
             },
             {
-               "field":"PARENTS_ED ",
+               "field":"PARENTS_ED",
                "KEY":"0",
                "Type":[
                   {
@@ -1183,7 +1183,7 @@
                ]
             },
             {
-               "field":"SOCIO_EC ",
+               "field":"SOCIO_EC",
                "KEY":"0",
                "Type":[
                   {
@@ -1200,7 +1200,7 @@
                ]
             },
             {
-               "field":"OVERSEAS ",
+               "field":"OVERSEAS",
                "KEY":"0",
                "Type":[
                   {
@@ -1212,87 +1212,87 @@
                ]
             },
             {
-               "field":"APPSHIB_ID ",
+               "field":"APPSHIB_ID",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"VLE_ID ",
+               "field":"VLE_ID",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"HUSID ",
+               "field":"HUSID",
                "KEY":"0",
                "Type":"String (13)"
             },
             {
-               "field":"USERNAME ",
+               "field":"USERNAME",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"LAST_NAME ",
+               "field":"LAST_NAME",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"FIRST_NAME ",
+               "field":"FIRST_NAME",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"ADDRESS_LINE_1 ",
+               "field":"ADDRESS_LINE_1",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"ADDRESS_LINE_2 ",
+               "field":"ADDRESS_LINE_2",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"ADDRESS_LINE_3 ",
+               "field":"ADDRESS_LINE_3",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"ADDRESS_LINE_4 ",
+               "field":"ADDRESS_LINE_4",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"POSTCODE ",
+               "field":"POSTCODE",
                "KEY":"0",
                "Type":"String (10)"
             },
             {
-               "field":"PRIMARY_EMAIL_ADDRESS ",
+               "field":"PRIMARY_EMAIL_ADDRESS",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"HOME_PHONE ",
+               "field":"HOME_PHONE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"MOBILE_PHONE ",
+               "field":"MOBILE_PHONE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"PHOTO_URL ",
+               "field":"PHOTO_URL",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"ENTRY_POSTCODE ",
+               "field":"ENTRY_POSTCODE",
                "KEY":"0",
                "Type":"String (10)"
             },
             {
-               "field":"CARELEAVER ",
+               "field":"CARELEAVER",
                "KEY":"0",
                "Type":[
                   {
@@ -1307,7 +1307,7 @@
                ]
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -1321,17 +1321,17 @@
                "Type":"String (255)"
             },
             {
-               "field":"STUDENT_ID ",
+               "field":"STUDENT_ID",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"COURSE_ID ",
+               "field":"COURSE_ID",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"WITHDRAWAL_REASON ",
+               "field":"WITHDRAWAL_REASON",
                "KEY":"0",
                "Type":[
                   {
@@ -1358,7 +1358,7 @@
                ]
             },
             {
-               "field":"ENTRY_QUALS ",
+               "field":"ENTRY_QUALS",
                "KEY":"0",
                "Type":[
                   {
@@ -1427,12 +1427,12 @@
                ]
             },
             {
-               "field":"ENTRY_POINTS ",
+               "field":"ENTRY_POINTS",
                "KEY":"0",
                "Type":"Int"
             },
             {
-               "field":"ENTRY_POINTS_SCHEMA ",
+               "field":"ENTRY_POINTS_SCHEMA",
                "KEY":"0",
                "Type":[
                   {
@@ -1443,12 +1443,12 @@
                ]
             },
             {
-               "field":"AVERAGE_GCSE_SCORE ",
+               "field":"AVERAGE_GCSE_SCORE",
                "KEY":"0",
                "Type":"Int"
             },
             {
-               "field":"COURSE_OUTCOME ",
+               "field":"COURSE_OUTCOME",
                "KEY":"0",
                "Type":[
                   {
@@ -1470,7 +1470,7 @@
                ]
             },
             {
-               "field":"COURSE_GRADE ",
+               "field":"COURSE_GRADE",
                "KEY":"0",
                "Type":[
                   {
@@ -1519,7 +1519,7 @@
                ]
             },
             {
-               "field":"COURSE_AIM_ATTAINED ",
+               "field":"COURSE_AIM_ATTAINED",
                "KEY":"0",
                "Type":[
                   {
@@ -1682,42 +1682,42 @@
                ]
             },
             {
-               "field":"COURSE_MARK ",
+               "field":"COURSE_MARK",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"COURSE_EXPECTED_END_DATE ",
+               "field":"COURSE_EXPECTED_END_DATE",
                "KEY":"0",
                "Type":"Int"
             },
             {
-               "field":"COURSE_END_DATE ",
+               "field":"COURSE_END_DATE",
                "KEY":"0",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"COURSE_DURATION ",
+               "field":"COURSE_DURATION",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"COURSE_JOIN_DATE ",
+               "field":"COURSE_JOIN_DATE",
                "KEY":"0",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"COURSE_JOIN_AGE ",
+               "field":"COURSE_JOIN_AGE",
                "KEY":"0",
                "Type":"Int"
             },
             {
-               "field":"COHORT_ID ",
+               "field":"COHORT_ID",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"ACTIVE_MEMBERSHIP ",
+               "field":"ACTIVE_MEMBERSHIP",
                "KEY":"RF",
                "Type":[
                   {
@@ -1727,47 +1727,47 @@
                ]
             },
             {
-               "field":"PREDICTED_OUTCOME_GRADE ",
+               "field":"PREDICTED_OUTCOME_GRADE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"ATTAINMENT_TARGET_GRADE ",
+               "field":"ATTAINMENT_TARGET_GRADE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"PREDICTED_OUTCOME_MARK ",
+               "field":"PREDICTED_OUTCOME_MARK",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"ATTAINMENT_TARGET_MARK ",
+               "field":"ATTAINMENT_TARGET_MARK",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"PRIOR_GRADE_ENGLISH ",
+               "field":"PRIOR_GRADE_ENGLISH",
                "KEY":"0",
                "Type":"String (10)"
             },
             {
-               "field":"PRIOR_GRADE_MATHEMATICS ",
+               "field":"PRIOR_GRADE_MATHEMATICS",
                "KEY":"0",
                "Type":"String (10)"
             },
             {
-               "field":"INITIAL_ASSESSMENT_ENGLISH ",
+               "field":"INITIAL_ASSESSMENT_ENGLISH",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"INITIAL_ASSESSMENT_MATHEMATICS ",
+               "field":"INITIAL_ASSESSMENT_MATHEMATICS",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"ADMISSIONS_ROUTE ",
+               "field":"ADMISSIONS_ROUTE",
                "KEY":"0",
                "Type":[
                   {
@@ -1780,12 +1780,12 @@
                ]
             },
             {
-               "field":"COURSE_TRANSFERRED_FROM ",
+               "field":"COURSE_TRANSFERRED_FROM",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"VISA ",
+               "field":"VISA",
                "KEY":"0",
                "Type":[
                   {
@@ -1794,7 +1794,7 @@
                ]
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -1818,7 +1818,7 @@
                "Type":"String (255)"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -1847,7 +1847,7 @@
                "Type":"String (255)"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -1871,17 +1871,17 @@
                "Type":"String (255)"
             },
             {
-               "field":"COURSE_INSTANCE_ID ",
+               "field":"COURSE_INSTANCE_ID",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"STUDENT_ID ",
+               "field":"STUDENT_ID",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"MOD_RESULT ",
+               "field":"MOD_RESULT",
                "KEY":"0",
                "Type":[
                   {
@@ -1892,7 +1892,7 @@
                ]
             },
             {
-               "field":"MOD_RETAKE ",
+               "field":"MOD_RETAKE",
                "KEY":"0",
                "Type":[
                   {
@@ -1902,7 +1902,7 @@
                ]
             },
             {
-               "field":"MOD_TRAILING ",
+               "field":"MOD_TRAILING",
                "KEY":"0",
                "Type":[
                   {
@@ -1912,87 +1912,87 @@
                ]
             },
             {
-               "field":"MOD_START_DATE ",
+               "field":"MOD_START_DATE",
                "KEY":"0",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"MOD_END_DATE ",
+               "field":"MOD_END_DATE",
                "KEY":"0",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"MOD_FIRST_MARK ",
-               "KEY":"0",
-               "Type":"Decimal"
-            },
-            {
-               "field":"MOD_ACTUAL_MARK ",
+               "field":"MOD_FIRST_MARK",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"MOD_AGREED_MARK ",
+               "field":"MOD_ACTUAL_MARK",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"MOD_RAW_ACTUAL_MARK ",
+               "field":"MOD_AGREED_MARK",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"MOD_RAW_AGREED_MARK ",
+               "field":"MOD_RAW_ACTUAL_MARK",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"MOD_FIRST_GRADE ",
+               "field":"MOD_RAW_AGREED_MARK",
+               "KEY":"0",
+               "Type":"Decimal"
+            },
+            {
+               "field":"MOD_FIRST_GRADE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"MOD_ACTUAL_GRADE ",
+               "field":"MOD_ACTUAL_GRADE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"MOD_AGREED_GRADE ",
+               "field":"MOD_AGREED_GRADE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"MOD_CREDITS_ACHIEVED ",
+               "field":"MOD_CREDITS_ACHIEVED",
                "KEY":"0",
                "Type":"Int"
             },
             {
-               "field":"MOD_CURRENT_ATTEMPT ",
+               "field":"MOD_CURRENT_ATTEMPT",
                "KEY":"0",
                "Type":"Int"
             },
             {
-               "field":"MOD_COMPLETED_ATTEMPT ",
+               "field":"MOD_COMPLETED_ATTEMPT",
                "KEY":"0",
                "Type":"Int"
             },
             {
-               "field":"X_MOD_NAME ",
+               "field":"X_MOD_NAME",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"MOD_ACADEMIC_YEAR ",
+               "field":"MOD_ACADEMIC_YEAR",
                "KEY":"RF",
                "Type":"Int"
             },
             {
-               "field":"MOD_OPTIONAL ",
+               "field":"MOD_OPTIONAL",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -2021,32 +2021,32 @@
                "Type":"Int"
             },
             {
-               "field":"MOD_INSTANCE_ID ",
+               "field":"MOD_INSTANCE_ID",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"STUDENT_ID ",
+               "field":"STUDENT_ID",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"ASSESSMENT_DATA_SOURCE ",
+               "field":"ASSESSMENT_DATA_SOURCE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"ASSESS_DUE_DATE ",
+               "field":"ASSESS_DUE_DATE",
                "KEY":"0",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"ASSESS_SUBMISSION_DATE ",
+               "field":"ASSESS_SUBMISSION_DATE",
                "KEY":"0",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"ASSESS_RETAKE ",
+               "field":"ASSESS_RETAKE",
                "KEY":"0",
                "Type":[
                   {
@@ -2056,42 +2056,42 @@
                ]
             },
             {
-               "field":"ASSESS_ACTUAL_MARK ",
+               "field":"ASSESS_ACTUAL_MARK",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"ASSESS_AGREED_MARK ",
+               "field":"ASSESS_AGREED_MARK",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"ASSESS_RAW_ACTUAL_MARK ",
+               "field":"ASSESS_RAW_ACTUAL_MARK",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"ASSESS_RAW_AGREED_MARK ",
+               "field":"ASSESS_RAW_AGREED_MARK",
                "KEY":"0",
                "Type":"Decimal"
             },
             {
-               "field":"ASSESS_AGREED_GRADE ",
+               "field":"ASSESS_AGREED_GRADE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"ASSESS_ACTUAL_GRADE ",
+               "field":"ASSESS_ACTUAL_GRADE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"ASSESSMENT_CURRENT_ATTEMPT ",
+               "field":"ASSESSMENT_CURRENT_ATTEMPT",
                "KEY":"0",
                "Type":"Int"
             },
             {
-               "field":"ASSESSMENT_RESULT ",
+               "field":"ASSESSMENT_RESULT",
                "KEY":"0",
                "Type":[
                   {
@@ -2102,32 +2102,32 @@
                ]
             },
             {
-               "field":"GRADE_DATE ",
+               "field":"GRADE_DATE",
                "KEY":"0",
-               "Type":"Date "
+               "Type":"Date"
             },
             {
-               "field":"X_ASSESS_DETAIL ",
-               "KEY":"0",
-               "Type":"String (255)"
-            },
-            {
-               "field":"X_MOD_NAME ",
+               "field":"X_ASSESS_DETAIL",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"X_MOD_ID ",
+               "field":"X_MOD_NAME",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"MOD_ACADEMIC_YEAR ",
+               "field":"X_MOD_ID",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_ACADEMIC_YEAR",
                "KEY":"RF",
                "Type":"Int"
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }
@@ -2151,12 +2151,12 @@
                "Type":"String (255)"
             },
             {
-               "field":"STUDENT_ID ",
+               "field":"STUDENT_ID",
                "KEY":"RF",
                "Type":"String (255)"
             },
             {
-               "field":"MODE ",
+               "field":"MODE",
                "KEY":"0",
                "Type":[
                   {
@@ -2194,27 +2194,27 @@
                "Type":"Decimal"
             },
             {
-               "field":"YEAR_PRG ",
+               "field":"YEAR_PRG",
                "KEY":"0",
                "Type":"Int"
             },
             {
-               "field":"YEAR_STU ",
+               "field":"YEAR_STU",
                "KEY":"0",
                "Type":"Int"
             },
             {
-               "field":"COURSE_LOCATION ",
+               "field":"COURSE_LOCATION",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"X_COURSE_AVERAGE_MARK ",
+               "field":"X_COURSE_AVERAGE_MARK",
                "KEY":"0",
                "Type":"Float"
             },
             {
-               "field":"PROGRESSION ",
+               "field":"PROGRESSION",
                "KEY":"0",
                "Type":[
                   {
@@ -2231,12 +2231,12 @@
                ]
             },
             {
-               "field":"PROGRESSION_SOURCE ",
+               "field":"PROGRESSION_SOURCE",
                "KEY":"0",
                "Type":"String (255)"
             },
             {
-               "field":"LOCATION_OF_STUDY ",
+               "field":"LOCATION_OF_STUDY",
                "KEY":"0",
                "Type":[
                   {
@@ -2256,12 +2256,12 @@
                ]
             },
             {
-               "field":"ACADEMIC_YEAR ",
+               "field":"ACADEMIC_YEAR",
                "KEY":"RF",
                "Type":"Int"
             },
             {
-               "field":"TERMTIME_ACCOM ",
+               "field":"TERMTIME_ACCOM",
                "KEY":"0",
                "Type":[
                   {
@@ -2277,7 +2277,7 @@
                ]
             },
             {
-               "field":"PROVIDED_AT ",
+               "field":"PROVIDED_AT",
                "KEY":"0",
                "Type":"Date"
             }

@@ -63,16 +63,16 @@
             {
                "field":"ASSESS_WEIGHT",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"MAX_MARKS",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"MOD_ACADEMIC_YEAR",
-               "KEY":"PK",
+               "KEY":"UC",
                "Type":"Int"
             },
             {
@@ -313,7 +313,7 @@
             },
             {
                "field":"ACADEMIC_YEAR",
-               "KEY":"PK",
+               "KEY":"UC",
                "Type":"Int"
             },
             {
@@ -363,7 +363,7 @@
             {
                "field":"PROPORTION",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"SEQUENCE_ID",
@@ -1429,7 +1429,7 @@
             {
                "field":"ENTRY_POINTS",
                "KEY":"0",
-               "Type":"Int"
+               "Type":"Float"
             },
             {
                "field":"ENTRY_POINTS_SCHEMA",
@@ -1739,12 +1739,12 @@
             {
                "field":"PREDICTED_OUTCOME_MARK",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"ATTAINMENT_TARGET_MARK",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"PRIOR_GRADE_ENGLISH",
@@ -1759,12 +1759,12 @@
             {
                "field":"INITIAL_ASSESSMENT_ENGLISH",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"INITIAL_ASSESSMENT_MATHEMATICS",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"ADMISSIONS_ROUTE",
@@ -1924,27 +1924,27 @@
             {
                "field":"MOD_FIRST_MARK",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"MOD_ACTUAL_MARK",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"MOD_AGREED_MARK",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"MOD_RAW_ACTUAL_MARK",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"MOD_RAW_AGREED_MARK",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"MOD_FIRST_GRADE",
@@ -2058,12 +2058,12 @@
             {
                "field":"ASSESS_ACTUAL_MARK",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"ASSESS_AGREED_MARK",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"ASSESS_RAW_ACTUAL_MARK",
@@ -2073,12 +2073,12 @@
             {
                "field":"ASSESS_RAW_AGREED_MARK",
                "KEY":"0",
-               "Type":"Decimal"
+               "Type":"Float"
             },
             {
                "field":"ASSESS_AGREED_GRADE",
                "KEY":"0",
-               "Type":"String (255)"
+               "Type":"Float"
             },
             {
                "field":"ASSESS_ACTUAL_GRADE",

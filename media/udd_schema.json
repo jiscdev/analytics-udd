@@ -1689,7 +1689,7 @@
             {
                "field":"COURSE_EXPECTED_END_DATE",
                "KEY":"0",
-               "Type":"Int"
+               "Type":"Date"
             },
             {
                "field":"COURSE_END_DATE",

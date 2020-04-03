@@ -1699,7 +1699,7 @@
             {
                "field":"COURSE_DURATION",
                "KEY":"0",
-               "Type":"String (255)"
+               "Type":"Int"
             },
             {
                "field":"COURSE_JOIN_DATE",

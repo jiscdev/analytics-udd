@@ -247,46 +247,6 @@ Decimal
 Can contain any decimal value, for example "59", "162.87", and so on; this value may or may not be a percentage. ASSESS_AGREED_MARK contains a representation of ASSESS_RAW_AGREED_MARK explicitly as a percentage.
 
 
-## ASSESS_RAW_ACTUAL_MARK
-### Description
-The original mark scored by the student.
-
-### Purpose
-Storage of the original numerical score.
-
-### Derivation
-Institution
-
-### Valid Values
-Any decimal value
-
-### Format
-Decimal
-
-### Notes
-Can contain any decimal value, for example "59", "162.87", and so on; this value may or may not be a percentage. ASSESS_ACTUAL_MARK contains a representation of ASSESS_RAW_ACTUAL_MARK explicitly as a percentage.
-
-
-## ASSESS_RAW_AGREED_MARK
-### Description
-The mark scored by the student after any moderation or confirmation processes, or the only recorded mark if there are no moderation or confirmation processes.
-
-### Purpose
-Storage of the confirmed numerical score.
-
-### Derivation
-Institution
-
-### Valid Values
-Any decimal value
-
-### Format
-Decimal
-
-### Notes
-Can contain any decimal value, for example "59", "162.87", and so on; this value may or may not be a percentage. ASSESS_AGREED_MARK contains a representation of ASSESS_RAW_AGREED_MARK explicitly as a percentage.
-
-
 ## ASSESS_ACTUAL_GRADE
 ### Description
 The grade awarded to the learner as first recorded in the SRS, usually but not always, prior to formal moderation and exam board confirmation.

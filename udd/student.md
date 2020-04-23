@@ -25,7 +25,6 @@
 * [HOME_PHONE](#home_phone) [0..1]
 * [MOBILE_PHONE](#mobile_phone) [0..1]
 * [PHOTO_URL](#photo_url) [0..1]
-* [TUTOR_STAFF_ID](#tutor_staff_id) [0..1] (deprecated)
 * [ENTRY_POSTCODE](#entry_postcode) [0..1]
 * [CARELEAVER](#careleaver) [0..1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]

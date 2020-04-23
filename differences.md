@@ -8,6 +8,13 @@ The following spreadsheet gives an overview of all the changes between UDD Versi
 
 ## Summary of differences
 
+Differences between v1.6, compared to v1.5.1:
+
+- module_vle_map: entity deleted (use module map)
+- staff_on_module_instance: entity deleted (use staff link)
+- staff_on_course_instance: entity deleted (use staff link)
+- student: TUTOR_STAFF_ID deleted (use staff link)
+
 Differences between v1.5.1, compared to v1.5.0:
 
 - student_course_membership: CARELEAVER deleted (moved to student entity)

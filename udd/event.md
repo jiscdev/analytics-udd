@@ -10,8 +10,6 @@
 * [ROOM_ID](#room_id) [0..1]
 * [EVENT_TYPE](#event_type) [0..1]
 * [EVENT_TYPE_RAW](#event_type_raw) [0..1]
-* [MOD_INSTANCE_ID](module_instance.md#mod_instance_id) [0..1]
-* [COURSE_INSTANCE_ID](course_instance.md#course_instance_id)  [0..1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.

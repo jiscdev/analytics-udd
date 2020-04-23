@@ -1,0 +1,2287 @@
+{
+   "key_codes":[
+      {
+         "PK":"Primary key",
+         "UC":"Unique constraint",
+         "RF":"Required field"
+      }
+   ],
+   "entities":[
+      {
+         "assessmentinstance":[
+            {
+               "field":"ASSESS_INSTANCE_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_INSTANCE_ID",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ASSESS_TYPE",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"assignment or coursework",
+                     "98":"other",
+                     "3":"group work or group discussion",
+                     "2":"exam",
+                     "5":"practical or observation",
+                     "4":"oral exam or viva voce",
+                     "7":"project",
+                     "6":"presentation"
+                  }
+               ]
+            },
+            {
+               "field":"ASSESS_TYPE_RAW",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ASSESS_TYPE_RAW_NAME",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ASSESS_DETAIL",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ASSESS_SUMMATIVE",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "JACS3":"Joint Academic Coding System, version 3",
+                     "HECoS":"Higher Education Classification of Subjects"
+                  }
+               ]
+            },
+            {
+               "field":"ASSESS_WEIGHT",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"MAX_MARKS",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"MOD_ACADEMIC_YEAR",
+               "KEY":"UC",
+               "Type":"Int"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "course":[
+            {
+               "field":"COURSE_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"TENANT_ID",
+               "KEY":"RF",
+               "Type":"String (8)"
+            },
+            {
+               "field":"TITLE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"COURSE_AIM",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "C42":"Certificate at level C",
+                     "M50":"Postgraduate bachelors degree at level M obtained typically by a combination of coursework and thesis/dissertation, that does not meet the criteria for a research-based higher degree",
+                     "S57":"Standard Grade Foundation (Scotland)",
+                     "C30":"Higher National Certificate (HNC)",
+                     "P77":"Level 3 Preparing to Teach in the Lifelong Learning Sector",
+                     "P70":"Professional qualification at level 3",
+                     "Q56":"Intermediate 2 (Scotland)",
+                     "P78":"Level 3 Certificate in Teaching in the Lifelong Learning Sector",
+                     "Q50":"GCSE at grade A*-C",
+                     "I76":"Post-registration health and social care qualification at level I other than an ordinary (non-honours) first degree",
+                     "I74":"Teaching certificate (trained through the medium of Welsh)",
+                     "H50":"Postgraduate bachelors degree at level H",
+                     "I72":"Professional qualification at level I for serving schoolteachers",
+                     "I71":"Qualified Teacher Status (QTS)/registration with a General Teaching Council (GTC) only",
+                     "I70":"Professional qualification at level I other than an ordinary (non-honours) first degree",
+                     "I79":"Level 5 Diploma in Teaching in the Lifelong Learning Sector",
+                     "C20":"Certificate of Higher Education (CertHE)",
+                     "M42":"Advanced professional certificate at level M",
+                     "M43":"National Vocational Qualification (NVQ) at level M",
+                     "M40":"Fellowship at level M",
+                     "M41":"Diploma at level M",
+                     "M44":"Certificate at level M",
+                     "L00":"Masters degree that meets the criteria for a research-based higher degree",
+                     "C77":"Level 4 Preparing to Teach in the Lifelong Learning Sector",
+                     "S42":"National Vocational Qualification (NVQ) Entry level certificate",
+                     "R80":"Other qualification at level 1",
+                     "R50":"GCSE at grade D-G",
+                     "Q45":"Scottish Vocational Qualification (SVQ) 2",
+                     "Q42":"Certificate at level Q",
+                     "Q43":"National Vocational Qualification (NVQ) 2",
+                     "Q41":"Diploma at level Q",
+                     "R56":"Intermediate 1 (Scotland)",
+                     "P80":"Other qualification at level 3",
+                     "P85":"Diploma in Foundation Studies (Art and Design) at level 3",
+                     "J26":"Diploma of Higher Education (DipHE) leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "I60":"Graduate diploma/certificate at level I",
+                     "I61":"Graduate diploma/certificate at level I but where a previous qualification at level I or H is a pre-requisite for course entry",
+                     "J20":"Diploma of Higher Education (DipHE)",
+                     "H61":"Graduate diploma/certificate at level H but where a previous qualification at level H is a pre-requisite for course entry",
+                     "H60":"Graduate diploma/certificate at level H",
+                     "H62":"Pre-registration graduate diploma/certificate leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "J80":"Other qualification at level J",
+                     "X45":"Welsh for Adults level 4",
+                     "X44":"Welsh for Adults level 3",
+                     "X43":"Welsh for Adults level 2",
+                     "X42":"Welsh for Adults level 1",
+                     "X41":"Welsh for Adults Entry level",
+                     "H00":"First degree with honours",
+                     "H81":"Other qualification at level H but where a previous qualification at level H is a pre-requisite for course entry",
+                     "H80":"Other qualification at level H",
+                     "H88":"Qualification at level H (where another qualification at level H is a pre-requisite for course entry) leading towards registration with the Architects Registration Board (Part 2 qualification)",
+                     "R90":"Credits at level 1",
+                     "R45":"Scottish Vocational Qualification (SVQ) 1",
+                     "J90":"Credits at level J",
+                     "L80":"Other postgraduate qualification at level L that meets the criteria for a research-based higher degree",
+                     "P90":"Credits at level 3",
+                     "C43":"National Vocational Qualification (NVQ) at level C",
+                     "J30":"Higher National Diploma (HND)",
+                     "H78":"Other qualification at level H (where other qualifications at level H are a pre-requisite for course entry) leading towards registration with the Architects Registration Board (Part 3 qualification)",
+                     "H79":"Level 6 Diploma in Teaching in the Lifelong Learning Sector",
+                     "H76":"Post-registration health and social care qualification at level H other than a first degree with honours",
+                     "H72":"Professional qualification at level H for serving schoolteachers other than a first degree with honours",
+                     "M26":"Integrated undergraduate/postgraduate taught masters degree on the enhanced/extended pattern leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "H70":"Professional qualification at level H other than a first degree with honours",
+                     "H71":"Professional Graduate Certificate in Education",
+                     "H18":"First degree with honours leading towards registration with the Architects Registration Board (Part 1 qualification)",
+                     "E43":"Highly specialist diploma from a professional body",
+                     "E40":"National Vocational Qualification (NVQ) at level E",
+                     "M28":"Integrated undergraduate/postgraduate taught masters degree on the enhanced/extended pattern leading towards registration with the Architects Registration Board (Part 1 and Part 2 qualification)",
+                     "C41":"Diploma at level C",
+                     "D01":"New Route PhD that meets the criteria for a research-based higher degree",
+                     "D00":"Doctorate degree that meets the criteria for a research-based higher degree",
+                     "H11":"First degree with honours leading to Qualified Teacher Status (QTS)/registration with a General Teaching Council (GTC)",
+                     "H12":"First degree with honours leading to Early Years Teacher Status (EYTS)",
+                     "R42":"Certificate at level R",
+                     "H16":"Pre-registration first degree with honours leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "J99":"Taught work at level J with an unspecified qualification aim",
+                     "H90":"Credits at level H",
+                     "H91":"Visiting students at level H, with formal or informal credit",
+                     "M22":"Integrated undergraduate/postgraduate taught masters degree on the enhanced/extended pattern",
+                     "H99":"Taught work at level H with an unspecified qualification aim",
+                     "L90":"Provider credit at level L that can count towards a research-based higher degree",
+                     "L91":"Visiting research students at levels D or L, with formal or informal credit",
+                     "L99":"Research-based higher degree where the student may ultimately study at levels D or L",
+                     "C78":"Level 4 Certificate in Teaching in the Lifelong Learning Sector",
+                     "X46":"Welsh for Adults specialist/arbennig",
+                     "H23":"First degree with honours and diploma",
+                     "H22":"First degree with honours on the enhanced/extended pattern but at level H",
+                     "D90":"Provider credit at level D that can count towards a research-based higher degree",
+                     "Q90":"Credits at level 2",
+                     "R70":"Professional qualification at level 1",
+                     "S90":"Credits at further education (FE) access level",
+                     "J16":"Foundation degree which on completion meets entry requirement for pre-registration health and social care qualification",
+                     "I73":"Early Years Teacher Status (EYTS) only",
+                     "Q57":"Standard Grade Credit (Scotland)",
+                     "J10":"Foundation degree",
+                     "I16":"Pre-registration ordinary (non-honours) first degree leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "I11":"Ordinary (non-honours) first degree leading to Qualified Teacher Status (QTS)/registration with a General Teaching Council (GTC)",
+                     "J76":"Post-registration health and social care qualification at level J",
+                     "I12":"Ordinary (non-honours) first degree leading to Early Years Teacher Status (EYTS)",
+                     "Q80":"Other qualification at level 2",
+                     "I91":"Visiting students at level I, with formal or informal credit",
+                     "I90":"Credits at level I",
+                     "I99":"Taught work at level I with an unspecified qualification aim",
+                     "M99":"Taught work at levels E or M with an unspecified qualification aim",
+                     "M91":"Visiting taught students at levels E or M, with formal or informal credit",
+                     "M90":"Taught work at level M for provider credit",
+                     "M11":"Master of Business Administration (MBA)",
+                     "M10":"Post-experience taught masters degree",
+                     "R43":"National Vocational Qualification (NVQ) 1",
+                     "M16":"Pre-registration masters degree leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "P45":"Scottish Vocational Qualification (SVQ) 3",
+                     "P43":"National Vocational Qualification (NVQ) 3",
+                     "P42":"Certificate at level P",
+                     "P41":"Diploma at level P",
+                     "M73":"Postgraduate Diploma in Education",
+                     "M72":"Post-registration education qualification at level M other than a masters degree for serving schoolteachers",
+                     "M71":"Postgraduate Certificate in Education or Professional Graduate Diploma in Education",
+                     "M70":"Professional taught qualification at level M other than a masters degree",
+                     "M76":"Post-registration health and social care qualification at level M",
+                     "J45":"Scottish Vocational Qualification (SVQ) 4",
+                     "M79":"Level 7 Diploma in Teaching in the Lifelong Learning Sector",
+                     "M78":"Taught qualification at level M (where qualification at level H and/or level M is a pre-requisite for course entry) leading towards registration with the Architects Registration Board (Part 3 qualification)",
+                     "J41":"Diploma at level J",
+                     "J43":"National Vocational Qualification (NVQ) at level J",
+                     "J42":"Certificate at level J",
+                     "E90":"Advanced taught study at level E for provider credit",
+                     "I80":"Other qualification at level I",
+                     "I81":"Other qualification at level I but where a previous qualification at level I or H is a pre-requisite for course entry",
+                     "X01":"Higher education (HE) access course, not Quality Assurance Agency (QAA) recognised",
+                     "C90":"Credits at level C",
+                     "M88":"Taught qualification at level M (where a qualification at level H is a pre-requisite for course entry) leading towards registration with the Architects Registration Board (Part 2 qualification)",
+                     "M86":"Taught qualification at level M leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "C99":"Taught work at level C with an unspecified qualification aim",
+                     "M80":"Other taught qualification at level M",
+                     "M02":"Masters in Teaching and Learning",
+                     "M00":"Masters degree obtained typically by a combination of coursework and thesis/dissertation, that does not meet the criteria for a research-based higher degree",
+                     "M01":"Taught masters degree designed specifically as a training in research methods and intended as a preparation for a research-based higher degree",
+                     "P55":"Advanced Higher (Scotland)",
+                     "P56":"Higher (Scotland)",
+                     "P50":"A/AS level",
+                     "R57":"Standard Grade General (Scotland)",
+                     "Q70":"Professional qualification at level 2",
+                     "E00":"Doctorate degree that does not meet the criteria for a research-based higher degree",
+                     "S80":"Other qualification at further education (FE) access level",
+                     "M45":"Scottish Vocational Qualification (SVQ) 5",
+                     "Z99":"Course aim does not apply",
+                     "C80":"Other qualification at level C",
+                     "X98":"No formal qualification aim, below FE level",
+                     "X99":"No formal qualification aim, below HE level",
+                     "X00":"Higher education (HE) access course, Quality Assurance Agency (QAA) recognised",
+                     "I00":"Ordinary (non-honours) first degree",
+                     "H43":"National Vocational Qualification (NVQ) at level H",
+                     "H42":"Certificate at level H",
+                     "H41":"Diploma at level H"
+                  }
+               ]
+            },
+            {
+               "field":"INST_TIER_1",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"INST_TIER_2",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"INST_TIER_3",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"AWARDING_BODY",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "courseinstance":[
+            {
+               "field":"COURSE_INSTANCE_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"COURSE_ID",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"START_DATE",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"END_DATE",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"ACADEMIC_YEAR",
+               "KEY":"UC",
+               "Type":"Int"
+            },
+            {
+               "field":"COMMENCEMENT_PERIOD",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "coursesubject":[
+            {
+               "field":"COURSE_SUBJECT_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"COURSE_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"SUBJECT_ID",
+               "KEY":"UC",
+               "Type":"String (10)"
+            },
+            {
+               "field":"SUBJECT_LABEL",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ENCODING_ID",
+               "KEY":"RF",
+               "Type":[
+                  {
+                     "JACS3":"Joint Academic Coding System, version 3",
+                     "HECoS":"Higher Education Classification of Subjects"
+                  }
+               ]
+            },
+            {
+               "field":"PROPORTION",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"SEQUENCE_ID",
+               "KEY":"0",
+               "Type":"Positive integer"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "event":[
+            {
+               "field":"EVENT_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"EVENT_NAME",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"EVENT_DATA_SOURCE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"EVENT_DESCRIPTION",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"EVENT_START",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"EVENT_END",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"EVENT_LOCATION",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ROOM_ID",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"EVENT_TYPE",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "11":"Field Trip",
+                     "10":"Dissertation",
+                     "13":"Lecture",
+                     "12":"Assessment",
+                     "15":"Practical",
+                     "14":"Meeting",
+                     "17":"Seminar",
+                     "16":"Laboratory",
+                     "19":"Workshop",
+                     "18":"Tutorial",
+                     "20":"Study Skills",
+                     "21":"Other"
+                  }
+               ]
+            },
+            {
+               "field":"EVENT_TYPE_RAW",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_INSTANCE_ID",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"COURSE_INSTANCE_ID",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "institution":[
+            {
+               "field":"TENANT_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"TENANT_NAME",
+               "KEY":"0",
+               "Type":"String (8)"
+            },
+            {
+               "field":"UDD_VERSION",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "module":[
+            {
+               "field":"MOD_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_NAME",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_CREDITS",
+               "KEY":"0",
+               "Type":"Int"
+            },
+            {
+               "field":"MOD_LEVEL",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "A":"NVQ level 1 or equivalent",
+                     "C":"NVQ level 3 or equivalent",
+                     "B":"NVQ level 2 or equivalent",
+                     "E":"Ordinary degrees",
+                     "D":"HND/Diploma HE",
+                     "1":"HE Certificate/NVQ Level 4 or equivalent",
+                     "0":"Entry level",
+                     "3":"HE Honours",
+                     "2":"HE Intermediate",
+                     "5":"Undergraduate unspecified",
+                     "7":"HE Doctorate",
+                     "6":"HE Masters",
+                     "9":"Not applicable"
+                  }
+               ]
+            },
+            {
+               "field":"CREDIT_BEARING",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"For credit, see MOD_CREDITS and MOD_LEVEL for details.",
+                     "0":"Not for credit",
+                     "2":"for credit, but credit value unknown."
+                  }
+               ]
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "moduleinstance":[
+            {
+               "field":"MOD_INSTANCE_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_ID",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_PERIOD",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_ONLINE",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"Yes",
+                     "2":"No"
+                  }
+               ]
+            },
+            {
+               "field":"MOD_ACADEMIC_YEAR",
+               "KEY":"RF",
+               "Type":"Int"
+            },
+            {
+               "field":"MOD_LOCATION",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "modulemap":[
+            {
+               "field":"MODULE_MAP_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_INSTANCE_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MODULE_MAP_DOMAIN",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"DOMAIN_MAPPED_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "modulesubject":[
+            {
+               "field":"MODULE_SUBJECT_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"SUBJECT_ID",
+               "KEY":"UC",
+               "Type":"String (10)"
+            },
+            {
+               "field":"SUBJECT_LABEL",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ENCODING_ID",
+               "KEY":"RF",
+               "Type":[
+                  {
+                     "JACS3":"Joint Academic Coding System, version 3",
+                     "HECoS":"Higher Education Classification of Subjects"
+                  }
+               ]
+            },
+            {
+               "field":"PROPORTION",
+               "KEY":"0",
+               "Type":"Decimal"
+            },
+            {
+               "field":"SEQUENCE_ID",
+               "KEY":"0",
+               "Type":"Positive integer"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "modulevlemap":[
+            {
+               "field":"MODULE_VLE_MAP_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_INSTANCE_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"VLE_MOD_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "period":[
+            {
+               "field":"PERIOD_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PERIOD_CODE",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ACADEMIC_YEAR",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PERIOD_NAME",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PERIOD_START_DATE",
+               "KEY":"RF",
+               "Type":"Date"
+            },
+            {
+               "field":"PERIOD_END_DATE",
+               "KEY":"RF",
+               "Type":"Date"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "staff":[
+            {
+               "field":"STAFF_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"FIRST_NAME",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"LAST_NAME",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"TITLE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PRIMARY_EMAIL_ADDRESS",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"HESA_STAFF_ID",
+               "KEY":"0",
+               "Type":"String (13)"
+            },
+            {
+               "field":"DASH_SHIB_ID",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "stafflink":[
+            {
+               "field":"STAFF_LINK_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"STAFF_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROPERTY_NAME",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROPERTY_VALUE",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"RELATIONSHIP",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"SCOPE",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "student":[
+            {
+               "field":"STUDENT_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ULN",
+               "KEY":"0",
+               "Type":"String (10)"
+            },
+            {
+               "field":"DOB",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"ETHNICITY",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "43":"Mixed - White and Asian",
+                     "80":"Other ethnic background",
+                     "21":"Black or Black British - Caribbean",
+                     "22":"Black or Black British - African",
+                     "49":"Other mixed background",
+                     "42":"Mixed - White and Black African",
+                     "29":"Other Black background",
+                     "41":"Mixed - White and Black Caribbean",
+                     "39":"Other Asian background",
+                     "98":"Information refused",
+                     "90":"Not known",
+                     "10":"White",
+                     "13":"White - Scottish",
+                     "15":"Gypsy or Traveller",
+                     "14":"Irish Traveller",
+                     "19":"Other White background",
+                     "32":"Asian or Asian British - Pakistani",
+                     "31":"Asian or Asian British - Indian",
+                     "51":"Irish",
+                     "50":"Arab",
+                     "34":"Chinese",
+                     "33":"Asian or Asian British - Bangladeshi"
+                  }
+               ]
+            },
+            {
+               "field":"SEXID",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"Male",
+                     "3":"Other",
+                     "2":"Female",
+                     "4":"Unknown"
+                  }
+               ]
+            },
+            {
+               "field":"DIFFLEARN1",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"No known difficulty",
+                     "3":"Hearing impairment",
+                     "2":"Visual impairment",
+                     "5":"Health Condition",
+                     "4":"Mobility impairment",
+                     "7":"Other and multiple difficulties",
+                     "6":"Learning and communication challenge"
+                  }
+               ]
+            },
+            {
+               "field":"DIFFLEARN2",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"No known difficulty",
+                     "3":"Hearing impairment",
+                     "2":"Visual impairment",
+                     "5":"Health Condition",
+                     "4":"Mobility impairment",
+                     "7":"Other and multiple difficulties",
+                     "6":"Learning and communication challenge"
+                  }
+               ]
+            },
+            {
+               "field":"DOMICILE",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "BD":"Bangladesh",
+                     "BE":"Belgium",
+                     "BF":"Burkina [Burkina Faso]",
+                     "BG":"Bulgaria",
+                     "BA":"Bosnia and Herzegovina",
+                     "BB":"Barbados",
+                     "WF":"Wallis and Futuna",
+                     "BL":"St Barth\u00e9lemy",
+                     "BM":"Bermuda",
+                     "BN":"Brunei [Brunei Darussalam]",
+                     "BO":"Bolivia [Bolivia, Plurinational State of]",
+                     "BH":"Bahrain",
+                     "BI":"Burundi",
+                     "BJ":"Benin",
+                     "BT":"Bhutan",
+                     "JM":"Jamaica",
+                     "BW":"Botswana",
+                     "WS":"Samoa",
+                     "BQ":"Bonaire, Sint Eustatius and Saba",
+                     "BR":"Brazil",
+                     "BS":"Bahamas, The",
+                     "JE":"Jersey",
+                     "BY":"Belarus",
+                     "BZ":"Belize",
+                     "RU":"Russia [Russian Federation]",
+                     "RW":"Rwanda",
+                     "RS":"Serbia",
+                     "XV":"South America not otherwise specified",
+                     "LT":"Lithuania",
+                     "CV":"Cape Verde",
+                     "RE":"R\u00e9union",
+                     "TM":"Turkmenistan",
+                     "XT":"North America not otherwise specified",
+                     "TJ":"Tajikistan",
+                     "RO":"Romania",
+                     "TK":"Tokelau",
+                     "GW":"Guinea-Bissau",
+                     "GU":"Guam",
+                     "GT":"Guatemala",
+                     "GS":"South Georgia and The South Sandwich Islands",
+                     "GR":"Greece",
+                     "GQ":"Equatorial Guinea",
+                     "GP":"Guadeloupe",
+                     "JP":"Japan",
+                     "GY":"Guyana",
+                     "GG":"Guernsey",
+                     "GF":"French Guiana",
+                     "GE":"Georgia",
+                     "GD":"Grenada",
+                     "GA":"Gabon",
+                     "GN":"Guinea",
+                     "GM":"Gambia, The",
+                     "GL":"Greenland",
+                     "GI":"Gibraltar",
+                     "GH":"Ghana",
+                     "OM":"Oman",
+                     "TN":"Tunisia",
+                     "JO":"Jordan",
+                     "TO":"Tonga",
+                     "HR":"Croatia",
+                     "HT":"Haiti",
+                     "HU":"Hungary",
+                     "HK":"Hong Kong (Special Administrative Region of China) [Hong Kong]",
+                     "HN":"Honduras",
+                     "PY":"Paraguay",
+                     "VE":"Venezuela [Venezuela, Bolivarian Republic of]",
+                     "PR":"Puerto Rico",
+                     "PS":"Occupied Palestinian Territories [Palestine, State of] {formerly West Bank (including East Jerusalem) and Gaza Strip}",
+                     "PW":"Palau",
+                     "PT":"Portugal {includes Madeira, Azores}",
+                     "KN":"St Kitts and Nevis",
+                     "AF":"Afghanistan",
+                     "IQ":"Iraq",
+                     "PA":"Panama",
+                     "PF":"French Polynesia",
+                     "PG":"Papua New Guinea",
+                     "PE":"Peru",
+                     "PK":"Pakistan",
+                     "PH":"Philippines",
+                     "PN":"Pitcairn, Henderson, Ducie and Oeno Islands [Pitcairn]",
+                     "PL":"Poland",
+                     "PM":"St Pierre and Miquelon",
+                     "ZM":"Zambia",
+                     "EH":"Western Sahara",
+                     "EE":"Estonia",
+                     "EG":"Egypt",
+                     "ZA":"South Africa",
+                     "EC":"Ecuador",
+                     "IT":"Italy {Includes Sardinia, Sicily}",
+                     "VN":"Vietnam [Viet Nam]",
+                     "ZZ":"Unknown",
+                     "SB":"Solomon Islands",
+                     "EU":"European Union not otherwise specified",
+                     "ET":"Ethiopia",
+                     "ZW":"Zimbabwe",
+                     "SA":"Saudi Arabia",
+                     "ES":"Spain {includes Ceuta, Melilla}",
+                     "ER":"Eritrea",
+                     "ME":"Montenegro",
+                     "MD":"Moldova [Moldova, Republic of]",
+                     "MG":"Madagascar",
+                     "MF":"St Martin (French Part) [St Martin]",
+                     "MA":"Morocco",
+                     "MC":"Monaco",
+                     "UZ":"Uzbekistan",
+                     "MM":"Burma [Myanmar]",
+                     "ML":"Mali",
+                     "MO":"Macao (Special Administrative Region of China) [Macao]",
+                     "MN":"Mongolia",
+                     "MH":"Marshall Islands",
+                     "MK":"Macedonia [Macedonia, The Former Yugoslav Republic of]",
+                     "MU":"Mauritius",
+                     "MT":"Malta",
+                     "MW":"Malawi",
+                     "MV":"Maldives",
+                     "MQ":"Martinique",
+                     "MP":"Northern Mariana Islands",
+                     "MS":"Montserrat",
+                     "MR":"Mauritania",
+                     "IM":"Isle of Man",
+                     "UG":"Uganda",
+                     "TZ":"Tanzania [Tanzania, United Republic of]",
+                     "MY":"Malaysia",
+                     "MX":"Mexico",
+                     "IL":"Israel",
+                     "FR":"France {includes Corsica}",
+                     "SH":"St Helena, Ascension and Tristan da Cunha",
+                     "XS":"Asia (Except Middle East) not otherwise specified",
+                     "SJ":"Svalbard and Jan Mayen",
+                     "FI":"Finland",
+                     "FJ":"Fiji",
+                     "FK":"Falkland Islands [Falkland Islands (Malvinas)]",
+                     "FM":"Micronesia [Micronesia, Federated States of]",
+                     "FO":"Faroe Islands",
+                     "NI":"Nicaragua",
+                     "NL":"Netherlands",
+                     "NO":"Norway",
+                     "SO":"Somalia",
+                     "VU":"Vanuatu",
+                     "NC":"New Caledonia",
+                     "NE":"Niger",
+                     "NF":"Norfolk Island",
+                     "NG":"Nigeria",
+                     "NZ":"New Zealand",
+                     "NP":"Nepal",
+                     "NR":"Nauru",
+                     "NU":"Niue",
+                     "CK":"Cook Islands",
+                     "XK":"United Kingdom, not otherwise specified",
+                     "CI":"Ivory Coast [C\u00f4te D'ivoire]",
+                     "CH":"Switzerland",
+                     "CO":"Colombia",
+                     "CN":"China",
+                     "CM":"Cameroon",
+                     "CL":"Chile",
+                     "CC":"Cocos (Keeling) Islands",
+                     "XC":"Cyprus not otherwise specified",
+                     "CA":"Canada",
+                     "XA":"Cyprus (European Union)",
+                     "XF":"England",
+                     "CF":"Central African Republic",
+                     "CD":"Congo (Democratic Republic) [Congo (The Democratic Republic of the)] {formerly Zaire}",
+                     "CZ":"Czech Republic",
+                     "XX":"Antarctica and Oceania not otherwise specified",
+                     "CX":"Christmas Island",
+                     "XR":"Middle East not otherwise specified",
+                     "CR":"Costa Rica",
+                     "XP":"Europe not otherwise specified",
+                     "XQ":"Africa not otherwise specified",
+                     "CW":"Cura\u00e7ao",
+                     "XW":"Caribbean not otherwise specified",
+                     "CU":"Cuba",
+                     "XU":"Central America not otherwise specified",
+                     "SZ":"Swaziland",
+                     "SY":"Syria [Syrian Arab Republic]",
+                     "SX":"Sint Maarten (Dutch part)",
+                     "KG":"Kyrgyzstan",
+                     "KE":"Kenya",
+                     "SS":"South Sudan",
+                     "SR":"Surinam [Suriname]",
+                     "KI":"Kiribati",
+                     "KH":"Cambodia",
+                     "SV":"El Salvador",
+                     "KM":"Comoros",
+                     "ST":"Sao Tome and Principe",
+                     "SK":"Slovakia",
+                     "KR":"Korea (South) [Korea, Republic of]",
+                     "SI":"Slovenia",
+                     "KP":"Korea (North) [Korea, Democratic People's Republic of]",
+                     "KW":"Kuwait",
+                     "SN":"Senegal",
+                     "SM":"San Marino",
+                     "SL":"Sierra Leone",
+                     "SC":"Seychelles",
+                     "KZ":"Kazakhstan",
+                     "KY":"Cayman Islands",
+                     "SG":"Singapore",
+                     "SE":"Sweden",
+                     "SD":"Sudan",
+                     "DO":"Dominican Republic",
+                     "DM":"Dominica",
+                     "DJ":"Djibouti",
+                     "DK":"Denmark",
+                     "DE":"Germany",
+                     "YE":"Yemen",
+                     "XH":"Scotland",
+                     "XI":"Wales",
+                     "DZ":"Algeria",
+                     "US":"United States",
+                     "UY":"Uruguay",
+                     "YT":"Mayotte",
+                     "LB":"Lebanon",
+                     "XL":"Channel Islands not otherwise specified",
+                     "XG":"Northern Ireland",
+                     "LA":"Laos [Lao People's Democratic Republic]",
+                     "TV":"Tuvalu",
+                     "TW":"Taiwan [Taiwan, Province of China]",
+                     "TT":"Trinidad and Tobago",
+                     "TR":"Turkey",
+                     "LK":"Sri Lanka",
+                     "LI":"Liechtenstein",
+                     "LV":"Latvia",
+                     "XB":"Cyprus (Non-European Union)",
+                     "TL":"East Timor [Timor Leste]",
+                     "LU":"Luxembourg",
+                     "LR":"Liberia",
+                     "LS":"Lesotho",
+                     "TH":"Thailand",
+                     "TG":"Togo",
+                     "TD":"Chad",
+                     "TC":"Turks and Caicos Islands",
+                     "LY":"Libya",
+                     "VA":"Vatican City [Holy See (Vatican City State)]",
+                     "VI":"United States Virgin Islands [Virgin Islands, U. S.]",
+                     "VC":"St Vincent and The Grenadines",
+                     "AE":"United Arab Emirates",
+                     "AD":"Andorra",
+                     "AG":"Antigua and Barbuda",
+                     "VG":"British Virgin Islands [Virgin Islands, British]",
+                     "AI":"Anguilla",
+                     "CG":"Congo",
+                     "IS":"Iceland",
+                     "IR":"Iran [Iran, Islamic Republic of]",
+                     "AM":"Armenia",
+                     "AL":"Albania",
+                     "AO":"Angola",
+                     "AN":"Netherlands Antilles",
+                     "AS":"American Samoa",
+                     "AR":"Argentina",
+                     "AU":"Australia",
+                     "AT":"Austria",
+                     "AW":"Aruba",
+                     "IN":"India",
+                     "AX":"\u00c5land Islands {Ahvenamaa}",
+                     "IC":"Canary Islands",
+                     "AZ":"Azerbaijan",
+                     "IE":"Ireland",
+                     "ID":"Indonesia",
+                     "LC":"St Lucia",
+                     "UA":"Ukraine",
+                     "QA":"Qatar",
+                     "MZ":"Mozambique",
+                     "QO":"Kosovo"
+                  }
+               ]
+            },
+            {
+               "field":"PARENTS_ED",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"Yes",
+                     "8":"Don't know",
+                     "2":"No",
+                     "9":"Information refused",
+                     "7":"No response given"
+                  }
+               ]
+            },
+            {
+               "field":"SOCIO_EC",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"Higher managerial & professional occupations",
+                     "3":"Intermediate occupations",
+                     "2":"Lower managerial & professional occupations",
+                     "5":"Lower supervisory & technical occupations",
+                     "4":"Small employers & own account workers",
+                     "7":"Routine occupations",
+                     "6":"Semi-routine occupations",
+                     "9":"Not classified",
+                     "8":"Never worked & long-term unemployed"
+                  }
+               ]
+            },
+            {
+               "field":"OVERSEAS",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"United Kingdom",
+                     "99":"Not Known",
+                     "3":"Rest of the World (Overseas)",
+                     "2":"Europe (EU)"
+                  }
+               ]
+            },
+            {
+               "field":"APPSHIB_ID",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"VLE_ID",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"HUSID",
+               "KEY":"0",
+               "Type":"String (13)"
+            },
+            {
+               "field":"USERNAME",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"LAST_NAME",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"FIRST_NAME",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ADDRESS_LINE_1",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ADDRESS_LINE_2",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ADDRESS_LINE_3",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ADDRESS_LINE_4",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"POSTCODE",
+               "KEY":"0",
+               "Type":"String (10)"
+            },
+            {
+               "field":"PRIMARY_EMAIL_ADDRESS",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"HOME_PHONE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOBILE_PHONE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PHOTO_URL",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ENTRY_POSTCODE",
+               "KEY":"0",
+               "Type":"String (10)"
+            },
+            {
+               "field":"CARELEAVER",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "99":"Not known",
+                     "1":"Care leaver (16+)",
+                     "98":"Information refused",
+                     "3":"In care in the rest of UK",
+                     "2":"Looked after in Scotland",
+                     "5":"Not a care leaver",
+                     "4":"UCAS defined care leaver"
+                  }
+               ]
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "studentcoursemembership":[
+            {
+               "field":"STUDENT_COURSE_MEMBERSHIP_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"STUDENT_ID",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"COURSE_ID",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"WITHDRAWAL_REASON",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "10":"Gone into employment",
+                     "12":"Transferred out as part of collaborative supervision arrangements",
+                     "43":"Financial reasons",
+                     "46":"Exclusion",
+                     "42":"Academic failure/left in bad standing/not permitted to progress - HE learning aims only",
+                     "44":"Other personal reasons",
+                     "45":"Written off after lapse of time (HE learning aims only)",
+                     "28":"OLASS learner withdrawn due to circumstances outside the provider's control",
+                     "29":"Learner has been made redundant",
+                     "40":"Learner has transferred to a new learning aim with the same provider",
+                     "41":"Learner has transferred to another provider to undertake learning that meets a specific government strategy",
+                     "99":"Completion of course - result unknown",
+                     "98":"Reason not known",
+                     "3":"Learner injury / illness",
+                     "2":"Learner has transferred to another provider",
+                     "5":"Death",
+                     "7":"Learner has transferred between providers due to intervention by the Skills Funding Agency",
+                     "47":"Learner has transferred to another provider due to merger",
+                     "97":"Other"
+                  }
+               ]
+            },
+            {
+               "field":"ENTRY_QUALS",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "J80":"Other qualification at level J",
+                     "M71":"Postgraduate Certificate in Education or Professional Graduate Diploma in Education",
+                     "J49":"Foundation course at level J",
+                     "J48":"Certificate in Education (CertEd) or Diploma in Education (DipEd) (i.e. non-graduate initial teacher training qualification)",
+                     "H80":"(Other) Qualification at level H or level 6",
+                     "X02":"Mature student admitted on basis of previous experience and/or admissions test",
+                     "X01":"Higher education (HE) access course not Quality Assurance Agency (QAA) recognised",
+                     "DZZ":"Non-UK doctorate degree",
+                     "X07":"(Other) Qualification below level 1",
+                     "C30":"Higher National Certificate (HNC)",
+                     "MUK":"UK masters degree",
+                     "X04":"Other qualification level not known",
+                     "Q51":"14-19 Higher Diploma (level 2)",
+                     "C90":"Undergraduate credits",
+                     "M2X":"Integrated undergraduate/postgraduate taught masters degree on the enhanced/extended pattern",
+                     "X06":"Not known",
+                     "JUK":"UK ordinary (non-honours) first degree",
+                     "P92":"Level 3 qualifications of which none are subject to UCAS Tariff",
+                     "P93":"Level 3 qualifications of which all are subject to UCAS Tariff",
+                     "P94":"Level 3 qualifications of which some are subject to UCAS Tariff",
+                     "M80":"Other taught qualification at level M",
+                     "HUK":"UK first degree with honours",
+                     "J30":"Higher National Diploma (HND)",
+                     "J31":"(Other) Qualification at level 5 or above (DEPRECATED SINCE 01/08/2013)",
+                     "P54":"Scottish Highers/Advanced Highers",
+                     "R51":"14-19 Foundation Diploma (level 1)",
+                     "P50":"A/AS level",
+                     "P51":"14-19 Advanced Diploma (level 3)",
+                     "J10":"Foundation degree",
+                     "H71":"Professional Graduate Certificate in Education",
+                     "C44":"Higher Apprenticeship (level 4)",
+                     "C20":"Certificate of Higher Education (CertHE)",
+                     "DUK":"UK doctorate degree",
+                     "X05":"Student has no formal qualification",
+                     "P91":"Level 3 qualifications of which some or all are subject to UCAS Tariff",
+                     "H11":"First degree with honours leading to Qualified Teacher Status (QTS)/registration with a General Teaching Council (GTC)",
+                     "M41":"Diploma at level M",
+                     "M44":"Certificate at level M",
+                     "R52":"Welsh Baccalaureate Foundation Diploma (level 1)",
+                     "Q80":"(Other) Qualification at level 2",
+                     "Q52":"Welsh Baccalaureate Intermediate Diploma (level 2)",
+                     "R80":"Other qualification at level 1",
+                     "HZZ":"Non-UK first degree",
+                     "C80":"(Other) Qualification at level C or level 4",
+                     "P63":"International Baccalaureate (IB) Certificate",
+                     "P62":"International Baccalaureate (IB) Diploma",
+                     "P65":"Cambridge Pre-U Certificate",
+                     "P64":"Cambridge Pre-U Diploma",
+                     "M91":"(Other) Qualification at level 7 or above",
+                     "M90":"Taught work at level M for provider credit",
+                     "P80":"(Other) Qualification at level 3",
+                     "X00":"Higher education (HE) access course Quality Assurance Agency (QAA) recognised",
+                     "MZZ":"Non-UK masters degree",
+                     "D80":"Other qualification at level D",
+                     "P68":"Welsh Baccalaureate Advanced Diploma (level 3)",
+                     "J20":"Diploma of Higher Education (DipHE)",
+                     "P47":"AQA Baccalaureate (Bacc)",
+                     "P46":"Award at level 3",
+                     "P53":"Scottish Baccalaureate",
+                     "P42":"Certificate at level 3",
+                     "P41":"Diploma at level 3"
+                  }
+               ]
+            },
+            {
+               "field":"ENTRY_POINTS",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"ENTRY_POINTS_SCHEMA",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "UCAS_17":"UCAS Tariff Scheme 2017 (the \"new\" scheme)",
+                     "99":"Not known (DEFAULT)",
+                     "UCAS_01":"UCAS Tariff Scheme 2001-20016 (the \"old\" scheme)"
+                  }
+               ]
+            },
+            {
+               "field":"AVERAGE_GCSE_SCORE",
+               "KEY":"0",
+               "Type":"Int"
+            },
+            {
+               "field":"COURSE_OUTCOME",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "11":"Other",
+                     "10":"Gone into employment",
+                     "12":"Transferred out as part of collaborative supervision arrangements",
+                     "1":"Successful completion of course",
+                     "98":"Completion of course - result unknown",
+                     "3":"Transferred to another provider",
+                     "2":"Academic failure/left in bad standing/not permitted toprogress",
+                     "5":"Death",
+                     "4":"Health reasons",
+                     "7":"Other personal reasons & dropped out",
+                     "6":"Financial reasons",
+                     "9":"Exclusion",
+                     "8":"Written off after lapse of time",
+                     "99":"Unknown"
+                  }
+               ]
+            },
+            {
+               "field":"COURSE_GRADE",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "61":"N FE",
+                     "62":"U FE",
+                     "63":"X FE",
+                     "64":"A* FE",
+                     "65":"Y FE",
+                     "82":"2 FE",
+                     "83":"3 FE",
+                     "81":"1 FE",
+                     "86":"6 FE",
+                     "87":"7 FE",
+                     "84":"4 FE",
+                     "85":"5 FE",
+                     "1":"First class honours",
+                     "3":"Lower second class honours",
+                     "2":"Upper second class honours",
+                     "5":"Third class honours",
+                     "4":"Undivided second class honours",
+                     "7":"Unclassified honours",
+                     "6":"Fourth class honours",
+                     "9":"Pass - degree awarded without honours following an honours course",
+                     "8":"Aegrotat (whether to honours or pass)",
+                     "74":"Fail FE",
+                     "73":"Distinction FE",
+                     "72":"Merit FE",
+                     "71":"Pass FE",
+                     "91":"Not yet awarded",
+                     "90":"10 FE",
+                     "11":"General degree - degree awarded after following a non-honours course/degree that was not available to be classified",
+                     "10":"Ordinary (to include divisions of ordinary if any) - degree awarded after following a non-honours course",
+                     "13":"Merit",
+                     "12":"Distinction",
+                     "14":"Pass",
+                     "55":"E FE",
+                     "54":"D FE",
+                     "57":"G FE",
+                     "56":"F FE",
+                     "51":"A FE",
+                     "88":"8 FE",
+                     "53":"C FE",
+                     "52":"B FE",
+                     "89":"9 FE"
+                  }
+               ]
+            },
+            {
+               "field":"COURSE_AIM_ATTAINED",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "D00":"Doctorate degree that meets the criteria for a research-based higher degree",
+                     "D01":"New Route PhD that meets the criteria for a research-based higher degree",
+                     "D90":"Provider credit at level D that can count towards a research-based higher degree",
+                     "E00":"Doctorate degree that does not meet the criteria for a research-based higher degree",
+                     "E40":"National Vocational Qualification (NVQ) at level E",
+                     "E43":"Highly specialist diploma from a professional body",
+                     "E90":"Advanced taught study at level E for provider credit",
+                     "L00":"Masters degree that meets the criteria for a research-based higher degree",
+                     "L80":"Other postgraduate qualification at level L that meets the criteria for a research-based higher degree",
+                     "L90":"Provider credit at level L that can count towards a research-based higher degree",
+                     "L91":"Visiting research students at levels D or L, with formal or informal credit",
+                     "L99":"Research-based higher degree where the student may ultimately study at levels D or L",
+                     "M00":"Masters degree obtained typically by a combination of coursework and thesis/dissertation, that does not meet the criteria for a research-based higher degree",
+                     "M01":"Taught masters degree designed specifically as a training in research methods and intended as a preparation for a research-based higher degree",
+                     "M02":"Masters in Teaching and Learning",
+                     "M10":"Post-experience taught masters degree",
+                     "M11":"Master of Business Administration (MBA)",
+                     "M16":"Pre-registration masters degree leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "M22":"Integrated undergraduate/postgraduate taught masters degree on the enhanced/extended pattern",
+                     "M26":"Integrated undergraduate/postgraduate taught masters degree on the enhanced/extended pattern leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "M28":"Integrated undergraduate/postgraduate taught masters degree on the enhanced/extended pattern leading towards registration with the Architects Registration Board (Part 1 and Part 2 qualification)",
+                     "M40":"Fellowship at level M",
+                     "M41":"Diploma at level M",
+                     "M42":"Advanced professional certificate at level M",
+                     "M43":"National Vocational Qualification (NVQ) at level M",
+                     "M44":"Certificate at level M",
+                     "M45":"Scottish Vocational Qualification (SVQ) 5",
+                     "M50":"Postgraduate bachelors degree at level M obtained typically by a combination of coursework and thesis/dissertation, that does not meet the criteria for a research-based higher degree",
+                     "M70":"Professional taught qualification at level M other than a masters degree",
+                     "M71":"Postgraduate Certificate in Education or Professional Graduate Diploma in Education",
+                     "M72":"Post-registration education qualification at level M other than a masters degree for serving schoolteachers",
+                     "M73":"Postgraduate Diploma in Education",
+                     "M76":"Post-registration health and social care qualification at level M",
+                     "M78":"Taught qualification at level M (where qualification at level H and/or level M is a pre-requisite for course entry) leading towards registration with the Architects Registration Board (Part 3 qualification)",
+                     "M79":"Level 7 Diploma in Teaching in the Lifelong Learning Sector",
+                     "M80":"Other taught qualification at level M",
+                     "M86":"Taught qualification at level M leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "M88":"Taught qualification at level M (where a qualification at level H is a pre-requisite for course entry) leading towards registration with the Architects Registration Board (Part 2 qualification)",
+                     "M90":"Taught work at level M for provider credit",
+                     "M91":"Visiting taught students at levels E or M, with formal or informal credit",
+                     "M99":"Taught work at levels E or M with an unspecified qualification aim",
+                     "H00":"First degree with honours",
+                     "H11":"First degree with honours leading to Qualified Teacher Status (QTS)/registration with a General Teaching Council (GTC)",
+                     "H12":"First degree with honours leading to Early Years Teacher Status (EYTS)",
+                     "H16":"Pre-registration first degree with honours leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "H18":"First degree with honours leading towards registration with the Architects Registration Board (Part 1 qualification)",
+                     "H22":"First degree with honours on the enhanced/extended pattern but at level H",
+                     "H23":"First degree with honours and diploma",
+                     "H41":"Diploma at level H",
+                     "H42":"Certificate at level H",
+                     "H43":"National Vocational Qualification (NVQ) at level H",
+                     "H50":"Postgraduate bachelors degree at level H",
+                     "H60":"Graduate diploma/certificate at level H",
+                     "H61":"Graduate diploma/certificate at level H but where a previous qualification at level H is a pre-requisite for course entry",
+                     "H62":"Pre-registration graduate diploma/certificate leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "H70":"Professional qualification at level H other than a first degree with honours",
+                     "H71":"Professional Graduate Certificate in Education",
+                     "H72":"Professional qualification at level H for serving schoolteachers other than a first degree with honours",
+                     "H76":"Post-registration health and social care qualification at level H other than a first degree with honours",
+                     "H78":"Other qualification at level H (where other qualifications at level H are a pre-requisite for course entry) leading towards registration with the Architects Registration Board (Part 3 qualification)",
+                     "H79":"Level 6 Diploma in Teaching in the Lifelong Learning Sector",
+                     "H80":"Other qualification at level H",
+                     "H81":"Other qualification at level H but where a previous qualification at level H is a pre-requisite for course entry",
+                     "H88":"Qualification at level H (where another qualification at level H is a pre-requisite for course entry) leading towards registration with the Architects Registration Board (Part 2 qualification)",
+                     "H90":"Credits at level H",
+                     "H91":"Visiting students at level H, with formal or informal credit",
+                     "H99":"Taught work at level H with an unspecified qualification aim",
+                     "I00":"Ordinary (non-honours) first degree",
+                     "I11":"Ordinary (non-honours) first degree leading to Qualified Teacher Status (QTS)/registration with a General Teaching Council (GTC)",
+                     "I12":"Ordinary (non-honours) first degree leading to Early Years Teacher Status (EYTS)",
+                     "I16":"Pre-registration ordinary (non-honours) first degree leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "I60":"Graduate diploma/certificate at level I",
+                     "I61":"Graduate diploma/certificate at level I but where a previous qualification at level I or H is a pre-requisite for course entry",
+                     "I70":"Professional qualification at level I other than an ordinary (non-honours) first degree",
+                     "I71":"Qualified Teacher Status (QTS)/registration with a General Teaching Council (GTC) only",
+                     "I72":"Professional qualification at level I for serving schoolteachers",
+                     "I73":"Early Years Teacher Status (EYTS) only",
+                     "I74":"Teaching certificate (trained through the medium of Welsh)",
+                     "I76":"Post-registration health and social care qualification at level I other than an ordinary (non-honours) first degree",
+                     "I79":"Level 5 Diploma in Teaching in the Lifelong Learning Sector",
+                     "I80":"Other qualification at level I",
+                     "I81":"Other qualification at level I but where a previous qualification at level I or H is a pre-requisite for course entry",
+                     "I90":"Credits at level I",
+                     "I91":"Visiting students at level I, with formal or informal credit",
+                     "I99":"Taught work at level I with an unspecified qualification aim",
+                     "J10":"Foundation degree",
+                     "J16":"Foundation degree which on completion meets entry requirement for pre-registration health and social care qualification",
+                     "J20":"Diploma of Higher Education (DipHE)",
+                     "J26":"Diploma of Higher Education (DipHE) leading towards obtaining eligibility to register to practice with a health or social care or veterinary statutory regulatory body",
+                     "J30":"Higher National Diploma (HND)",
+                     "J41":"Diploma at level J",
+                     "J42":"Certificate at level J",
+                     "J43":"National Vocational Qualification (NVQ) at level J",
+                     "J45":"Scottish Vocational Qualification (SVQ) 4",
+                     "J76":"Post-registration health and social care qualification at level J",
+                     "J80":"Other qualification at level J",
+                     "J90":"Credits at level J",
+                     "J99":"Taught work at level J with an unspecified qualification aim",
+                     "C20":"Certificate of Higher Education (CertHE)",
+                     "C30":"Higher National Certificate (HNC)",
+                     "C41":"Diploma at level C",
+                     "C42":"Certificate at level C",
+                     "C43":"National Vocational Qualification (NVQ) at level C",
+                     "C77":"Level 4 Preparing to Teach in the Lifelong Learning Sector",
+                     "C78":"Level 4 Certificate in Teaching in the Lifelong Learning Sector",
+                     "C80":"Other qualification at level C",
+                     "C90":"Credits at level C",
+                     "C99":"Taught work at level C with an unspecified qualification aim",
+                     "P41":"Diploma at level P",
+                     "P42":"Certificate at level P",
+                     "P43":"National Vocational Qualification (NVQ) 3",
+                     "P45":"Scottish Vocational Qualification (SVQ) 3",
+                     "P50":"A/AS level",
+                     "P55":"Advanced Higher (Scotland)",
+                     "P56":"Higher (Scotland)",
+                     "P70":"Professional qualification at level 3",
+                     "P77":"Level 3 Preparing to Teach in the Lifelong Learning Sector",
+                     "P78":"Level 3 Certificate in Teaching in the Lifelong Learning Sector",
+                     "P80":"Other qualification at level 3",
+                     "P85":"Diploma in Foundation Studies (Art and Design) at level 3",
+                     "P90":"Credits at level 3",
+                     "Q41":"Diploma at level Q",
+                     "Q42":"Certificate at level Q",
+                     "Q43":"National Vocational Qualification (NVQ) 2",
+                     "Q45":"Scottish Vocational Qualification (SVQ) 2",
+                     "Q50":"GCSE at grade A*-C",
+                     "Q56":"Intermediate 2 (Scotland)",
+                     "Q57":"Standard Grade Credit (Scotland)",
+                     "Q70":"Professional qualification at level 2",
+                     "Q80":"Other qualification at level 2",
+                     "Q90":"Credits at level 2",
+                     "R42":"Certificate at level R",
+                     "R43":"National Vocational Qualification (NVQ) 1",
+                     "R45":"Scottish Vocational Qualification (SVQ) 1",
+                     "R50":"GCSE at grade D-G",
+                     "R56":"Intermediate 1 (Scotland)",
+                     "R57":"Standard Grade General (Scotland)",
+                     "R70":"Professional qualification at level 1",
+                     "R80":"Other qualification at level 1",
+                     "R90":"Credits at level 1",
+                     "S42":"National Vocational Qualification (NVQ) Entry level certificate",
+                     "S57":"Standard Grade Foundation (Scotland)",
+                     "S80":"Other qualification at further education (FE) access level",
+                     "S90":"Credits at further education (FE) access level",
+                     "X00":"Higher education (HE) access course, Quality Assurance Agency (QAA) recognised",
+                     "X01":"Higher education (HE) access course, not Quality Assurance Agency (QAA) recognised",
+                     "X41":"Welsh for Adults Entry level",
+                     "X42":"Welsh for Adults level 1",
+                     "X43":"Welsh for Adults level 2",
+                     "X44":"Welsh for Adults level 3",
+                     "X45":"Welsh for Adults level 4",
+                     "X46":"Welsh for Adults specialist/arbennig",
+                     "X98":"No formal qualification aim, below FE level",
+                     "X99":"No formal qualification aim, below HE level",
+                     "Z99":"Course aim does not apply"
+                  }
+               ]
+            },
+            {
+               "field":"COURSE_MARK",
+               "KEY":"0",
+               "Type":"Decimal"
+            },
+            {
+               "field":"COURSE_EXPECTED_END_DATE",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"COURSE_END_DATE",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"COURSE_DURATION",
+               "KEY":"0",
+               "Type":"Int"
+            },
+            {
+               "field":"COURSE_JOIN_DATE",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"COURSE_JOIN_AGE",
+               "KEY":"0",
+               "Type":"Int"
+            },
+            {
+               "field":"COHORT_ID",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ACTIVE_MEMBERSHIP",
+               "KEY":"RF",
+               "Type":[
+                  {
+                     "1":"active - The student is studying on the course, or enrolled to study on the course.",
+                     "2":"not active - The student has finished the course, or has withdrawn from, left or transferred out of the course for any reason."
+                  }
+               ]
+            },
+            {
+               "field":"PREDICTED_OUTCOME_GRADE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ATTAINMENT_TARGET_GRADE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PREDICTED_OUTCOME_MARK",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"ATTAINMENT_TARGET_MARK",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"PRIOR_GRADE_ENGLISH",
+               "KEY":"0",
+               "Type":"String (10)"
+            },
+            {
+               "field":"PRIOR_GRADE_MATHEMATICS",
+               "KEY":"0",
+               "Type":"String (10)"
+            },
+            {
+               "field":"INITIAL_ASSESSMENT_ENGLISH",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"INITIAL_ASSESSMENT_MATHEMATICS",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"ADMISSIONS_ROUTE",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"Student was accepted onto the course via UCAS Clearing",
+                     "0":"Accepted through default application route",
+                     "3":"Student was accepted onto the course via UCAS Adjustment",
+                     "2":"Student was accepted onto the course via a widening participation initiative",
+                     "4":"Student was accepted onto the course via UCAS Record of Prior Acceptance"
+                  }
+               ]
+            },
+            {
+               "field":"COURSE_TRANSFERRED_FROM",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"VISA",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "Tier4":"Student has a Tier 4 visa permitting leave to study in the UK."
+                  }
+               ]
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "studentevent":[
+            {
+               "field":"STUDENT_EVENT_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"EVENT_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"STUDENT_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "studentidmap":[
+            {
+               "field":"STUDENT_ID_MAP_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"STUDENT_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"DOMAIN",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"IDENTIFIER",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "studentmoduleinstance":[
+            {
+               "field":"STUDENT_ON_A_MODULE_INSTANCE_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"STUDENT_COURSE_MEMBERSHIP_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_INSTANCE_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"COURSE_INSTANCE_ID",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"STUDENT_ID",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_RESULT",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"Pass",
+                     "3":"Not known",
+                     "2":"Fail"
+                  }
+               ]
+            },
+            {
+               "field":"MOD_RETAKE",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"Yes",
+                     "2":"No"
+                  }
+               ]
+            },
+            {
+               "field":"MOD_TRAILING",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"Yes",
+                     "2":"No"
+                  }
+               ]
+            },
+            {
+               "field":"MOD_START_DATE",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"MOD_END_DATE",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"MOD_FIRST_MARK",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"MOD_ACTUAL_MARK",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"MOD_AGREED_MARK",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"MOD_RAW_ACTUAL_MARK",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"MOD_RAW_AGREED_MARK",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"MOD_FIRST_GRADE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_ACTUAL_GRADE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_AGREED_GRADE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_CREDITS_ACHIEVED",
+               "KEY":"0",
+               "Type":"Int"
+            },
+            {
+               "field":"MOD_CURRENT_ATTEMPT",
+               "KEY":"0",
+               "Type":"Int"
+            },
+            {
+               "field":"MOD_COMPLETED_ATTEMPT",
+               "KEY":"0",
+               "Type":"Int"
+            },
+            {
+               "field":"X_MOD_NAME",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_ACADEMIC_YEAR",
+               "KEY":"RF",
+               "Type":"Int"
+            },
+            {
+               "field":"MOD_OPTIONAL",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "studentassessmentinstance":[
+            {
+               "field":"STUDENT_ON_ASSESSMENT_INSTANCE_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"STUDENT_COURSE_MEMBERSHIP_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ASSESS_INSTANCE_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ASSESS_SEQ_ID",
+               "KEY":"UC",
+               "Type":"Int"
+            },
+            {
+               "field":"MOD_INSTANCE_ID",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"STUDENT_ID",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ASSESSMENT_DATA_SOURCE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ASSESS_DUE_DATE",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"ASSESS_SUBMISSION_DATE",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"ASSESS_RETAKE",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"Yes",
+                     "2":"No"
+                  }
+               ]
+            },
+            {
+               "field":"ASSESS_ACTUAL_MARK",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"ASSESS_AGREED_MARK",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"ASSESS_RAW_ACTUAL_MARK",
+               "KEY":"0",
+               "Type":"Decimal"
+            },
+            {
+               "field":"ASSESS_RAW_AGREED_MARK",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"ASSESS_AGREED_GRADE",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"ASSESS_ACTUAL_GRADE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"ASSESSMENT_CURRENT_ATTEMPT",
+               "KEY":"0",
+               "Type":"Int"
+            },
+            {
+               "field":"ASSESSMENT_RESULT",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"Pass",
+                     "3":"Not known",
+                     "2":"Fail"
+                  }
+               ]
+            },
+            {
+               "field":"GRADE_DATE",
+               "KEY":"0",
+               "Type":"Date"
+            },
+            {
+               "field":"X_ASSESS_DETAIL",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"X_MOD_NAME",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"X_MOD_ID",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MOD_ACADEMIC_YEAR",
+               "KEY":"RF",
+               "Type":"Int"
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      },
+      {
+         "studentcourseinstance":[
+            {
+               "field":"STUDENT_ON_COURSE_INSTANCE_ID",
+               "KEY":"PK",
+               "Type":"String (255)"
+            },
+            {
+               "field":"STUDENT_COURSE_MEMBERSHIP_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"COURSE_INSTANCE_ID",
+               "KEY":"UC",
+               "Type":"String (255)"
+            },
+            {
+               "field":"STUDENT_ID",
+               "KEY":"RF",
+               "Type":"String (255)"
+            },
+            {
+               "field":"MODE",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "63":"Dormant - previously full-time",
+                     "64":"Dormant - previously part-time",
+                     "65":"FE students continuous delivery day/daytime",
+                     "24":"Sandwich (thin) according to funding council definitions",
+                     "25":"Other sandwich course/programme",
+                     "23":"Sandwich (thick) according to funding council definitions",
+                     "44":"Writing-up - previously part-time",
+                     "43":"Writing-up - previously full-time",
+                     "1":"Full-time according to funding council definitions",
+                     "2":"Other full-time",
+                     "39":"Other part-time (providers in Scotland)",
+                     "99":"FE students in England",
+                     "98":"Not Known / Not in Early Statistics / HEIFES population / not applicable",
+                     "38":"Structured part-time (providers in Scotland)",
+                     "73":"Change to dormant status - previously full-time",
+                     "13":"FE students full-time 4-29 weeks",
+                     "12":"FE students full-time 30 weeks or more",
+                     "14":"FE students full-time less than 4 weeks",
+                     "33":"FE students part-time released from employment",
+                     "31":"Part-time",
+                     "51":"Sabbatical",
+                     "36":"FE students open or distance learning",
+                     "35":"FE students evening only",
+                     "34":"FE students part-time not released from employment",
+                     "74":"Change to dormant status - previously part-time"
+                  }
+               ]
+            },
+            {
+               "field":"FTE",
+               "KEY":"0",
+               "Type":"Decimal"
+            },
+            {
+               "field":"YEAR_PRG",
+               "KEY":"0",
+               "Type":"Int"
+            },
+            {
+               "field":"YEAR_STU",
+               "KEY":"0",
+               "Type":"Int"
+            },
+            {
+               "field":"COURSE_LOCATION",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"X_COURSE_AVERAGE_MARK",
+               "KEY":"0",
+               "Type":"Float"
+            },
+            {
+               "field":"PROGRESSION",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "10":"The student is continuing or intending to continue on the course.",
+                     "15":"The student is continuing on the course and is repeating some modules from this stage alongside the next stage modules; the student has not failed the stage.",
+                     "55":"The student has failed this stage of the course and is repeating the whole stage.",
+                     "30":"The student has withdrawn from the course. This may have been for academic or non-academic reasons.",
+                     "50":"The student has failed this stage of the course and is repeating some modules, but not the whole stage; the student is not yet continuing to the next stage.",
+                     "40":"The student has transferred to a new course. That is the student has withdrawn from this course & as a direct result has at the same time started studying on another course.",
+                     "60":"Learner has temporarily withdrawn from the aim due to an agreed break in learning.",
+                     "70":"Learner has failed this stage and has withdrawn from the course.",
+                     "20":"The student has completed all the learning activities of the course."
+                  }
+               ]
+            },
+            {
+               "field":"PROGRESSION_SOURCE",
+               "KEY":"0",
+               "Type":"String (255)"
+            },
+            {
+               "field":"LOCATION_OF_STUDY",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "C":"NVQ delivered entirely in the workplace",
+                     "E":"On industrial (or other) placement for a proportion of the year",
+                     "D":"On industrial (or other) placement for the year as a whole",
+                     "H":"Classroom",
+                     "K":"Workplace",
+                     "J":"Workshop",
+                     "S":"Studying abroad and included in the Student record as student has spent or will spend more than 8 weeks in the UK",
+                     "U":"Abroad for a proportion of the year",
+                     "T":"Abroad for the whole year",
+                     "6":"Distance learning - UK based student",
+                     "9":"Distance learning - Non-UK based student",
+                     "Z":"At institution or a partner for the whole year"
+                  }
+               ]
+            },
+            {
+               "field":"ACADEMIC_YEAR",
+               "KEY":"RF",
+               "Type":"Int"
+            },
+            {
+               "field":"TERMTIME_ACCOM",
+               "KEY":"0",
+               "Type":[
+                  {
+                     "1":"Provider maintained property",
+                     "2":"Parental/guardian home",
+                     "5":"Not known",
+                     "4":"Other",
+                     "7":"Own residence",
+                     "6":"Not in attendance at the provider",
+                     "9":"Private-sector halls",
+                     "8":"Other rented accommodation"
+                  }
+               ]
+            },
+            {
+               "field":"PROVIDED_AT",
+               "KEY":"0",
+               "Type":"Date"
+            }
+         ]
+      }
+   ]
+}

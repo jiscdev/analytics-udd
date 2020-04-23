@@ -30,7 +30,6 @@
 * [ADMISSIONS_ROUTE](#admissions_route) [0..1]
 * [COURSE_TRANSFERRED_FROM](#course_transferred_from) [0..1]
 * [VISA](#visa) [0..1]
-* [CARELEAVER](#careleaver) [0..1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.
@@ -2003,31 +2002,3 @@ String (255)
 ### Notes
 Code list may be extended in future.
 
-## CARELEAVER
-### Description
-Whether the student is a care leaver.
-
-### Purpose
-For analytics
-
-### Derivation
-https://www.hesa.ac.uk/collection/c19051/a/careleaver
-
-### Valid Values & Mappings
-<table>
-<tr><td>CARELEAVER</td><td>DESCRIPTION (ENGLISH)</td><td>DESCRIPTION (WELSH)</td><td>HESA (CARELEAVER)</td></tr>
-<tr><td>01</td><td>Care leaver (16+)</td><td></td><td>01</td></tr>
-<tr><td>02</td><td>Looked after in Scotland</td><td></td><td>02</td></tr>
-<tr><td>03</td><td>In care in the rest of UK</td><td></td><td>03</td></tr>
-<tr><td>04</td><td>UCAS defined care leaver</td><td></td><td>04</td></tr>
-<tr><td>05</td><td>Not a care leaver</td><td></td><td>05</td></tr>
-<tr><td>98</td><td>Information refused</td><td></td><td>98</td></tr>
-<tr><td>99</td><td>Not known</td><td></td><td>99</td></tr>
-</table>  
-
-### Format
-String (255)
-
-### Notes
-
-This property is identical to the HESA CARELEAVER field. Please refer to the link https://www.hesa.ac.uk/collection/c19051/a/careleaver for definitions, details of coverage and other information about this data.

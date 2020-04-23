@@ -14,6 +14,9 @@ API endpoint name: **courseinstance**
 ## Description of course_instance entity
 A course_instance is a stage of a course with a start date and an end date, often marked by a progression decision point at the end.  Example: a single academic year in a 3 year Honours degree course.
 
+## Note on data output
+In most cases, there should be only a small number of course_instance records per academic year for any 1 course. For example, if a course_instance equates to a single academic year of a full-time course, then there would normally be 1 course_instance record for each academic year. Some providers may split course_instance records by mode of study and / or by terms or semesters, in which case there will be multiple course_instance records for a course in a single academic year. However, if more than about 4 course_instance records are generated for 1 course for a single academic year, it is possible that there has been an error in the data output process, and providers are encouraged to check this prior to import into the Learning Data Hub. 
+
 ## COURSE_INSTANCE_ID
 ### Description
 Institution's identifier for this course_instance

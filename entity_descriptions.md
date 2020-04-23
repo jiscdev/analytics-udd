@@ -39,7 +39,6 @@ This description is the same as the description for the Module entity in the HED
 A module_instance is the specific offer of a module to students. It therefore has a specific venue and defined assessments.
 
 # module_map
-
 ## Description of module_map entity
 The module_map entity establishes an association between a module_instance and relevant information in another system. This association may be relatively fuzzy, in that the concepts on each side of the relationship may be different. However, the mapping might be used where the two IDs are in fact identical and relate to information about a single module.
 
@@ -65,7 +64,6 @@ A period describes an institution's official start date and end date of time sli
 A staff element identifies a member of staff at an institution.
 
 # staff_link
-
 ## Description of staff_link entity
 A staff_link record makes a statement about a member of staff in relation to a property of another entity referenced by PROPERTY_NAME and PROPERTY_VALUE; for example, that a specific member of staff identified by STAFF_ID tutors a particular student identified by STUDENT_ID. The type of relationship is described in the RELATIONSHIP property, but the meaning of the relationship, and any functionality associated with it, is not prescribed in the UDD. Instead these are defined and controlled by the organisation responsible for a particular application, product or service identified in the SCOPE property. This entity enables the identification and linking of individual members of staff to single concrete entities (for example, a member of staff to a module_instance via MODULE_INSTANCE_ID), or to multiples (for example, for filtering by INST_TIER).
 

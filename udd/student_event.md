@@ -3,6 +3,8 @@
 * [STUDENT_EVENT_ID](#student_event_id) [1] **
 * [EVENT_ID](event.md#event_id) [1] *
 * [STUDENT_ID](student.md#student_id) [1] *
+* [MOD_INSTANCE_ID](module_instance.md#mod_instance_id) [0..1]
+* [COURSE_INSTANCE_ID](course_instance.md#course_instance_id)  [0..1]
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity.  

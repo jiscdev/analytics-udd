@@ -30,6 +30,8 @@ When providing UDD data, supply the data for different entities in separate file
 ## Diagram
 An Entity-relationship diagrams provide an overview of the specification. [Full ERD](diagramFull.md) with all the properties.
 
+![UDD entity relation diagram](media/UDDdiagramFull.png "UDD entity-relationship diagram with all properties")
+
 ## Entities
 
 ### Primary keys

@@ -2138,27 +2138,6 @@ GIF or JPG (exact list of formats, and ideal (minimum) photo resolution, to be c
 ### Notes
 This assumes that there is a way of securing access to the photo.
 
-
-## TUTOR_STAFF_ID
-### Description
-This is the unique identification number for the learner's academic or course year supervisor/ tutor, or alternatively the id of the contact who will be responsible for handling Learning Analytics alerts and notification regarding the student.
-This property is deprecated.
-
-### Purpose
-For notification and alerts purposes for Learning Analytics SSP and other software tools
-
-### Derivation
-https://www.hesa.ac.uk/collection/c18025/a/ownstaffid
-
-### References
-
-### Format
-String (255)
-
-### Notes
-This will be the unique identifier/ primary key for the member of staff who is responsible for the student (course/ year tutor) or the person responsible for receiving alerts and notifications from the Learning Analytics software suite/ tools. This will typically be the staff/ HR/ payroll number for the member of academic staff, which links to their email address in the institutions identity management system.
-This property is deprecated. Use the staff_link entity instead, if possible.
-
 ## ENTRY_POSTCODE
 ### Description.
 Identifies the postal code of the student's permanent or home address prior to entry to the course. It is not necessarily the correspondence address of the student.

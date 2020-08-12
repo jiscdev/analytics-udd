@@ -32,8 +32,6 @@ An Entity-relationship diagrams provide the full specification with all its prop
 
 ![UDD entity relation diagram](media/UDDdiagramFull.png "UDD entity-relationship diagram with all properties")
 
-![UDD entity relation diagram](media/UDDdiagramFull.png "UDD entity-relationship diagram with all properties")
-
 ## Entities
 
 ### Primary keys

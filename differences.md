@@ -4,6 +4,8 @@ The following spreadsheet gives an overview of all the changes between UDD Versi
 
 [Excel Spreadsheet of UDD Revision History][differencesXLS]
 
+![UDD entity relation diagram](media/UDDdiagramFull_latest_changes.png "UDD entity-relationship diagram with all properties")
+
 [differencesXLS]: media/UDD_Revision_History.xlsx "differencesXLS"
 
 ## Summary of differences

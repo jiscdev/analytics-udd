@@ -50,11 +50,6 @@ By default, MOD_INSTANCE_ID and DOMAIN_MAPPED_ID form a uniqueness constraint wi
 ## Description of module_subject entity
 A module_subject describes the subject or subjects of study of a module, using a specified subject classification system.
 
-# module_VLE_map
-This entity is DEPRECATED. Use module_map for preference.
-## Description of module_VLE_map entity
-A module_VLE_map links a module in a student record system with module materials in a VLE.
-
 # period
 ## Description of period entity
 A period describes an institution's official start date and end date of time slices, such as academic years, terms and semesters.
@@ -68,14 +63,6 @@ A staff element identifies a member of staff at an institution.
 A staff_link record makes a statement about a member of staff in relation to a property of another entity referenced by PROPERTY_NAME and PROPERTY_VALUE; for example, that a specific member of staff identified by STAFF_ID tutors a particular student identified by STUDENT_ID. The type of relationship is described in the RELATIONSHIP property, but the meaning of the relationship, and any functionality associated with it, is not prescribed in the UDD. Instead these are defined and controlled by the organisation responsible for a particular application, product or service identified in the SCOPE property. This entity enables the identification and linking of individual members of staff to single concrete entities (for example, a member of staff to a module_instance via MODULE_INSTANCE_ID), or to multiples (for example, for filtering by INST_TIER).
 
 Other organisations MAY use these RELATIONSHIPs, but no system behaviour should be inferred, except when using one of their own RELATIONSHIPs.
-
-# staff_on_course_instance
-## Description of staff_on_course_instance entity
-A staff_on_course_instance links a member of staff to a course_instance.
-
-# staff_on_mod_instance
-## Description of staff_on_mod_instance entity
-A staff_on_mod_instance links a member of staff to a module_instance.
 
 # student
 ## Description of student entity

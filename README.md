@@ -28,7 +28,9 @@ UDD data must be UTF-8 encoded. TSV is the preferred data format, but JSON and X
 When providing UDD data, supply the data for different entities in separate files, 1 file per entity, using the [UDD filename conventions](implementation/filename_conventions.md).
 
 ## Diagram
-An Entity-relationship diagrams provide an overview of the specification. [Full ERD](diagramFull.md) with all the properties.
+An Entity-relationship diagrams provide the full specification with all its properties.
+
+![UDD entity relation diagram](media/UDDdiagramFull.png "UDD entity-relationship diagram with all properties")
 
 ## Entities
 
@@ -150,26 +152,6 @@ Note that some properties will be marked as 'deprecated'. This means that the pr
 ## Acknowledgements
 
 Many thanks to all contributors who have raised issues, sent pull requests, commented and made suggestions. The UDD specification is the achievement of all of you.
-
-- @alanepaull
-- @andrewhickey
-- @arc12
-- @christoffballard
-- @craig-petch
-- @ds10
-- @gmoger-jisc
-- @gryglbrt
-- @ht2 
-- @huwrobertsjisc
-- @Josh-Ring-jisc
-- @jfmullaney
-- @michaelwebjisc
-- @MiroslavKratchounov
-- @robwynj
-- @ryansmith94
-- @sandeepmjay
-- @willblenkhorn
-- @wilmTap
 
 
 ### License

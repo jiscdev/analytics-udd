@@ -4,9 +4,18 @@ The following spreadsheet gives an overview of all the changes between UDD Versi
 
 [Excel Spreadsheet of UDD Revision History][differencesXLS]
 
+![UDD entity relation diagram](media/UDDdiagramFull_latest_changes.png "UDD entity-relationship diagram with all properties")
+
 [differencesXLS]: media/UDD_Revision_History.xlsx "differencesXLS"
 
 ## Summary of differences
+
+Differences between v1.6, compared to v1.5.1:
+
+- module_vle_map: entity deleted (use module map)
+- staff_on_module_instance: entity deleted (use staff link)
+- staff_on_course_instance: entity deleted (use staff link)
+- student: TUTOR_STAFF_ID deleted (use staff link)
 
 Differences between v1.5.1, compared to v1.5.0:
 

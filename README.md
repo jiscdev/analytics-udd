@@ -1,6 +1,6 @@
-# Jisc Learning Analytics Unified Data Definitions v1.5.1
+# Jisc Learning Analytics Unified Data Definitions v1.6
 
-_Version 1.5.1 released on 6 April 2020._
+_Version 1.6 released on 1st August 2020._
 
 ## Introduction
 The Unified Data Definitions (UDD) of the Jisc learning analytics project is a vocabulary of the chief data entities of interest to learning analytics: students, courses, modules, and so on, as well as their characteristics. The data coded with this vocabulary is typically extracted from the student record system of a college or university.
@@ -19,8 +19,8 @@ In addition to the main folder, there are 4 sub-folders. The udd sub-folder is t
 
 For release schedule and version control, see [below](README.md#release-schedule-and-version-control).
 
-## Differences between v1.5 and v1.5.1
-The development of v1.5.1 has involved a number of additions and changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between versions.
+## Differences between v1.5.1 and v1.6
+The development of v1.6 has involved a number of changes. [This overview page](differences.md) lists the changes in summary and provides a spreadsheet with the mapped listing of each entity and property change between versions.
 
 ## Data format
 UDD data must be UTF-8 encoded. TSV is the preferred data format, but JSON and XML data are also supported. Other formats are not supported.
@@ -28,7 +28,9 @@ UDD data must be UTF-8 encoded. TSV is the preferred data format, but JSON and X
 When providing UDD data, supply the data for different entities in separate files, 1 file per entity, using the [UDD filename conventions](implementation/filename_conventions.md).
 
 ## Diagram
-An Entity-relationship diagrams provide an overview of the specification. [Full ERD](diagramFull.md) with all the properties.
+An Entity-relationship diagrams provide the full specification with all its properties.
+
+![UDD entity relation diagram](media/UDDdiagramFull.png "UDD entity-relationship diagram with all properties")
 
 ![UDD entity relation diagram](media/UDDdiagramFull.png "UDD entity-relationship diagram with all properties")
 
@@ -57,7 +59,11 @@ Some entities have uniqueness constraints across multiple properties; for exampl
 
 ### [module_subject](udd/module_subject.md)
 
-### [module_vle_map](udd/module_vle_map.md) Deprecated
+### [period](udd/period.md)
+
+### [staff](udd/staff.md)
+
+### [staff_link](udd/staff_link.md)
 
 ### [student](udd/student.md)
 
@@ -70,17 +76,6 @@ Some entities have uniqueness constraints across multiple properties; for exampl
 ### [student_on_a_module_instance](udd/student_on_a_module_instance.md)
 
 ### [student_on_course_instance](udd/student_on_course_instance.md)
-
-## Additional sections
-### [period](udd/period.md)
-
-### [staff](udd/staff.md)
-
-### [staff_on_course_instance](udd/staff_on_course_instance.md) Deprecated
-
-### [staff_on_mod_instance](udd/staff_on_mod_instance.md) Deprecated
-
-### [staff_link](udd/staff_link.md)
 
 ### [student_id_map](udd/student_id_map.md)
 
@@ -159,26 +154,6 @@ Note that some properties will be marked as 'deprecated'. This means that the pr
 ## Acknowledgements
 
 Many thanks to all contributors who have raised issues, sent pull requests, commented and made suggestions. The UDD specification is the achievement of all of you.
-
-- @alanepaull
-- @andrewhickey
-- @arc12
-- @christoffballard
-- @craig-petch
-- @ds10
-- @gmoger-jisc
-- @gryglbrt
-- @ht2 
-- @huwrobertsjisc
-- @Josh-Ring-jisc
-- @jfmullaney
-- @michaelwebjisc
-- @MiroslavKratchounov
-- @robwynj
-- @ryansmith94
-- @sandeepmjay
-- @willblenkhorn
-- @wilmTap
 
 
 ### License

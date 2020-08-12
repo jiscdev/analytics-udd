@@ -14,7 +14,7 @@ API endpoint name: **studentevent**
 
 ## Description of student_event entity
 
-The student_event entity records that a student is registered to attend, or expected to attend, an event. Subsequently, the xapi data may describe whether or not a student attended.
+The student_event entity records that a student is registered to attend, or expected to attend, an event. Subsequently, the xapi data may describe whether or not a student attended. Can be linked to module_instance and / or course_instance records with MOD_INSTANCE_ID and COURSE_INSTANCE_ID.
 
 ## STUDENT_EVENT_ID
 ### Description

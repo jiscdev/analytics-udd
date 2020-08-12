@@ -19,6 +19,8 @@ API endpoint name: **event**
 ## Description of event entity
 The event entity records events that might be attended by a student in the future. These include events linked to modules or courses, such as lectures and seminars, as well as other more general events, such as induction meetings. Data about events will often, but not exclusively, be drawn from timetabling systems; the source is indicated in EVENT_DATA_SOURCE. The primary purpose of the event entity is to record the details of events that a student was registered to attend, or expected to attend. Subsequently, the xapi data may describe whether or not a student attended. In addition, the event record links to the [booking_event entity](https://github.com/Cetis/intelligent-campus/blob/master/udd/booking-event.md) in the Jisc Intelligent Campus specification.
 
+For linking Event instances to specific module_instance and / or course_instance records, use the student_event entity. This mechanism enables Event instances to be linked to multiple modules and courses, or none.
+
 ## EVENT_ID
 ### Description
 Primary key. The EVENT_ID is used to link the UDD data to xAPI attendance data in the [xAPI attendance statement](https://github.com/jiscdev/xapi/blob/1.0.3/recipes/attendance/attendance.md#object).

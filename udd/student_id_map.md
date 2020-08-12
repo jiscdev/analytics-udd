@@ -38,14 +38,14 @@ Efficient processing of IDs, and lookup of data in xAPI statements.
 
 ### Valid values
 Values should be one of the following:
-- HUSID 
-- ULN 
-- a URL that identifies the system within which IDENTIFIER exists, for example a VLE
+- 'VLE' - this is a reserved label for the institution's primary VLE.
+- a local name that identifies the system within which IDENTIFIER exists, for example 'Scientia'.
 
 ### Format
 String (255)
 
 ### Notes
+Local name values are not maintained in the UDD.
 
 
 ## IDENTIFIER

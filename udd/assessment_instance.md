@@ -7,6 +7,8 @@
 * [ASSESS_DETAIL](#assess_detail) [0..1]
 * [ASSESS_SUMMATIVE](#assess_summative) [0..1]
 * [ASSESS_WEIGHT](#assess_weight) [0..1]
+* [ASSESS_VLE_ID](#assess_vle_id) [0..1]
+* [ASSESS_TURNITIN_ID](#assess_turnitin_id) [0..1]
 * [MAX_MARKS](#max_marks) [0..1]
 * [MOD_ACADEMIC_YEAR](module_instance.md#mod_academic_year) [1]
 * [PROVIDED_AT](#provided_at) [0..1]
@@ -165,6 +167,38 @@ Decimal
 
 ### Notes
 Omitting this property may hinder the development or use of an effective analytics model.
+
+## ASSESS_VLE_ID
+### Description
+A provider's identifier for this assessment_instance in their VLE.
+
+### Purpose
+To map assessments between the student record system and VLE.
+
+### Derivation
+Jisc
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+## ASSESS_TURNITIN_ID
+### Description
+A provider's identifier for this assessment_instance in Turnitin.
+
+### Purpose
+To map assessments between the student record system and VLE.
+
+### Derivation
+Jisc
+
+### Valid Values
+Any
+
+### Format
+String (255)
 
 ## MAX_MARKS
 ### Description

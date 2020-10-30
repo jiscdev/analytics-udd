@@ -166,7 +166,7 @@ Jisc
 String (255)
 
 ### Notes
-
+This field should be considered with [ASSESSMENT_CURRENT_ATTEMPT](#assessment_current_attempt).  A student might have multiple attempts but not all will be as a result of mitigating circumstances.
 
 ## ASSESS_ACTUAL_MARK
 ### Description

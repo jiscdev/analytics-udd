@@ -291,8 +291,29 @@ https://www.hesa.ac.uk/collection/c18051/a/yearprg
 Int
 
 ### Notes
-"0" indicates a foundation year or other bridging year aimed at students who are not quite ready to enter the first year of the course. See Notes in YEAR_STU.
-Omitting this property may hinder the development or use of an effective analytics model.
+"0" indicates a foundation year or other bridging year aimed at students who are not quite ready to enter the first year of the course. 
+
+**_Example of relationship between YEAR_STU and YEAR_PRG:_**
+<table>
+  <tr>
+    <td>Year</td><td>YEAR_STU</td><td>YEAR_PRG</td>
+  </tr>
+  <tr>
+    <td>Foundation year</td><td>1</td><td>0</td>
+  </tr>
+  <tr>
+    <td>First Year</td><td>2</td><td>1</td>
+  </tr>
+  <tr>
+    <td>Second Year</td><td>3</td><td>2</td>
+  </tr>
+    <tr>
+    <td>Re-take of Second Year</td><td>4</td><td>2</td>
+  </tr><tr>
+    <td>Third Year</td><td>5</td><td>3</td>
+  </tr>
+</table>
+
 
 ## YEAR_STU
 ### Description
@@ -311,7 +332,7 @@ https://www.hesa.ac.uk/collection/c18051/a/yearstu
 Int
 
 ### Notes
-Omitting this property may hinder the development or use of an effective analytics model.
+
 **_Example of relationship between YEAR_STU and YEAR_PRG:_**
 <table>
   <tr>

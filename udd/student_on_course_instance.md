@@ -379,19 +379,22 @@ String (255)
 The current (LIVE) average of all module marks from across a learner's whole course.
 
 ### Purpose
-For analytics
+Analytics
 
 ### Derivation
 Jisc
 
 ### Valid Values
-0-1
+0-100
 
 ### Format
-Float
+Decimal
 
 ### Notes
-This data is generated internally to the learning record warehouse from existing data, and does not need to be supplied by an institution.
+The provider is not expected to submit data to this field.
+
+The value represents a percentage; for example, a value of "63.75" means 63.75%, a value of "50" means 50%.
+This mark should not be changed after subsequent attempts at the same module, as it is used in analytics.
 
 
 ## PROGRESSION

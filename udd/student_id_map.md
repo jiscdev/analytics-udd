@@ -2,7 +2,7 @@
 * [STUDENT_ID_MAP_ID](#student_id_map_id) **
 * [STUDENT_ID](student.md#student_id) [1] *
 * [DOMAIN](#domain) [1] *
-* [IDENTIFIER](#identifier) [1] *
+* [DOMAIN_MAPPED_ID](#domain_mapped_id) [1] *
 * [PROVIDED_AT](assessment_instance.md#provided_at) [0..1]
 
 \** indicates that the property is the primary key for this entity; if not provided by data supplier, will be Learning Data Hub generated.   
@@ -11,7 +11,7 @@
 API endpoint name: **studentidmap**
 
 ## Description
-The UDD student identifier entity enables efficient processing of IDs in relation to both the UDD structures and xAPI statements.
+The UDD student identifier entity enables efficient processing of IDs in relation to both the UDD structures and xAPI statements.  This further provides an extension to the core identifiers stored in the student entity.
 
 ## STUDENT_ID_MAP_ID
 ### Description
@@ -36,10 +36,11 @@ Identifies the system within which IDENTIFIER exists.
 ### Purpose
 Efficient processing of IDs, and lookup of data in xAPI statements.
 
-### Valid values
-Values should be one of the following:
-- 'VLE' - this is a reserved label for the institution's primary VLE.
-- a local name that identifies the system within which IDENTIFIER exists, for example 'Scientia'.
+### Example Values
+
+- TURNITIN
+- TALIS
+- PANOPTO
 
 ### Format
 String (255)
@@ -48,7 +49,7 @@ String (255)
 Local name values are not maintained in the UDD.
 
 
-## IDENTIFIER
+## DOMAIN_MAPPED_ID
 ### Description
 Local ID for the student, as used in DOMAIN.
 
